@@ -36,46 +36,46 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Embeds',
-              to: 'docs/',
-            },
-            {
-              label: 'Authentication',
-              to: 'docs/doc2/',
-            },
-            {
-              label: 'Guides',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Pricing',
-              href: 'https://dev-v2.mimeeq.co.uk/pricing/',
-            },
-            {
-              label: 'Features',
-              href: 'https://dev-v2.mimeeq.co.uk/features/',
-            },
-            {
-              label: 'Contact',
-              href: 'https://dev-v2.mimeeq.co.uk/contact/',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
+      // links: [
+      //   {
+      //     title: 'Docs',
+      //     items: [
+      //       {
+      //         label: 'Embeds',
+      //         to: 'docs/',
+      //       },
+      //       {
+      //         label: 'Authentication',
+      //         to: 'docs/doc2/',
+      //       },
+      //       {
+      //         label: 'Guides',
+      //         to: 'docs/doc2/',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'More',
+      //     items: [
+      //       {
+      //         label: 'Pricing',
+      //         href: 'https://dev-v2.mimeeq.co.uk/pricing/',
+      //       },
+      //       {
+      //         label: 'Features',
+      //         href: 'https://dev-v2.mimeeq.co.uk/features/',
+      //       },
+      //       {
+      //         label: 'Contact',
+      //         href: 'https://dev-v2.mimeeq.co.uk/contact/',
+      //       },
+      //       {
+      //         label: 'GitHub',
+      //         href: 'https://github.com/facebook/docusaurus',
+      //       },
+      //     ],
+      //   },
+      // ],
       copyright: `Copyright © ${new Date().getFullYear()} Mimeeq. Built with Docusaurus.`,
     },
   },
