@@ -33,7 +33,7 @@ This function renders login modal which handles full authentication flow out of 
 
 | Name           | Type              | Default | Output | Description                                                                                                     |
 | -------------- | ----------------- | ------- | --- | --------------------------------------------------------------------------------------------------------------- |
-| onLoginSuccess | function |         | `User` object or `Error`| Callback fired on successful sign in. |
+| onLoginSuccess | function |         | `User` object | Callback fired on successful sign in. |
 | locale         | string            | en      | | Country Code                                                                                          |
 
 ### Usage
