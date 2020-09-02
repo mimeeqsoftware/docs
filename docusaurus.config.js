@@ -12,7 +12,7 @@ module.exports = {
       title: 'Mimeeq Documentation',
       logo: {
         alt: 'Mimeeq',
-        src: 'img/logo.png',
+        src: 'img/logo.svg',
       },
       items: [
         // {
