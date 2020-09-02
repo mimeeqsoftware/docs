@@ -28,6 +28,12 @@ window.mimeeqCustomMessages = {
     "modallogin.header.login": "Sign in", // Sign in modal title
     "signinPage.title": "Log in to your account" // Sign in modal subtitle
     "signinPage.description": "", // sign in modal description
+
+    // Pricing
+    "usepricingoptions.blank": "Blank",
+    "usepricingoptions.cost": "Cost",
+    "usepricingoptions.rrp": "RRP",
+    "usepricingoptions.sale": "Sale",
 }
 </script>
 ```
