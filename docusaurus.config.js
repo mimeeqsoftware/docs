@@ -1,27 +1,32 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Mimeeq Documentation',
+  tagline: '',
+  url: 'https://documentation.mimeeq.co.uk',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'mimeeq', // Usually your GitHub org/user name.
+  projectName: 'documentation', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Mimeeq Documentation',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Mimeeq',
+        src: 'img/logo.png',
       },
       items: [
+        // {
+        //   to: 'docs/',
+        //   activeBasePath: 'docs',
+        //   label: 'Docs',
+        //   position: 'left',
+        // },
+        // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          href: 'https://app.mimeeq.co.uk',
+          label: 'Go to app',
+          position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -36,29 +41,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Embeds',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
+              label: 'Authentication',
               to: 'docs/doc2/',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Guides',
+              to: 'docs/doc2/',
             },
           ],
         },
@@ -66,8 +58,16 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Pricing',
+              href: 'https://dev-v2.mimeeq.co.uk/pricing/',
+            },
+            {
+              label: 'Features',
+              href: 'https://dev-v2.mimeeq.co.uk/features/',
+            },
+            {
+              label: 'Contact',
+              href: 'https://dev-v2.mimeeq.co.uk/contact/',
             },
             {
               label: 'GitHub',
@@ -76,7 +76,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Mimeeq. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -85,9 +85,10 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
