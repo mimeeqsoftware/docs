@@ -4,10 +4,11 @@ module.exports = {
   url: 'https://documentation.mimeeq.co.uk',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon-256x256.png',
   organizationName: 'mimeeq', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     navbar: {
       title: 'Mimeeq Documentation',
       logo: {
@@ -27,6 +28,11 @@ module.exports = {
           label: 'Go to app',
           position: 'right',
         },
+        {
+          href: 'mailto:support@mimeeq.co.uk',
+          label: 'Support',
+          position: 'right',
+        }
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',

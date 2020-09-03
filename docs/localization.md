@@ -1,5 +1,5 @@
 ---
-title: Internationalization
+title: Localization
 ---
 
 The language has to be passed for each embed separately, by defining `data-locale` attribute on
