@@ -108,3 +108,19 @@ title: Events
 | Name                | Description                                                               |
 | ------------------- | ------------------------------------------------------------------------- |
 | mimeeq-show-modular | Calling this event will show (if hidden) modular modal when in modal mode |
+
+## Example
+
+Listening to an event
+
+```js
+document.addEventListener('mimeeq-change-quantity', (e, quantity) => {
+    console.log(`Quantity has been changed to ${quantity}`)
+})
+```
+
+Firing an event
+
+```js
+document.dispatchEvent(new Event('mimeeq-show-modular'))
+```
