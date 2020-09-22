@@ -69,7 +69,7 @@ Using class name:
 
 ## Modular Configurator Button
 
-Sometimes, you might need a button that opens modular configurator on click. 
+Sometimes, you might need a button that opens the modular configurator on clicking it. 
 Of course, you can do this directly via our API or using [this](guides-modular.md) example,
 but we've also made it easier for you:
 
