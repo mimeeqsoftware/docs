@@ -94,7 +94,7 @@ module.exports = {
           routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/adriandmitroca/mimeeq-docs/edit/master/',
+            'https://github.com/mimeeqsoftware/docs/edit/master/',
         },
         blog: {
           showReadingTime: true,
