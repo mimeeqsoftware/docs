@@ -4,9 +4,10 @@ module.exports = {
   url: 'https://documentation.mimeeq.co.uk',
   baseUrl: '/',
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/icon-256x256.png',
-  organizationName: 'mimeeq', // Usually your GitHub org/user name.
-  projectName: 'documentation', // Usually your repo name.
+  organizationName: 'mimeeqsoftware', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
