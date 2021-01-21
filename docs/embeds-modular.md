@@ -10,7 +10,7 @@ Generate code snippet under Admin Panel -> Product -> Copy Embed Code (button).
 This embed is available in modal-only view, which means that you need to enable it. There are two possible ways to achieve this.
 
 1. By using `data-mimeeq-render-at-mount` attribute on `data-mimeeq` element. This will enable modal immediately after page load.
-2. By firing `mimeeq-show-modular` event on your `document`. This allows you to enable it on demand but requires a bit of coding on host site. You can find full example [here](guides-modular).
+2. By firing `mimeeq-show-modular` event on your `document`. This allows you to enable it on demand but requires a bit of coding on host site. You can find full example [here](/guides-modular).
 
 ## Parameters
 
