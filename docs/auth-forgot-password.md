@@ -12,7 +12,8 @@ render within it.
 
 | Name           | Type              | Default | Description                                                                                                     |
 | -------------- | ----------------- | -------  | --------------------------------------------------------------------------------------------------------------- |
-| onSubmit       | function            | en     | Callback when user successfully triggers the recovery process.                                                                                          |
+| onSubmit       | function          | en       | Callback when user successfully triggers the recovery process.                                                                                          |
+| locale         | string            | en       | Country Code                                                                                          |
 
 #### Usage
 
