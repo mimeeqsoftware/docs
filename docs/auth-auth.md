@@ -6,14 +6,14 @@ title: Auth
 
 This function renders login modal which handles full authentication flow out of the box. 
 
-### Parameters
+#### Parameters
 
 | Name           | Type              | Default | Output | Description                                                                                                     |
 | -------------- | ----------------- | ------- | --- | --------------------------------------------------------------------------------------------------------------- |
 | onLoginSuccess | function |         | `User` object | Callback fired on successful sign in. |
 | locale         | string            | en      | | Country Code                                                                                          |
 
-### Usage
+#### Usage
 
 ```js
 mimeeqAuth.mountLogin({
@@ -26,7 +26,7 @@ mimeeqAuth.mountLogin({
 
 You can use this method to log in programmatically using a fully custom UI.
 
-### Usage
+#### Usage
 
 ```js
 mimeeqAuth.authorization.signIn(email, password)
@@ -38,7 +38,7 @@ This method returns `Promise` with `User` object, or thrown an error in case of 
 
 Logs out current user.
 
-### Usage
+#### Usage
 
 ```js
 mimeeqAuth.authorization.signOut().then(() => {

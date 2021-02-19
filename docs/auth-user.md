@@ -7,7 +7,7 @@ title: User
 This methods display modal with user details, including password and other credentials
 management.
 
-### Parameters
+#### Parameters
 
 | Name           | Type              | Default | Description                                                                                                     |
 | -------------- | ----------------- | -------  | --------------------------------------------------------------------------------------------------------------- |
@@ -18,7 +18,7 @@ management.
 Use this method to get information about currently logged in user. This is useful for
 reading current state of authentication or accessing current user details.
 
-### Usage
+#### Usage
 
 ```js
 mimeeqAuth.authorization.getUserData().then(user => {
@@ -33,7 +33,7 @@ mimeeqAuth.authorization.getUserData().then(user => {
 })
 ```
 
-### Response
+#### Response
 
 This method returns `User` object.
 
