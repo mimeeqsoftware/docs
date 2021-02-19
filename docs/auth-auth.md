@@ -4,24 +4,25 @@ title: Auth
 
 ## mimeeqAuth.mountLogin()
 
-This function renders login modal which handles full authentication flow out of the box. 
+This function renders login modal which handles full authentication flow out of the box.
 
 #### Parameters
 
-| Name           | Type              | Default | Output | Description                                                                                                     |
-| -------------- | ----------------- | ------- | --- | --------------------------------------------------------------------------------------------------------------- |
+| Name           | Type     | Default | Output        | Description                           |
+| -------------- | -------- | ------- | ------------- | ------------------------------------- |
 | onLoginSuccess | function |         | `User` object | Callback fired on successful sign in. |
-| locale         | string            | en      | | Country Code                                                                                          |
+| locale         | string   | en      |               | Country Code                          |
 
 #### Usage
 
 ```js
 mimeeqAuth.mountLogin({
-    onLoginSuccess: res => {
-        window.location.reload()
-    }
+  onLoginSuccess: (res) => {
+    window.location.reload()
+  },
 })
 ```
+
 ## mimeeqAuth.authorization.signIn()
 
 You can use this method to log in programmatically using a fully custom UI.
@@ -42,6 +43,6 @@ Logs out current user.
 
 ```js
 mimeeqAuth.authorization.signOut().then(() => {
-    window.location.reload()
+  window.location.reload()
 })
 ```

@@ -3,6 +3,7 @@ title: Modular Configurator
 ---
 
 ## Get started
+
 Generate code snippet under Admin Panel -> Product -> Copy Embed Code (button).
 
 ## Usage

@@ -1,20 +1,20 @@
 module.exports = {
-  title: 'Mimeeq Documentation',
-  tagline: '',
-  url: 'https://documentation.mimeeq.co.uk',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/icon-256x256.png',
-  organizationName: 'mimeeqsoftware', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  title: "Mimeeq Documentation",
+  tagline: "",
+  url: "https://documentation.mimeeq.co.uk",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/icon-256x256.png",
+  organizationName: "mimeeqsoftware", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      title: 'Mimeeq Documentation',
+      title: "Mimeeq Documentation",
       logo: {
-        alt: 'Mimeeq',
-        src: 'img/logo.svg',
+        alt: "Mimeeq",
+        src: "img/logo.svg",
       },
       items: [
         // {
@@ -25,15 +25,15 @@ module.exports = {
         // },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://app.mimeeq.co.uk',
-          label: 'Go to app',
-          position: 'right',
+          href: "https://app.mimeeq.co.uk",
+          label: "Go to app",
+          position: "right",
         },
         {
-          href: 'mailto:support@mimeeq.co.uk',
-          label: 'Support',
-          position: 'right',
-        }
+          href: "mailto:support@mimeeq.co.uk",
+          label: "Support",
+          position: "right",
+        },
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
@@ -42,7 +42,7 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       // links: [
       //   {
       //     title: 'Docs',
@@ -88,25 +88,24 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/mimeeqsoftware/docs/edit/master/',
+          editUrl: "https://github.com/mimeeqsoftware/docs/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
-};
+}

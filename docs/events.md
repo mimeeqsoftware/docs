@@ -6,9 +6,9 @@ title: Events
 
 | Name                                     | Description                                                                                                                                                                                                                                             | Data                                           |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| mimeeq-app-loaded                        | Event called after configurator library is loaded                                                                                                                                                                                                         |                                                |
-| mimeeq-auth-loaded                       | Event called after authentication library is loaded                                                                                                                                                                                                        |                                                |
-| mimeeq-3d-after-export-image             | Event called after image is generated and saved                                                                                                                                                                                                        |                                                |
+| mimeeq-app-loaded                        | Event called after configurator library is loaded                                                                                                                                                                                                       |                                                |
+| mimeeq-auth-loaded                       | Event called after authentication library is loaded                                                                                                                                                                                                     |                                                |
+| mimeeq-3d-after-export-image             | Event called after image is generated and saved                                                                                                                                                                                                         |                                                |
 | mimeeq-3d-after-export-scene             | Event called after archive is generated and saved                                                                                                                                                                                                       |                                                |
 | mimeeq-3d-before-export-image            | Event called before process of generating start (after clicking generate button tho)                                                                                                                                                                    |                                                |
 | mimeeq-3d-before-export-scene            | Event called just before process of exporting start                                                                                                                                                                                                     |                                                |
@@ -94,7 +94,7 @@ title: Events
 | mimeeq-show-export-pdf-modal             | Event called on entering Generate PDF modal                                                                                                                                                                                                             |                                                |
 | mimeeq-show-order-modal                  | Event called on entering Make order modal                                                                                                                                                                                                               |                                                |
 | mimeeq-show-quote-modal                  | Event called on entering Make Quotation modal                                                                                                                                                                                                           |                                                |
-| mimeeq-show-summary                      | Event called after clicking Finish button - 2d/3d products                                                                                                                                                                                              | {variantCode, productId, qty, viewId*}         |
+| mimeeq-show-summary                      | Event called after clicking Finish button - 2d/3d products                                                                                                                                                                                              | {variantCode, productId, qty, viewId\*}        |
 | mimeeq-user-deleted                      | Event called after Tier2 user deleted his/hers accout                                                                                                                                                                                                   |                                                |
 | mimeeq-user-signed-in                    | Event called after successful sign in process                                                                                                                                                                                                           | {firstName, lastName, email}                   |
 | mimeeq-user-signed-out                   | Event called after successful sign out process                                                                                                                                                                                                          |                                                |
@@ -105,23 +105,23 @@ title: Events
 
 ## Events that can be triggered by the host site
 
-| Name                | Description                                                               |
-| ------------------- | ------------------------------------------------------------------------- |
-| mimeeq-show-modular | Show (if hidden) modular modal when in modal mode
-| mimeeq-unmount      | Remove all existing Mimeeq instances from the DOM including in-memory cleanup
+| Name                | Description                                                                   |
+| ------------------- | ----------------------------------------------------------------------------- |
+| mimeeq-show-modular | Show (if hidden) modular modal when in modal mode                             |
+| mimeeq-unmount      | Remove all existing Mimeeq instances from the DOM including in-memory cleanup |
 
 ## Example
 
 Listening to an event
 
 ```js
-document.addEventListener('mimeeq-change-quantity', (e, quantity) => {
-    console.log(`Quantity has been changed to ${quantity}`)
+document.addEventListener("mimeeq-change-quantity", (e, quantity) => {
+  console.log(`Quantity has been changed to ${quantity}`)
 })
 ```
 
 Firing an event
 
 ```js
-document.dispatchEvent(new Event('mimeeq-show-modular'))
+document.dispatchEvent(new Event("mimeeq-show-modular"))
 ```

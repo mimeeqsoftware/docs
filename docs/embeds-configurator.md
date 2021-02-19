@@ -3,10 +3,12 @@ title: 2D/3D Configurator
 ---
 
 ## Get started
+
 Generate code snippet under Admin Panel -> Product -> Copy Embed Code (button).
 
 ## Usage
-Copy paste embed code onto your website. Embed will be inserted exactly where you 
+
+Copy paste embed code onto your website. Embed will be inserted exactly where you
 put the snippet (specifically, `data-mimeeq` element).
 
 ## Parameters

@@ -10,17 +10,17 @@ render within it.
 
 #### Parameters
 
-| Name           | Type              | Default | Description                                                                                                     |
-| -------------- | ----------------- | -------  | --------------------------------------------------------------------------------------------------------------- |
-| onSubmit       | function          | en       | Callback when user successfully triggers the recovery process.                                                                                          |
-| locale         | string            | en       | Country Code                                                                                          |
+| Name     | Type     | Default | Description                                                    |
+| -------- | -------- | ------- | -------------------------------------------------------------- |
+| onSubmit | function | en      | Callback when user successfully triggers the recovery process. |
+| locale   | string   | en      | Country Code                                                   |
 
 #### Usage
 
 ```html
 <div data-mimeeq-forgot-password></div>
 <script>
-  document.addEventListener('mimeeq-auth-loaded', () => {
+  document.addEventListener("mimeeq-auth-loaded", () => {
     mimeeqAuth.mountForgotPassword({
       onSubmit: () => {},
     })
@@ -35,9 +35,9 @@ verification code and fallback URL to set the new password within the applicatio
 
 #### Parameters
 
-| Name           | Type              | Default | Description                                                                                                     |
-| -------------- | ----------------- | -------  | --------------------------------------------------------------------------------------------------------------- |
-| email          | string (required) |          | Username or email                                                                                  |
+| Name  | Type              | Default | Description       |
+| ----- | ----------------- | ------- | ----------------- |
+| email | string (required) |         | Username or email |
 
 #### Response
 
@@ -52,14 +52,14 @@ that should be set.
 
 #### Parameters
 
-| Name           | Type              | Default | Description                                                                                                     |
-| -------------- | ----------------- | -------  | --------------------------------------------------------------------------------------------------------------- |
-| email          | string (required) |          | Username or email                                                                                  |
-| password       | string (required) |          | New password that will be set for the user                                                                                  |
-| code           | string (required) |          | Verification code from the email triggered by forgotPassword method                                                                               |
+| Name     | Type              | Default | Description                                                         |
+| -------- | ----------------- | ------- | ------------------------------------------------------------------- |
+| email    | string (required) |         | Username or email                                                   |
+| password | string (required) |         | New password that will be set for the user                          |
+| code     | string (required) |         | Verification code from the email triggered by forgotPassword method |
 
 #### Response
 
-Mimeeq returns to `{ success: true }` when the password has been updated successfully. 
+Mimeeq returns to `{ success: true }` when the password has been updated successfully.
 In case of errors, you will receive self-explaining message about the issue alongside with
 error code.

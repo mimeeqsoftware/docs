@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 
-const transformCodeEvent = code => {
+const transformCodeEvent = (code) => {
   let transformedCode = code
   transformedCode = transformedCode.replace(
     "DOMContentLoaded",
@@ -14,7 +14,7 @@ export default ({ code }) => {
   const codeRef = useRef(null)
 
   useEffect(() => {
-    console.log(window);
+    console.log(window)
     const documentFragment = document
       .createRange()
       .createContextualFragment(transformCodeEvent(code))

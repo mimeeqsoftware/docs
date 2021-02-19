@@ -9,9 +9,9 @@ management.
 
 #### Parameters
 
-| Name           | Type              | Default | Description                                                                                                     |
-| -------------- | ----------------- | -------  | --------------------------------------------------------------------------------------------------------------- |
-| locale         | string            | en      | Country Code                                                                                          |
+| Name   | Type   | Default | Description  |
+| ------ | ------ | ------- | ------------ |
+| locale | string | en      | Country Code |
 
 ## mimeeqAuth.authorization.getUserData()
 
@@ -21,24 +21,27 @@ reading current state of authentication or accessing current user details.
 #### Usage
 
 ```js
-mimeeqAuth.authorization.getUserData().then(user => {
+mimeeqAuth.authorization
+  .getUserData()
+  .then((user) => {
     if (user) {
-        // logged in
-        console.log(user)
+      // logged in
+      console.log(user)
     } else {
-        // logged out
+      // logged out
     }
-}).catch(err => {
+  })
+  .catch((err) => {
     console.error(err)
-})
+  })
 ```
 
 #### Response
 
 This method returns `User` object.
 
-| Key       | Data Type | Example |
-| --------- | --------- | -------  | 
-| firstName | string    | John     | 
-| lastName  | string    | Doe  | 
+| Key       | Data Type | Example          |
+| --------- | --------- | ---------------- |
+| firstName | string    | John             |
+| lastName  | string    | Doe              |
 | email     | string    | john@example.com |
