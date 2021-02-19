@@ -107,7 +107,8 @@ title: Events
 
 | Name                | Description                                                               |
 | ------------------- | ------------------------------------------------------------------------- |
-| mimeeq-show-modular | Calling this event will show (if hidden) modular modal when in modal mode |
+| mimeeq-show-modular | Show (if hidden) modular modal when in modal mode
+| mimeeq-unmount      | Remove all existing Mimeeq instances from the DOM including in-memory cleanup
 
 ## Example
 
