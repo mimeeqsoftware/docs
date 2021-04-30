@@ -1,0 +1,4 @@
+https://docs.mimeeq.co.uk https://docs.mimeeq.com 301!
+https://www.docs.mimeeq.co.uk https://docs.mimeeq.com 301!
+https://docs.mimeeq.co.uk/* https://docs.mimeeq.com/:splat 301!
+https://www.docs.mimeeq.co.uk/* https://docs.mimeeq.com/:splat 301!
