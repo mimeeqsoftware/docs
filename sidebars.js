@@ -4,6 +4,7 @@ module.exports = {
       "embeds-introduction",
       "embeds-configurator",
       "embeds-modular",
+      "embeds-utils",
       "events",
       "localization",
       "custom-translations",
