@@ -26,16 +26,6 @@ When you generate the code snippet, you can customize things like:
 ## Example code
 
 ```html
-<div
-  data-mimeeq
-  data-mimeeq-short-code="E3AN1J"
-  data-withhistory
-  data-locale="en"
-></div>
-<script
-  src="https://jrdgrq09nk.execute-api.eu-central-1.amazonaws.com/api/cpq/get-embed-short-code-data?shortCode=E3AN1J&html=1"
-  rel="script"
-  type="application/javascript"
-  async
-></script>
+<div data-mimeeq data-mimeeq-short-code="E3AN1J" data-withhistory data-locale="en"></div>
+<script src="https://jrdgrq09nk.execute-api.eu-central-1.amazonaws.com/api/cpq/get-embed-short-code-data?shortCode=E3AN1J&html=1" rel="script" type="application/javascript" async></script>
 ```
