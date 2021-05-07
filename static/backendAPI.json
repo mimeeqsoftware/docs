@@ -1473,9 +1473,7 @@
   "paths": {
     "/get-product-price-api": {
       "get": {
-        "tags": [
-          "product"
-        ],
+        "tags": ["product"],
         "summary": "Returns the product price by product ID, configuration code and quantity",
         "description": "Gets one of the prices: RRP, SALE, COST, BLANK",
         "operationId": "getProductPriceApi",
@@ -1532,9 +1530,7 @@
     },
     "/get-product-by-prefix-api": {
       "get": {
-        "tags": [
-          "product"
-        ],
+        "tags": ["product"],
         "summary": "Returns the product by prefix",
         "description": "Gets one of the products: 2D, 3D, MODULAR",
         "operationId": "getProductByPrefixApi",
@@ -1557,10 +1553,7 @@
               "type": "array",
               "items": {
                 "type": "string",
-                "enum": [
-                  "true",
-                  "false"
-                ]
+                "enum": ["true", "false"]
               }
             }
           }
@@ -1589,9 +1582,7 @@
     },
     "/get-products-standard-by-customer-id-api": {
       "get": {
-        "tags": [
-          "product"
-        ],
+        "tags": ["product"],
         "summary": "Returns the products by customer ID",
         "description": "Gets one of the products: 2D, 3D, MODULAR",
         "operationId": "getProductsStandardByCustomerId",

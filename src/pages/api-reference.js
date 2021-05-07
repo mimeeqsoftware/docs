@@ -8,7 +8,7 @@ import "./api-reference.css"
 
 const ApiReference = () => (
   <Layout title="Api Reference | Mimeeq Documentation">
-    <SwaggerUI spec={ spec } />
+    <SwaggerUI spec={spec} />
   </Layout>
 )
 
