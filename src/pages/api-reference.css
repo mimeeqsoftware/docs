@@ -1,0 +1,18 @@
+.swagger-ui pre{
+  background:initial;
+  border-radius:initial;
+}
+
+.swagger-ui table{
+  margin-bottom:initial;
+  display:table;
+  overflow:initial;
+}
+
+.swagger-ui table tr{
+  background-color:initial;
+  border:initial;
+}
+.swagger-ui td{
+  border:initial;
+}

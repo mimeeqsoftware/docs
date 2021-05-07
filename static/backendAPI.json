@@ -1,0 +1,1635 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Swagger Mimeeq",
+    "description": "Mimeeq API.",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "justyna.stachera@xcactus.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  },
+  "externalDocs": {
+    "description": "Find out more about Mimeeq Configurator",
+    "url": "https://docs.mimeeq.com"
+  },
+  "servers": [
+    {
+      "url": "https://cjqo3924b3.execute-api.eu-central-1.amazonaws.com/api/cpq",
+      "description": "Staging server"
+    },
+    {
+      "url": "https://jrdgrq09nk.execute-api.eu-central-1.amazonaws.com/api/cpq",
+      "description": "Production server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "products",
+      "description": "Product API methods"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-KEY"
+      }
+    },
+    "schemas": {
+      "MimeeqHistory": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "createdDate": {
+            "description": "",
+            "type": "number"
+          },
+          "lastModifiedDate": {
+            "description": "",
+            "type": "number"
+          },
+          "lastModifiedUserId": {
+            "description": "",
+            "type": "string"
+          },
+          "createdUserId": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqPriceLevel": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "quantityMin": {
+            "description": "",
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "quantityMax": {
+            "description": "",
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "price": {
+            "description": "",
+            "type": "number"
+          },
+          "pricePart": {
+            "description": "",
+            "type": "number"
+          },
+          "discount": {
+            "type": "number"
+          }
+        }
+      },
+      "ProductPriceResponse": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "price": {
+            "description": "Total price",
+            "type": "number"
+          },
+          "oneTimePrice": {
+            "description": "One time extra amount",
+            "type": "number"
+          },
+          "levels": {
+            "description": "Quantity breaks levels",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqPriceLevel"
+            }
+          },
+          "currency": {
+            "description": "Currency symbol",
+            "type": "string"
+          },
+          "deliveryTime": {
+            "description": "Delivery time for selected configuration",
+            "type": "number"
+          },
+          "marketCostPriceMap": {
+            "type": "object",
+            "deprecated": true
+          }
+        }
+      },
+      "MimeeqOption": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "priceCode": {
+            "description": "",
+            "type": "string"
+          },
+          "code": {
+            "description": "",
+            "type": "string"
+          },
+          "material3dId": {
+            "description": "",
+            "type": "string"
+          },
+          "src": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "ordinal": {
+            "description": "",
+            "type": "number"
+          },
+          "name": {
+            "description": "",
+            "type": "string"
+          },
+          "optionSetId": {
+            "description": "",
+            "type": "string"
+          },
+          "blockId": {
+            "description": "",
+            "type": "string"
+          },
+          "filters": {
+            "$ref": "#/components/schemas/MimeeqFilters"
+          },
+          "isHidden": {
+            "description": "",
+            "type": "boolean"
+          },
+          "isDisabled": {
+            "description": "",
+            "type": "boolean"
+          }
+        }
+      },
+      "MimeeqOptionSetBlock": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "mode": {
+            "description": "",
+            "type": "string"
+          },
+          "blockColor": {
+            "description": "",
+            "type": "string"
+          },
+          "blockName": {
+            "description": "",
+            "type": "string"
+          },
+          "collectionSetId": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "type": {
+            "description": "",
+            "type": "string"
+          },
+          "widgetType": {
+            "description": "",
+            "type": "string"
+          },
+          "name": {
+            "description": "",
+            "type": "string"
+          },
+          "clearable": {
+            "description": "",
+            "type": "boolean"
+          },
+          "optionSetIds": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "letterMappings": {
+            "description": "",
+            "type": "object",
+            "items": {
+              "type": "string"
+            }
+          },
+          "nextLetter": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqFilters": {
+        "description": "",
+        "type": "object",
+        "additionalProperties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqOptionSetData": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "optionSetId": {
+            "description": "",
+            "type": "string"
+          },
+          "name": {
+            "description": "",
+            "type": "string"
+          },
+          "display": {
+            "description": "",
+            "type": "string"
+          },
+          "options": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqOption"
+            }
+          }
+        }
+      },
+      "MimeeqOptionSetsData": {
+        "description": "",
+        "type": "object",
+        "additionalProperties": {
+          "$ref": "#/components/schemas/MimeeqOptionSetData"
+        }
+      },
+      "MimeeqBlockGroup": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "optionSetNames": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "selectMatching": {
+            "description": "",
+            "type": "boolean"
+          },
+          "optionSetIds": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "name": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqMetadata": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "standard": {
+            "$ref": "#/components/schemas/MimeeqProductThumb"
+          },
+          "mouseover": {
+            "$ref": "#/components/schemas/MimeeqProductThumb"
+          },
+          "code": {
+            "description": "",
+            "type": "string"
+          },
+          "visibility": {
+            "description": "",
+            "type": "string"
+          },
+          "companyGroupIds": {
+            "description": "",
+            "type": "string"
+          },
+          "designer": {
+            "description": "",
+            "type": "string"
+          },
+          "type": {
+            "description": "",
+            "type": "string"
+          },
+          "manufacturer": {
+            "description": "",
+            "type": "string"
+          },
+          "mode": {
+            "description": "",
+            "type": "string"
+          },
+          "description": {
+            "description": "",
+            "type": "object"
+          },
+          "showInProductMenu": {
+            "description": "",
+            "type": "boolean"
+          },
+          "name": {
+            "description": "",
+            "type": "string"
+          },
+          "productCategoryIds": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "productGroupIds": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "showDimensions": {
+            "description": "",
+            "type": "boolean"
+          },
+          "lengthUnit": {
+            "description": "",
+            "type": "string"
+          },
+          "status": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqProductThumb": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "imageS3Path": {
+            "description": "",
+            "type": "string"
+          },
+          "type": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqMesh": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "modelName": {
+            "description": "",
+            "type": "string"
+          },
+          "code": {
+            "description": "",
+            "type": "string"
+          },
+          "materialParameterSet": {
+            "description": "",
+            "type": "string"
+          },
+          "modelId": {
+            "description": "",
+            "type": "string"
+          },
+          "shadowTexture": {
+            "description": "",
+            "type": "string"
+          },
+          "meshName": {
+            "description": "",
+            "type": "string"
+          },
+          "isAlwaysVisible": {
+            "description": "",
+            "type": "boolean"
+          },
+          "textureType": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "type": {
+            "description": "",
+            "type": "string"
+          },
+          "skipBoundingBox": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqModel": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "filePath": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "label": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqPricing": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "codes": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "defaultCode": {
+            "description": "",
+            "type": "string"
+          },
+          "codeStructure": {
+            "description": "",
+            "type": "string"
+          },
+          "qty": {
+            "description": "",
+            "type": "number"
+          },
+          "finalRRPPriceRoundingType": {
+            "description": "",
+            "type": "string",
+            "deprecated": true
+          },
+          "finalRRPPriceValue": {
+            "description": "",
+            "type": "string",
+            "deprecated": true
+          },
+          "mqq": {
+            "description": "",
+            "type": "number"
+          },
+          "finalSalePriceRoundingType": {
+            "description": "",
+            "type": "string",
+            "deprecated": true
+          },
+          "finalSalePriceValue": {
+            "description": "",
+            "type": "string",
+            "deprecated": true
+          },
+          "useItemMaster": {
+            "type": "boolean"
+          },
+          "deliveryTime": {
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqEnvTexture": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "extension": {
+            "description": "",
+            "type": "string"
+          },
+          "isImage": {
+            "description": "",
+            "type": "boolean"
+          },
+          "createdDate": {
+            "description": "",
+            "type": "number"
+          },
+          "directoryPath": {
+            "description": "",
+            "type": "string"
+          },
+          "size": {
+            "description": "",
+            "type": "number"
+          },
+          "lastModifiedDate": {
+            "description": "",
+            "type": "string"
+          },
+          "s3_path": {
+            "description": "",
+            "type": "string"
+          },
+          "filePath": {
+            "description": "",
+            "type": "string"
+          },
+          "revisionsNumber": {
+            "description": "",
+            "type": "number"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "label": {
+            "description": "",
+            "type": "string"
+          },
+          "type": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqScene": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "sceneId": {
+            "description": "",
+            "type": "string"
+          },
+          "sceneName": {
+            "description": "",
+            "type": "string"
+          },
+          "status": {
+            "description": "",
+            "type": "string"
+          },
+          "description": {
+            "description": "",
+            "type": "string"
+          },
+          "environmentTexture": {
+            "$ref": "#/components/schemas/MimeeqEnvTexture"
+          },
+          "intensity": {
+            "description": "",
+            "type": "string"
+          },
+          "rotation": {
+            "description": "",
+            "type": "string"
+          },
+          "defaultMaterial": {
+            "description": "",
+            "type": "string"
+          },
+          "contrast": {
+            "description": "",
+            "type": "string"
+          },
+          "brightness": {
+            "description": "",
+            "type": "string"
+          },
+          "sliderType": {
+            "description": "",
+            "type": "string"
+          },
+          "sliderStyle": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqOptionSetsBlocks": {
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/MimeeqOptionSetBlock"
+        }
+      },
+      "MimeeqBlockGroups": {
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/MimeeqBlockGroup"
+        }
+      },
+      "ProductResponse": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "history": {
+            "$ref": "#/components/schemas/MimeeqHistory"
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/MimeeqMetadata"
+          },
+          "models3dTable": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqMesh"
+            }
+          },
+          "models3d": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqModel"
+            }
+          },
+          "prefix": {
+            "description": "",
+            "type": "string"
+          },
+          "groups": {
+            "$ref": "#/components/schemas/MimeeqBlockGroups"
+          },
+          "views": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "tabs": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqTab"
+            }
+          },
+          "pricing": {
+            "$ref": "#/components/schemas/MimeeqPricing"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "scene3d": {
+            "description": "",
+            "type": "string"
+          },
+          "customerId": {
+            "description": "",
+            "type": "string"
+          },
+          "productId": {
+            "description": "",
+            "type": "string"
+          },
+          "sceneConfig": {
+            "$ref": "#/components/schemas/MimeeqScene"
+          },
+          "showExportObj": {
+            "description": "",
+            "type": "boolean"
+          },
+          "blocks": {
+            "$ref": "#/components/schemas/MimeeqOptionSetsBlocks"
+          },
+          "optionSetsData": {
+            "$ref": "#/components/schemas/MimeeqOptionSetsData"
+          },
+          "businessLogics": {
+            "$ref": "#/components/schemas/MimeeqRules"
+          },
+          "settings": {
+            "$ref": "#/components/schemas/MimeeqProductSettings"
+          },
+          "modularSettings": {
+            "$ref": "#/components/schemas/MimeeqModularSettings"
+          },
+          "rules": {
+            "$ref": "#/components/schemas/MimeeqModularRules"
+          },
+          "products": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqModularProduct"
+            }
+          }
+        }
+      },
+      "MimeeqProductSettings": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "filters": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "general": {
+            "$ref": "#/components/schemas/MimeeqSettingsGeneral"
+          },
+          "hierarchy": {
+            "$ref": "#/components/schemas/MimeeqSettingsHierarchy"
+          }
+        }
+      },
+      "MimeeqModularRules": {
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/MimeeqModularRule"
+        }
+      },
+      "MimeeqSnapCode": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "code": {
+            "description": "",
+            "type": "string"
+          },
+          "isVisible": {
+            "description": "",
+            "type": "boolean"
+          },
+          "index": {
+            "description": "",
+            "type": "number"
+          }
+        }
+      },
+      "MimeeqSnappingCodes": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "snappingFromCodes": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqSnapCode"
+            }
+          },
+          "snappingToCodes": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqSnapCode"
+            }
+          }
+        }
+      },
+      "MimeeqSnapCondition": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "snap1": {
+            "description": "",
+            "type": "string"
+          },
+          "snap2": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqSnapConditions": {
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/MimeeqSnapCondition"
+        }
+      },
+      "MimeeqSettingsHierarchy": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "child": {
+            "description": "",
+            "type": "boolean"
+          },
+          "parent": {
+            "description": "",
+            "type": "boolean"
+          }
+        }
+      },
+      "MimeeqSettingsGeneral": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "allowClone": {
+            "description": "",
+            "type": "boolean"
+          },
+          "allowFlip": {
+            "description": "",
+            "type": "boolean"
+          },
+          "allowMove": {
+            "description": "",
+            "type": "boolean"
+          },
+          "allowRemove": {
+            "description": "",
+            "type": "boolean"
+          },
+          "canBePrimary": {
+            "description": "",
+            "type": "boolean"
+          },
+          "excludeFromSummary": {
+            "description": "",
+            "type": "boolean"
+          },
+          "horizontalSlide": {
+            "description": "",
+            "type": "boolean"
+          },
+          "hoverMessage": {
+            "description": "",
+            "type": "string"
+          },
+          "overlaySize": {
+            "description": "",
+            "type": "boolean"
+          },
+          "useCollisions": {
+            "description": "",
+            "type": "boolean"
+          },
+          "requiredSnaps": {
+            "$ref": "#/components/schemas/MimeeqSettingsRequiredSnaps"
+          }
+        }
+      },
+      "MimeeqSettingsRequiredSnaps": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "description": "",
+            "type": "boolean"
+          },
+          "number": {
+            "description": "",
+            "type": "number"
+          },
+          "list": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqRequiredSnapItem"
+            }
+          }
+        }
+      },
+      "MimeeqRequiredSnapItem": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "code": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqConnectorRule": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "connectedProduct": {
+            "description": "",
+            "type": "string"
+          },
+          "firstProduct": {
+            "description": "",
+            "type": "string"
+          },
+          "secondProduct": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqConnectorRules": {
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/MimeeqConnectorRule"
+        }
+      },
+      "MimeeqModularRule": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "ruleName": {
+            "description": "",
+            "type": "string"
+          },
+          "type": {
+            "description": "",
+            "type": "string"
+          },
+          "initiate": {
+            "description": "",
+            "type": "boolean"
+          },
+          "opened": {
+            "description": "",
+            "type": "boolean"
+          },
+          "snappingCodes": {
+            "$ref": "#/components/schemas/MimeeqSnappingCodes"
+          },
+          "conditions": {
+            "$ref": "#/components/schemas/MimeeqSnapConditions"
+          },
+          "connected": {
+            "$ref": "#/components/schemas/MimeeqConnectorRules"
+          },
+          "products": {
+            "description": "Used when autosyncSelected is true",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "blocks": {
+            "description": "Used for synchronizing options between blocks",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "autosyncSelected": {
+            "description": "",
+            "type": "boolean"
+          }
+        }
+      },
+      "MimeeqModularProduct": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "settings": {
+            "$ref": "#/components/schemas/MimeeqProductSettings"
+          },
+          "productId": {
+            "description": "",
+            "type": "string"
+          },
+          "prefix": {
+            "description": "",
+            "type": "string"
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/MimeeqMetadata"
+          },
+          "models3dTable": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqMesh"
+            }
+          }
+        }
+      },
+      "MimeeqModularSceneSettings": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "defaultFloorType": {
+            "description": "",
+            "type": "string"
+          },
+          "downloadScene": {
+            "description": "",
+            "type": "boolean"
+          },
+          "floorColor": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "MimeeqModularSettings": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "snapsVisibility": {
+            "description": "",
+            "type": "string"
+          },
+          "scene3d": {
+            "description": "",
+            "type": "string"
+          },
+          "lengthUnit": {
+            "description": "",
+            "type": "string"
+          },
+          "starterConfig": {
+            "description": "",
+            "type": "string"
+          },
+          "alwaysVisible": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sceneSettings": {
+            "$ref": "#/components/schemas/MimeeqModularSceneSettings"
+          }
+        }
+      },
+      "MimeeqTab": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "enableForPdf": {
+            "description": "Yes/No",
+            "type": "string"
+          },
+          "tabName": {
+            "description": "",
+            "type": "string"
+          },
+          "opened": {
+            "description": "",
+            "type": "boolean"
+          },
+          "tabType": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          },
+          "content": {
+            "description": "text content",
+            "type": "object"
+          },
+          "galleryId": {
+            "description": "",
+            "type": "string"
+          },
+          "materials": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqTabMaterial"
+            }
+          },
+          "files": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqTabFile"
+            }
+          }
+        }
+      },
+      "MimeeqTabFile": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "mode": {
+            "description": "",
+            "type": "string"
+          },
+          "directoryPath": {
+            "description": "",
+            "type": "string"
+          },
+          "pattern": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqTabMaterial": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "",
+            "type": "string"
+          },
+          "id": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqRules": {
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/MimeeqRule"
+        }
+      },
+      "MimeeqRule": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "ruleId": {
+            "description": "",
+            "type": "string"
+          },
+          "ruleType": {
+            "description": "",
+            "type": "string"
+          },
+          "ruleName": {
+            "description": "",
+            "type": "string"
+          },
+          "values": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/MimeeqRuleMeshesDynamic"
+                },
+                {
+                  "$ref": "#/components/schemas/MimeeqRuleMatchMaterialSets"
+                },
+                {
+                  "$ref": "#/components/schemas/MimeeqRuleHotSpot"
+                }
+              ]
+            }
+          },
+          "trigger": {
+            "$ref": "#/components/schemas/MimeeqTriggerContainer"
+          }
+        }
+      },
+      "MimeeqTriggerContainer": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "triggers": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqRuleTrigger"
+            }
+          },
+          "actions": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqRuleAction"
+            }
+          }
+        }
+      },
+      "MimeeqRuleTrigger": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "triggerId": {
+            "description": "",
+            "type": "string"
+          },
+          "triggerBlockIds": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "triggerType": {
+            "description": "",
+            "type": "string"
+          },
+          "inclusion": {
+            "description": "",
+            "type": "string"
+          },
+          "values": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "MimeeqRuleAction": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "actionId": {
+            "description": "",
+            "type": "string"
+          },
+          "actionType": {
+            "description": "",
+            "type": "string"
+          },
+          "values": {
+            "description": "",
+            "oneOf": [
+              {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/MimeeqRuleActionFilter"
+                    },
+                    {
+                      "$ref": "#/components/schemas/MimeeqRuleActionOverrideMaterials"
+                    },
+                    {
+                      "$ref": "#/components/schemas/MimeeqRuleActionSwitchMaterials"
+                    },
+                    {
+                      "$ref": "#/components/schemas/MimeeqRuleActionSelectOption"
+                    },
+                    {
+                      "$ref": "#/components/schemas/MimeeqRuleActionFilter"
+                    }
+                  ]
+                }
+              },
+              {
+                "$ref": "#/components/schemas/MimeeqRuleCameraAnimation"
+              }
+            ]
+          }
+        }
+      },
+      "MimeeqRuleMeshesDynamic": {
+        "description": "",
+        "type": "string"
+      },
+      "MimeeqRuleMatchMaterialSets": {
+        "description": "",
+        "type": "string"
+      },
+      "MimeeqRuleActionFilter": {
+        "description": "",
+        "type": "string"
+      },
+      "MimeeqRuleActionOverrideMaterials": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "meshId": {
+            "description": "",
+            "type": "string"
+          },
+          "materialId": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqRuleActionSwitchMaterials": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "meshId": {
+            "description": "",
+            "type": "string"
+          },
+          "blockId": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqRuleActionSelectOption": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "blockId": {
+            "description": "",
+            "type": "string"
+          },
+          "optionId": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "MimeeqCameraPosition": {
+        "type": "object",
+        "properties": {
+          "alpha": {
+            "type": "number"
+          },
+          "beta": {
+            "type": "number"
+          },
+          "radius": {
+            "type": "number"
+          },
+          "position": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "z": {
+                "type": "number"
+              }
+            }
+          },
+          "target": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "z": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "MimeeqRuleCameraAnimation": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "cameraPosition": {
+            "$ref": "#/components/schemas/MimeeqCameraPosition"
+          },
+          "useAnimation": {
+            "description": "",
+            "type": "boolean"
+          }
+        }
+      },
+      "MimeeqRuleHotSpot": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "meshId": {
+            "description": "",
+            "type": "string"
+          },
+          "templateId": {
+            "description": "",
+            "type": "string"
+          },
+          "color": {
+            "description": "",
+            "type": "string"
+          },
+          "borderColor": {
+            "description": "",
+            "type": "string"
+          },
+          "displayTemplateName": {
+            "description": "",
+            "type": "string"
+          },
+          "label": {
+            "description": "",
+            "type": "string"
+          },
+          "visibility": {
+            "description": "",
+            "type": "string"
+          },
+          "showFullscreen": {
+            "description": "",
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiKeyAuth": []
+    }
+  ],
+  "paths": {
+    "/get-product-price-api": {
+      "get": {
+        "tags": [
+          "product"
+        ],
+        "summary": "Returns the product price by product ID, configuration code and quantity",
+        "description": "Gets one of the prices: RRP, SALE, COST, BLANK",
+        "operationId": "getProductPriceApi",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "query",
+            "description": "Product ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "configurationCode",
+            "in": "query",
+            "description": "Configuration code",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "quantity",
+            "in": "query",
+            "description": "Quantity",
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductPriceResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Authentication failed.",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/get-product-by-prefix-api": {
+      "get": {
+        "tags": [
+          "product"
+        ],
+        "summary": "Returns the product by prefix",
+        "description": "Gets one of the products: 2D, 3D, MODULAR",
+        "operationId": "getProductByPrefixApi",
+        "parameters": [
+          {
+            "name": "productPrefix",
+            "in": "query",
+            "description": "Product prefix",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "productInModular",
+            "in": "query",
+            "description": "Checks if the product in modular",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "true",
+                  "false"
+                ]
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value.",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/get-products-standard-by-customer-id-api": {
+      "get": {
+        "tags": [
+          "product"
+        ],
+        "summary": "Returns the products by customer ID",
+        "description": "Gets one of the products: 2D, 3D, MODULAR",
+        "operationId": "getProductsStandardByCustomerId",
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "query",
+            "description": "Customer ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductResponse"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value.",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {}
+          }
+        }
+      }
+    }
+  }
+}

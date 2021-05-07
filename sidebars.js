@@ -7,15 +7,20 @@ module.exports = {
       "embeds-utils",
       "events",
       "localization",
-      "custom-translations",
+      "custom-translations"
     ],
     "Authentication API": [
       "auth-introduction",
       "auth-auth",
       "auth-user",
-      "auth-forgot-password",
+      "auth-forgot-password"
     ],
-    Libraries: ["library-html-client"],
-    Examples: ["guides-modular"],
-  },
+    Libraries: [ "library-html-client" ],
+    Examples: [ "guides-modular" ],
+    "Specification": [ {
+      type: "link",
+      label: "API Reference",
+      href: "/api-reference"
+    } ]
+  }
 }
