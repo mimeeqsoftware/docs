@@ -16,6 +16,16 @@ This example includes all available keys for translation and usage.
       // finish button
       "header3d.finish": "Finish", // modular product
       "historymodule.panelmenufooter.finish": "Finish", // 2d/3d product
+      "historymodule.panelmenufooter.addToCart": "Add to Cart", // 2d/3d product when basket mode
+
+      // prices
+      "pricing.info.amountInfo": "Total price includes one time extras of {amount}", // info appearing when price contain one time extra
+
+      // basket
+      "addToCart.saving": "Saving...", // Text on Add to Cart button while loader is visible
+      "toast.error.required": "Some required fields are missing", // shown if there is some missing required fields
+      "toast.basket.adding": "Please wait until we prepare your product and put it into your cart", // shown while adding to cart
+      "toast.basket.adding.title": "Adding to Cart" // title of adding to cart toast
 
       // Sign in modal
       "modallogin.header.login": "Sign in", // modal title

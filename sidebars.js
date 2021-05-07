@@ -4,6 +4,7 @@ module.exports = {
       "embeds-introduction",
       "embeds-configurator",
       "embeds-modular",
+      "embeds-utils",
       "events",
       "localization",
       "custom-translations",
@@ -16,5 +17,12 @@ module.exports = {
     ],
     Libraries: ["library-html-client"],
     Examples: ["guides-modular"],
+    Specification: [
+      {
+        type: "link",
+        label: "API Reference",
+        href: "/api-reference",
+      },
+    ],
   },
 }
