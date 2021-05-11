@@ -135,6 +135,103 @@
           }
         }
       },
+      "ProductInfoConfigurationItem": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "option": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      },
+      "ProductInfoComponentItem": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "product": {
+            "description": "",
+            "type": "object"
+          },
+          "quantity": {
+            "description": "",
+            "type": "number"
+          },
+          "unitPrice": {
+            "description": "",
+            "type": "number"
+          },
+          "totalPrice": {
+            "description": "number",
+            "type": "number"
+          }
+        }
+      },
+      "ProductInfoResponse": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "",
+            "type": "string"
+          },
+          "status": {
+            "description": "",
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "INACTIVE"
+            ]
+          },
+          "code": {
+            "description": "",
+            "type": "string"
+          },
+          "description": {
+            "description": "",
+            "type": "string"
+          },
+          "configuration": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductInfoConfigurationItem"
+            }
+          },
+          "defaultImage": {
+            "description": "",
+            "type": "string"
+          },
+          "SKU": {
+            "description": "",
+            "type": "string"
+          },
+          "mode": {
+            "description": "",
+            "type": "string",
+            "enum": [
+              "MODULAR",
+              "VARIANT",
+              "STANDARD"
+            ]
+          },
+          "unitPrice": {
+            "description": "",
+            "type": "number"
+          },
+          "deliveryInfo": {
+            "description": "",
+            "type": "string"
+          },
+          "components": {
+            "description": "",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductInfoComponentItem"
+            }
+          }
+        }
+      },
       "MimeeqOption": {
         "description": "",
         "type": "object",
@@ -1472,7 +1569,9 @@
   "paths": {
     "/get-product-price-api": {
       "get": {
-        "tags": ["product"],
+        "tags": [
+          "product"
+        ],
         "summary": "Returns the product price by product ID, configuration code and quantity",
         "description": "Gets one of the prices: RRP, SALE, COST, BLANK",
         "operationId": "getProductPriceApi",
@@ -1527,9 +1626,70 @@
         }
       }
     },
+    "/get-product-info-by-prefix": {
+      "get": {
+        "tags": [
+          "product"
+        ],
+        "summary": "Returns the product info by prefix",
+        "description": "Gets ",
+        "operationId": "getProductInfoByPrefix",
+        "parameters": [
+          {
+            "name": "prefix",
+            "in": "query",
+            "description": "Prefix",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "configurationCode",
+            "in": "query",
+            "description": "Configuration code",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "quantity",
+            "in": "query",
+            "description": "Quantity",
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductInfoResponse"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Authentication failed.",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {}
+          }
+        }
+      }
+    },
     "/get-product-by-prefix-api": {
       "get": {
-        "tags": ["product"],
+        "tags": [
+          "product"
+        ],
         "summary": "Returns the product by prefix",
         "description": "Gets one of the products: 2D, 3D, MODULAR",
         "operationId": "getProductByPrefixApi",
@@ -1552,7 +1712,10 @@
               "type": "array",
               "items": {
                 "type": "string",
-                "enum": ["true", "false"]
+                "enum": [
+                  "true",
+                  "false"
+                ]
               }
             }
           }
@@ -1581,7 +1744,9 @@
     },
     "/get-products-standard-by-customer-id-api": {
       "get": {
-        "tags": ["product"],
+        "tags": [
+          "product"
+        ],
         "summary": "Returns the products by customer ID",
         "description": "Gets one of the products: 2D, 3D, MODULAR",
         "operationId": "getProductsStandardByCustomerId",
