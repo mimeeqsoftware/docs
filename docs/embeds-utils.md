@@ -1,8 +1,10 @@
 ---
-title: Utils
+title: Utilities
 ---
 
-## mimeeqApp.utils.takeScreenshot()
+## Image Generation
+
+Method: mimeeqApp.utils.takeScreenshot()
 
 You can use this method to get screenshot of current scene state.
 
