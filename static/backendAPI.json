@@ -1,9 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Swagger Mimeeq",
+    "title": "Mimeeq API",
     "description": "Mimeeq API.",
-    "termsOfService": "http://swagger.io/terms/",
     "contact": {
       "email": "support@mimeeq.co.uk"
     },

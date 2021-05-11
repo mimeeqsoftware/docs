@@ -16,3 +16,16 @@
 .swagger-ui td {
   border: initial;
 }
+
+.swagger-ui pre code {
+  color: inherit;
+  border-radius: initial;
+  word-wrap: initial;
+}
+
+.swagger-ui table thead tr td, .swagger-ui table thead tr th {
+  border-left:none;
+  border-right:none;
+  border-top:none;
+  background-color: inherit;
+}
