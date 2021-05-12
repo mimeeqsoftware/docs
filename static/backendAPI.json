@@ -151,7 +151,7 @@
         "properties": {
           "product": {
             "description": "",
-            "type": "object"
+            "$ref": "#/components/schemas/MimeeqProductInfo"
           },
           "quantity": {
             "description": "",
@@ -167,21 +167,12 @@
           }
         }
       },
-      "ProductInfoResponse": {
-        "description": "",
+      "MimeeqProductInfo": {
         "type": "object",
         "properties": {
           "name": {
             "description": "",
             "type": "string"
-          },
-          "status": {
-            "description": "",
-            "type": "string",
-            "enum": [
-              "ACTIVE",
-              "INACTIVE"
-            ]
           },
           "code": {
             "description": "",
@@ -205,32 +196,53 @@
           "SKU": {
             "description": "",
             "type": "string"
-          },
-          "mode": {
-            "description": "",
-            "type": "string",
-            "enum": [
-              "MODULAR",
-              "VARIANT",
-              "STANDARD"
-            ]
-          },
-          "unitPrice": {
-            "description": "",
-            "type": "number"
-          },
-          "deliveryInfo": {
-            "description": "",
-            "type": "string"
-          },
-          "components": {
-            "description": "",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProductInfoComponentItem"
-            }
-          }
+          }, 
         }
+      },
+      "ProductInfoResponse": {
+        "description": "",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/MimeeqProductInfo"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "status": {
+                "description": "",
+                "type": "string",
+                "enum": [
+                  "ACTIVE",
+                  "INACTIVE"
+                ]
+              },
+              "mode": {
+                "description": "",
+                "type": "string",
+                "enum": [
+                  "MODULAR",
+                  "VARIANT",
+                  "STANDARD"
+                ]
+              },
+              "unitPrice": {
+                "description": "",
+                "type": "number"
+              },
+              "deliveryInfo": {
+                "description": "",
+                "type": "string"
+              },
+              "components": {
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProductInfoComponentItem"
+                }
+              }
+            } 
+          }
+        ]
       },
       "MimeeqOption": {
         "description": "",
