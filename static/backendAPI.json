@@ -196,7 +196,7 @@
           "SKU": {
             "description": "",
             "type": "string"
-          }, 
+          }
         }
       },
       "ProductInfoResponse": {
