@@ -135,11 +135,11 @@
             "type": "number"
           },
           "unitPrice": {
-            "description": "",
+            "description": "Price for one unit",
             "type": "number"
           },
           "totalPrice": {
-            "description": "number",
+            "description": "Total price for selected quantity",
             "type": "number"
           }
         }
@@ -222,11 +222,15 @@
                 ]
               },
               "unitPrice": {
-                "description": "",
+                "description": "Price for one unit",
+                "type": "number"
+              },
+              "totalPrice": {
+                "description": "Total price for selected quantity",
                 "type": "number"
               },
               "deliveryInfo": {
-                "description": "",
+                "description": "Information about when product can be delivered",
                 "type": "string"
               },
               "components": {
