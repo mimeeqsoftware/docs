@@ -6,7 +6,7 @@ title: Utils
 
 Method: mimeeqApp.utils.takeScreenshot()
 
-You can use this method to get screenshot of current scene state.
+You can use this method to generate an image from the current canvas state, method is called screenshot but you are able to control the size of the image and the type, png or jpg.
 
 #### Parameters
 
