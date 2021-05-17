@@ -9,7 +9,6 @@ module.exports = {
   organizationName: "mimeeqsoftware", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
   themeConfig: {
-    sidebarCollapsible: false,
     navbar: {
       title: "Mimeeq Documentation",
       logo: {
