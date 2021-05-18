@@ -10,6 +10,7 @@ every `data-mimeeq` element. If no language is specified, English will be used b
 - English: **en**
 - English (US): **en-US**
 - Polish: **pl**
+- German: **de**
 
 ## Example
 
