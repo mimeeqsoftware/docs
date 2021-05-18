@@ -80,20 +80,50 @@
           }
         }
       },
+      "MimeeqPriceComponent": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "unitPrice": {
+            "description": "Price for one unit",
+            "type": "number"
+          },
+          "totalPrice": {
+            "description": "Total price for selected quantity",
+            "type": "number"
+          },
+          "quantity": {
+            "description": "",
+            "type": "number"
+          },
+          "productId": {
+            "description": "",
+            "type": "string"
+          },
+          "configurationCode": {
+            "description": "Configuration code for selected options",
+            "type": "string"
+          }
+        }
+      },
       "ProductPriceResponse": {
         "description": "",
         "type": "object",
+        "required": [
+          "price",
+          "currency"
+        ],
         "properties": {
           "price": {
             "description": "Total price",
             "type": "number"
           },
           "oneTimePrice": {
-            "description": "One time extra amount",
+            "description": "One time extra amount. Not available for Modular products",
             "type": "number"
           },
           "levels": {
-            "description": "Quantity breaks levels",
+            "description": "Quantity breaks levels. Not available for Modular products",
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MimeeqPriceLevel"
@@ -107,45 +137,61 @@
             "description": "Delivery time for selected configuration",
             "type": "number"
           },
-          "marketCostPriceMap": {
-            "type": "object",
-            "deprecated": true
+          "components": {
+            "description": "Price of modular product components",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqPriceComponent"
+            }
           }
         }
       },
       "ProductInfoConfigurationItem": {
         "description": "",
         "type": "object",
+        "additionalProperties": {
+          "type": "string"
+        },
         "properties": {
           "option": {
-            "description": "",
+            "description": "key is Block name and value is options name",
             "type": "string"
           }
         }
       },
       "ProductInfoComponentItem": {
         "description": "",
-        "type": "object",
-        "properties": {
-          "product": {
+        "allOf": [
+          {
             "$ref": "#/components/schemas/MimeeqProductInfo"
           },
-          "quantity": {
-            "description": "",
-            "type": "number"
-          },
-          "unitPrice": {
-            "description": "Price for one unit",
-            "type": "number"
-          },
-          "totalPrice": {
-            "description": "Total price for selected quantity",
-            "type": "number"
+          {
+            "type": "object",
+            "required": [
+              "quantity",
+              "productId"
+            ],
+            "properties": {
+              "quantity": {
+                "description": "",
+                "type": "number"
+              },
+              "productId": {
+                "description": "",
+                "type": "string"
+              }
+            }
           }
-        }
+        ]
       },
       "MimeeqProduct": {
         "type": "object",
+        "required": [
+          "name",
+          "code",
+          "defaultImage",
+          "description"
+        ],
         "properties": {
           "name": {
             "description": "",
@@ -160,18 +206,14 @@
             "type": "string"
           },
           "configuration": {
-            "description": "",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProductInfoConfigurationItem"
-            }
+            "$ref": "#/components/schemas/ProductInfoConfigurationItem"
           },
           "defaultImage": {
             "description": "",
             "type": "string"
           },
           "SKU": {
-            "description": "",
+            "description": "Not available for Modular product",
             "type": "string"
           }
         }
@@ -185,11 +227,7 @@
             "type": "object",
             "properties": {
               "configuration": {
-                "description": "",
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/ProductInfoConfigurationItem"
-                }
+                "$ref": "#/components/schemas/ProductInfoConfigurationItem"
               }
             }
           }
@@ -203,6 +241,10 @@
           },
           {
             "type": "object",
+            "required": [
+              "status",
+              "mode"
+            ],
             "properties": {
               "status": {
                 "description": "",
@@ -221,14 +263,6 @@
                   "STANDARD"
                 ]
               },
-              "unitPrice": {
-                "description": "Price for one unit",
-                "type": "number"
-              },
-              "totalPrice": {
-                "description": "Total price for selected quantity",
-                "type": "number"
-              },
               "deliveryInfo": {
                 "description": "Information about when product can be delivered",
                 "type": "string"
@@ -243,15 +277,6 @@
             }
           }
         ]
-      },
-      "GenerateShortCodeResponse": {
-        "description": "",
-        "type": "object",
-        "properties": {
-          "shortCode": {
-            "type": "string"
-          }
-        }
       }
     }
   },
@@ -346,56 +371,6 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProductInfoResponse"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Authentication failed.",
-            "content": {}
-          },
-          "500": {
-            "description": "Internal server error.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/generate-product-short-code": {
-      "post": {
-        "tags": [
-          "product"
-        ],
-        "summary": "Returns short code for given productId and configuration code",
-        "description": "Returns short code for given productId and configuration code. Short code is then required for other product related method to work.",
-        "operationId": "generateProductShortCode",
-        "parameters": [
-          {
-            "name": "configurationCode",
-            "in": "query",
-            "description": "Selected configuration code encrypted in base64.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "productId",
-            "in": "query",
-            "description": "Product id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/GenerateShortCodeResponse"
                 }
               }
             }

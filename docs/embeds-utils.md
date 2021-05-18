@@ -28,3 +28,30 @@ mimeeqApp.utils
 ```
 
 This method returns `Promise` with base64 string with image, or thrown an error in case of failure.
+
+
+## Short Code Generation
+
+Method: mimeeqApp.utils.getShortcode(productId, configurationCode)
+
+You can use this method to generate an image from the current canvas state, method is called screenshot but you are able to control the size of the image and
+the type, png or jpg.
+
+#### Parameters
+
+| Name              | Type                              | Default | Description                                                                                                                                                                          |
+| ----------------- | --------------------------------- | ------- | ----------------------------------------------- |
+| productId         | string                            | png     | Id of product                                   |
+| configurationCode | string                            | 3072    | Selected configuration code string              |
+
+#### Usage
+
+```js
+mimeeqApp.utils
+    .getShortcode(productId, configurationCode)
+    .then((shortCode) => {
+        console.log("Short code:", shortCode)
+    })
+```
+
+This method returns `Promise` with generated short code, or thrown an error in case of failure.
