@@ -281,14 +281,14 @@
     }
   ],
   "paths": {
-    "/get-product-price-api": {
+    "/get-product-price": {
       "get": {
         "tags": [
           "product"
         ],
-        "summary": "Returns the product price by product ID, configuration code and quantity",
-        "description": "Returns the product price by product ID, configuration code and quantity",
-        "operationId": "getProductPriceApi",
+        "summary": "Returns the product price by product ID, short code and quantity",
+        "description": "Returns the product price by product ID, short code and quantity",
+        "operationId": "getProductPrice",
         "parameters": [
           {
             "name": "productId",
@@ -300,9 +300,9 @@
             }
           },
           {
-            "name": "configurationCode",
+            "name": "shortCode",
             "in": "query",
-            "description": "Configuration code",
+            "description": "Short code generated for selected configuration",
             "required": true,
             "schema": {
               "type": "string"
@@ -340,28 +340,19 @@
         }
       }
     },
-    "/get-product-info-by-prefix": {
+    "/get-product-info": {
       "get": {
         "tags": [
           "product"
         ],
-        "summary": "Returns the product info by prefix",
-        "description": "Gets product information based on configuration code",
-        "operationId": "getProductInfoByPrefix",
+        "summary": "Returns the product info",
+        "description": "Gets product information based on short code.",
+        "operationId": "getProductInfo",
         "parameters": [
           {
-            "name": "variantCode",
+            "name": "shortCode",
             "in": "query",
-            "description": "Variant code",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "configurationCode",
-            "in": "query",
-            "description": "Configuration code",
+            "description": "Short code generated for selected configuration",
             "required": true,
             "schema": {
               "type": "string"
