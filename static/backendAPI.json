@@ -244,34 +244,14 @@
           }
         ]
       },
-      "ProductListItem": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/MimeeqProduct"
-          },
-          {
-            "type": "object",
-            "properties": {
-              "status": {
-                "description": "",
-                "type": "string",
-                "enum": [
-                  "ACTIVE",
-                  "INACTIVE"
-                ]
-              },
-              "mode": {
-                "description": "",
-                "type": "string",
-                "enum": [
-                  "MODULAR",
-                  "VARIANT",
-                  "STANDARD"
-                ]
-              }
-            }
+      "GenerateShortCodeResponse": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "shortCode": {
+            "type": "string"
           }
-        ]
+        }
       }
     }
   },
@@ -281,24 +261,15 @@
     }
   ],
   "paths": {
-    "/get-product-price": {
+    "/get-product-price-info": {
       "get": {
         "tags": [
           "product"
         ],
-        "summary": "Returns the product price by product ID, short code and quantity",
-        "description": "Returns the product price by product ID, short code and quantity",
-        "operationId": "getProductPrice",
+        "summary": "Returns the product price by short code and quantity",
+        "description": "Returns the product price by short code and quantity",
+        "operationId": "getProductPriceInfo",
         "parameters": [
-          {
-            "name": "productId",
-            "in": "query",
-            "description": "Product ID",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "shortCode",
             "in": "query",
@@ -390,30 +361,47 @@
         }
       }
     },
-    "/product": {
-      "get": {
+    "/generate-product-short-code": {
+      "post": {
         "tags": [
-          "products"
+          "product"
         ],
-        "summary": "Returns the products list",
-        "description": "Gets list of customer products",
-        "operationId": "product",
+        "summary": "Returns short code for given productId and configuration code",
+        "description": "Returns short code for given productId and configuration code. Short code is then required for other product related method to work.",
+        "operationId": "generateProductShortCode",
+        "parameters": [
+          {
+            "name": "configurationCode",
+            "in": "query",
+            "description": "Selected configuration code encrypted in base64.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "productId",
+            "in": "query",
+            "description": "Product id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "successful operation",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ProductListItem"
-                  }
+                  "$ref": "#/components/schemas/GenerateShortCodeResponse"
                 }
               }
             }
           },
-          "400": {
-            "description": "Invalid status value.",
+          "403": {
+            "description": "Authentication failed.",
             "content": {}
           },
           "500": {
