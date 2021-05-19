@@ -146,16 +146,31 @@
           }
         }
       },
+      "ProductInfoConfiguration": {
+        "description": "Array of selected options names grouped by block",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/ProductInfoConfigurationItem"
+        }
+      },
       "ProductInfoConfigurationItem": {
         "description": "",
         "type": "object",
-        "additionalProperties": {
-          "type": "string"
-        },
         "properties": {
-          "option": {
-            "description": "key is Block name and value is options name",
+          "blockId": {
+            "description": "Id of options block",
             "type": "string"
+          },
+          "blockName": {
+            "description": "Name of options block",
+            "type": "string"
+          },
+          "options": {
+            "description": "Names of options selected for current block",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
@@ -206,7 +221,7 @@
             "type": "string"
           },
           "configuration": {
-            "$ref": "#/components/schemas/ProductInfoConfigurationItem"
+            "$ref": "#/components/schemas/ProductInfoConfiguration"
           },
           "defaultImage": {
             "description": "",
@@ -227,7 +242,7 @@
             "type": "object",
             "properties": {
               "configuration": {
-                "$ref": "#/components/schemas/ProductInfoConfigurationItem"
+                "$ref": "#/components/schemas/ProductInfoConfiguration"
               }
             }
           }
