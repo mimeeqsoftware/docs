@@ -9,6 +9,10 @@ module.exports = {
   organizationName: "mimeeqsoftware", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
   themeConfig: {
+    gtag: {
+      trackingID: 'UA-134854471-2',
+      anonymizeIP: true,
+    },
     navbar: {
       title: "Mimeeq Documentation",
       logo: {
@@ -108,6 +112,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    '@docusaurus/plugin-google-gtag',
     [
       require.resolve('docusaurus-gtm-plugin'),
       {
