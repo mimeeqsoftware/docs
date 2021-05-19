@@ -112,6 +112,11 @@ module.exports = {
     ],
   ],
   plugins: [
+    ['@docusaurus/plugin-google-gtag',
+      {
+        id: 'gtag'
+      }
+    ],
     [
       require.resolve('docusaurus-gtm-plugin'),
       {
