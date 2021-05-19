@@ -107,4 +107,12 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      require.resolve('docusaurus-gtm-plugin'),
+      {
+        id: 'GTM-KDGB3WP',
+      }
+    ]
+  ],
 }
