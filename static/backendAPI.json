@@ -143,6 +143,14 @@
             "items": {
               "$ref": "#/components/schemas/MimeeqPriceComponent"
             }
+          },
+          "vatType": {
+            "descritpion": "",
+            "type": "string",
+            "enum": [
+              "VAT_INCL",
+              "VAT_EXCL"
+            ]
           }
         }
       },
