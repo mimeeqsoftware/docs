@@ -38,11 +38,6 @@
         "type": "apiKey",
         "in": "header",
         "name": "X-API-KEY"
-      },
-      "LangKey": {
-        "type": "apiKey",
-        "in": "header",
-        "name": "lang"
       }
     },
     "schemas": {
@@ -306,8 +301,7 @@
   },
   "security": [
     {
-      "ApiKeyAuth": [],
-      "LangKey": []
+      "ApiKeyAuth": []
     }
   ],
   "paths": {
