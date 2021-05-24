@@ -337,6 +337,14 @@
             "schema": {
               "type": "number"
             }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "Custom language code. If not provided it will use default Customer language",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -386,6 +394,14 @@
             "required": true,
             "schema": {
               "type": "number"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "Custom language code. If not provided it will use default Customer language",
+            "schema": {
+              "type": "string"
             }
           }
         ],
