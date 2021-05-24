@@ -38,6 +38,11 @@
         "type": "apiKey",
         "in": "header",
         "name": "X-API-KEY"
+      },
+      "LangKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "lang"
       }
     },
     "schemas": {
@@ -96,12 +101,8 @@
             "description": "",
             "type": "number"
           },
-          "productId": {
-            "description": "",
-            "type": "string"
-          },
-          "configurationCode": {
-            "description": "Configuration code for selected options",
+          "shortCode": {
+            "description": "Configuration short code",
             "type": "string"
           }
         }
@@ -145,7 +146,7 @@
             }
           },
           "vatType": {
-            "descritpion": "",
+            "description": "",
             "type": "string",
             "enum": [
               "VAT_INCL",
@@ -199,8 +200,8 @@
                 "description": "",
                 "type": "number"
               },
-              "productId": {
-                "description": "",
+              "shortCode": {
+                "description": "Configuration short code",
                 "type": "string"
               }
             }
@@ -305,7 +306,8 @@
   },
   "security": [
     {
-      "ApiKeyAuth": []
+      "ApiKeyAuth": [],
+      "LangKey": []
     }
   ],
   "paths": {
