@@ -3,5 +3,7 @@ title: Introduction
 slug: /
 ---
 
-This documentation explains how to use Mimeeq Embeds and integrate them with your website
-in the simplest possible way.
+This documentation is intended for developers who want to understand how to integrate Mimeeq's software into a third party site.
+If you would like to find infmation about using the application, adding products, prices, 3d models and so forth, please chekc our app knoledge base https://help.mimeeq.com/
+
+If your not sure what you looking for or need further assistance, reach out to us using live chat.
