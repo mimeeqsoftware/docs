@@ -113,6 +113,9 @@ This example includes all available keys for translation and usage.
       "validator.invalidLength": "Password should have at least 8 chars",
       "validator.invalidPasswordRegex": "Password should contain 1 lowercase, 1 uppercase, 1 number and 1 special char",
       "validator.invalidRegex": "Invalid regex"
+  
+      // AR
+      "ar.button": "View in your room"
   }
 </script>
 ```
