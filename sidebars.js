@@ -8,6 +8,7 @@ module.exports = {
       "events",
       "localization",
       "custom-translations",
+      "custom-css"
     ],
     "Authentication API": [
       "auth-introduction",
