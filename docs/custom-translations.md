@@ -112,10 +112,14 @@ This example includes all available keys for translation and usage.
       "validation.required": "Required",
       "validator.invalidLength": "Password should have at least 8 chars",
       "validator.invalidPasswordRegex": "Password should contain 1 lowercase, 1 uppercase, 1 number and 1 special char",
-      "validator.invalidRegex": "Invalid regex"
+      "validator.invalidRegex": "Invalid regex",
   
       // AR
-      "ar.button": "View in your room"
+      "ar.button": "View in your room",
+  
+      // Delivery Info
+      "summarypanel.delivery": "<b>Delivery</b>: {valueType, select, number {{type, select, week {{weeks, plural, one {# Week} other {# Weeks}}} month {{months, plural, one {# Month} other {# Months}}} year {{years, plural, one {# Year} other {# Years}}} other {{days, plural, one {# Working Day} other {# Working Days}}} }} other {{days}}}"
+
   }
 </script>
 ```
