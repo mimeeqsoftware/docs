@@ -140,3 +140,35 @@ This example includes all available keys for translation and usage.
   }
 </script>
 ```
+
+### Using HTML in translations
+
+While working with the translations you may want to ocasinally apply some additional styling in text or add url. To allow that we support custom HTML/XML tags in translations thanks to which you can have even more control over you text.
+
+#### Available tags
+
+```html
+<b>TEXT</b> - it will bold nested text
+<i>TEXT</i> - it will use italics to display nested text
+<c>TEXT</c> - nested text will be displayed in Customer accent color
+<a>https://example.com|click it</a> - it will add link for text. Make sure to use proper markup for this. While specifying links you should first provide URL at the beggining and then follow it with `|` and link text. In case you want to display url as text you may skip providing label. Then it will use url eg. `<a>https://google.com</a>`. You can pass any of the following values as URL
+  - An absolute URL - points to another web site (like `<a>http://www.example.com/default.html</a>`)
+  - A relative URL - points to a file within a web site (like `<a>default.htm</a>`)
+  - Link to an element with a specified id within the page (like `<a>#section2</a>`)
+  - Other protocols (like https://, ftp://, mailto:, file:, etc..)
+  - A script (like `<a>javascript:alert('Hello');</a>`)
+```
+
+#### Usage
+```html
+<script>
+  window.mimeeqCustomMessages = {
+    en: {
+      "toast.basket.adding": "<i>Please wait until we prepare your product and put it into your cart</i>", // this will display whole line in italics
+      "confirmdelete.user.text1": "To confirm you wish to delete your profile from from type <b>DELETE</b> in the box provided, this action cannot be undone", // DELETE will be bolded
+      "pricing.info.amountInfo": "Total price includes one time extras of <c>{amount}</c>", // this will display amount using customer accent color
+      "toast.basket.adding": "Please wait until we prepare your product and put it into your <a>https://example.com/cart|cart</a>" // this will add link pointing to cart page.
+    }
+  }
+</script>
+```
