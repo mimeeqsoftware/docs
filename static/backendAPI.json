@@ -80,6 +80,20 @@
           }
         }
       },
+      "MimeeqOptionComponent": {
+        "description": "",
+        "type": "object",
+        "properties": {
+          "optionName": {
+            "description": "Name of option",
+            "type": "string"
+          },
+          "image": {
+            "description": "URL to option image (optional)",
+            "type": "string"
+          }
+        }
+      },
       "MimeeqPriceComponent": {
         "description": "",
         "type": "object",
@@ -174,6 +188,13 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "optionsData": {
+            "description": "Data of options selected for current block",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MimeeqOptionComponent"
             }
           }
         }
