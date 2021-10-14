@@ -24,7 +24,7 @@ You can use this method to generate an image from the current canvas state, meth
 
 ```js
 mimeeqApp.utils
-    .takeScreenshot(fileName, extension, size, backgroundColor, customDimensions, autozoom, cameraReset)
+    .takeScreenshot(fileName, extension, size, backgroundColor, customDimensions, autozoom, cameraReset, customCameraPosition)
     .then((base64) => {
         console.log("Image:", base64)
     })
