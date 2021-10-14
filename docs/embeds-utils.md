@@ -16,7 +16,8 @@ You can use this method to generate an image from the current canvas state, meth
 | size             | number                            | 3072    | Width of image. Height will be set automatically based on canvas aspect ratio. On iOS powered mobiles it may cause reloads if size is bigger then 2k. We recommend 1k for ecommerce. |
 | backgroundColor  | string                            | #FFFFFF | If provided, will be used for background on jpeg file. Accepts only hex and hexa format.                                                                                             |
 | customDimensions | { width: number, height: number } |         | If provided, it will overwrite size and/or automatically calculated height.                                                                                                          |
-| autozoom         | boolean                           |         | If true, it will do zoom out on canvas to make sure product if fully visible.                                                                                                        |
+| autozoom         | boolean                           | false   | If `true`, it will do zoom out on canvas to make sure product if fully visible.                                                                                                      |
+| cameraReset      | boolean                           | false   | If `true`, it will reset camera to initial position (position from 1st camera at scene settings).                                                                                    |
 
 #### Usage
 
