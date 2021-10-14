@@ -23,7 +23,7 @@ You can use this method to generate an image from the current canvas state, meth
 
 ```js
 mimeeqApp.utils
-    .takeScreenshot(fileName, extension, size, backgroundColor, customDimensions, autozoom)
+    .takeScreenshot(fileName, extension, size, backgroundColor, customDimensions, autozoom, cameraReset)
     .then((base64) => {
         console.log("Image:", base64)
     })
@@ -35,6 +35,8 @@ This method returns `Promise` with base64 string with image, or thrown an error 
 ## Short Code Generation
 
 Method: mimeeqApp.utils.getShortcode(productId, configurationCode)
+
+When called it will generate unique shortcode for given productId-configurationCode pair. For the same pair shortcode is always the same.
 
 #### Parameters
 
