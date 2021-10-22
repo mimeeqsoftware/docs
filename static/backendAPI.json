@@ -332,7 +332,7 @@
           "product"
         ],
         "summary": "Returns the product price by short code and quantity",
-        "description": "Returns the product price by short code and quantity",
+        "description": "Returns the product price by short code and quantity. Please note that price list overrides default API price, company id overrides prices ids. They cannot be used simultaneously, if you require to use all please use separate calls.",
         "operationId": "getProductPriceInfo",
         "parameters": [
           {
@@ -362,14 +362,6 @@
             }
           },
           {
-            "name": "companyId",
-            "in": "query",
-            "description": "Custom company Id. Provide it in case you want to get price for specific company",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "priceListIds",
             "in": "query",
             "description": "Custom price list ids. Provide these in case you want get price from specific price list(s)",
@@ -378,6 +370,14 @@
               "items": {             
                 "type": "string" 
               }
+            }
+          },
+          {
+            "name": "companyId",
+            "in": "query",
+            "description": "Custom company Id. Provide it in case you want to get price for specific company",
+            "schema": {
+              "type": "string"
             }
           }
         ],
