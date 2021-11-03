@@ -58,7 +58,7 @@ mimeeqApp.utils
 
 This method returns `Promise` with generated short code, or thrown an error in case of failure.
 
-## Set price (avaiable from 4th November)
+## Set price (avaiable from 8th November)
 
 Method: mimeeqApp.utils.setPrice(pricing)
 
@@ -72,7 +72,7 @@ NOTE: Currently modular product does not accept price for components. You can on
 | ----------------- | --------------------------------- | ------- | ----------------------------------------------- |
 | pricing           | [ProductPriceResponse](https://docs.mimeeq.com/api-reference#model-ProductPriceResponse)  |         | Mimeeq Pricing data                             |
 
-## Set pricing settings (avaiable from 4th November)
+## Set pricing settings (avaiable from 8th November)
 
 Method: mimeeqApp.utils.setPricingSettings(minimumFractionDigits, maximumFractionDigits)
 
