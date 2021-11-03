@@ -116,6 +116,33 @@ This example includes all available keys for translation and usage.
   
       // AR
       "ar.button": "View in your room",
+      "ar.generating": "Generating...",
+  
+      // AR Desktop modal
+      "ar.modal.title": "View in your room",
+      "ar.modal.desktopText": "Oops! It looks like you are using a desktop.",
+      "ar.modal.desktopScanText": "Please, scan the QR code with the camera app on your mobile device to see the product in AR.",
+      "ar.modal.desktopScanText2": "your mobile device to see the product in AR.",
+      "ar.modal.copied": "Copied",
+      "ar.modal.copyUrl": "Copy Url",
+      "ar.modal.desktopText": "Oops! It looks like you are using a desktop.",
+      "ar.modal.desktopScanText": "Please, scan the QR code with the camera app on your mobile device to see the product in AR.",
+      "ar.modal.close": "Close",
+ 
+      // AR Landing Page
+      "ar.landingpage.header": "Beautiful! And now?",
+      "ar.landingpage.description": "Click view in room below and see this product come to life",
+      "ar.landingpage.button.text": "View in Room",
+      "ar.landingpage.button.loading.text": "Loading AR...",
+      "ar.landingpage.button.generating.text": "Generating...",
+      "ar.landingpage.button.createAnother.text": "Create another",
+      "ar.landingpage.image.placeholder.text": "We are generating your AR experience...",
+      "ar.landingpage.button.text.goBack": "Go back",
+      
+      // AR Incompatible Page
+      "ar.landingpage.header.incompatible": "Incompatible device",
+      "ar.landingpage.description.incompatible": "Look like your device is not AR compatible, {devicesSupported} for a list of devices supported",
+      "ar.landingpage.description.devicesSupported": "click here",
   
       // Delivery Info
       "summarypanel.delivery": "<b>Delivery</b>: {valueType, select, number {{type, select, week {{weeks, plural, one {# Week} other {# Weeks}}} month {{months, plural, one {# Month} other {# Months}}} year {{years, plural, one {# Year} other {# Years}}} other {{days, plural, one {# Working Day} other {# Working Days}}} }} other {{days}}}"
