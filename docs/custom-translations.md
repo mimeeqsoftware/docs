@@ -130,7 +130,6 @@ This example includes all available keys for translation and usage.
       "ar.modal.close": "Close",
  
       // AR Landing Page
-      "ar.landingpage.header": "Beautiful! And now?",
       "ar.landingpage.description": "Click view in room below and see this product come to life",
       "ar.landingpage.button.text": "View in Room",
       "ar.landingpage.button.loading.text": "Loading AR...",
