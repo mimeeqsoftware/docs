@@ -62,9 +62,13 @@ This method returns `Promise` with generated short code, or thrown an error in c
 
 Method: mimeeqApp.utils.setPrice(pricing)
 
-Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing). It accepts price object from API. Should be used with Use Custom Pricing enabled at embed snippet.
+Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing with the paremter enabled in the product admin panel). It accepts price object from API. It should be used in conjunection with "Use Custom Pricing" enabled at embed snippet.
 
-NOTE: Currently modular product does not accept price for components. You can only set total price.
+```
+data-mimeeq-use-custom-pricing
+```
+
+NOTE: Currently our modular product configurator does not accept price for components. You can only set the total price.
 
 #### Parameters
 
@@ -75,6 +79,7 @@ NOTE: Currently modular product does not accept price for components. You can on
 ## Set pricing settings (available from 14th November)
 
 Method: mimeeqApp.utils.setPricingSettings(minimumFractionDigits, maximumFractionDigits)
+This allows you to set the decimal places in the mimeeq configurator
 
 #### Parameters
 
