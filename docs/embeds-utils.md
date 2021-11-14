@@ -62,7 +62,7 @@ This method returns `Promise` with generated short code, or thrown an error in c
 
 Method: mimeeqApp.utils.setPrice(pricing)
 
-Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing with the paremter enabled in the product admin panel). It accepts price object from API. It should be used in conjunection with "Use Custom Pricing" enabled at embed snippet.
+Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing with the paremter enabled in the product admin panel). It accepts price object from API. It should be used in conjunction with "Use Custom Pricing" enabled at embed snippet.
 
 ```
 data-mimeeq-use-custom-pricing
