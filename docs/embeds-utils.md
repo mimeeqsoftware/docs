@@ -58,7 +58,8 @@ mimeeqApp.utils
 
 This method returns `Promise` with generated short code, or thrown an error in case of failure.
 
-## Set price (available from 14th November)
+## Set price
+available from 14th November
 
 Method: mimeeqApp.utils.setPrice(pricing)
 
@@ -76,7 +77,8 @@ NOTE: Currently our modular product configurator does not accept price for compo
 | ----------------- | --------------------------------- | ------- | ----------------------------------------------- |
 | pricing           | [ProductPriceResponse](https://docs.mimeeq.com/api-reference#model-ProductPriceResponse)  |         | Mimeeq Pricing data                             |
 
-## Set pricing settings (available from 14th November)
+## Set pricing settings
+available from 14th November
 
 Method: mimeeqApp.utils.setPricingSettings(minimumFractionDigits, maximumFractionDigits)
 This allows you to set the decimal places in the mimeeq configurator
