@@ -59,7 +59,6 @@ mimeeqApp.utils
 This method returns `Promise` with generated short code, or thrown an error in case of failure.
 
 ## Set price
-available from 16th November
 
 Method: mimeeqApp.utils.setPrice(pricing)
 
@@ -85,7 +84,6 @@ mimeeqApp.utils
 ```
 
 ## Set pricing settings
-available from 16th November
 
 Method: mimeeqApp.utils.setPricingSettings(minimumFractionDigits, maximumFractionDigits)
 This allows you to set the decimal places in the mimeeq configurator
