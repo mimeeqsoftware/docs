@@ -77,6 +77,13 @@ NOTE: Currently our modular product configurator does not accept price for compo
 | ----------------- | --------------------------------- | ------- | ----------------------------------------------- |
 | pricing           | [ProductPriceResponse](https://docs.mimeeq.com/api-reference#model-ProductPriceResponse)  |         | Mimeeq Pricing data                             |
 
+#### Usage
+
+```js
+mimeeqApp.utils
+    .setPrice(pricing)
+```
+
 ## Set pricing settings
 available from 16th November
 
@@ -89,3 +96,10 @@ This allows you to set the decimal places in the mimeeq configurator
 | --------------------- | --------------------------------- | ------- | ----------------------------------------------- |
 | minimumFractionDigits | number                            | 2       | Minimum number of decimal places                |
 | maximumFractionDigits | number                            | 2       | Selected configuration code string              |
+
+#### Usage
+
+```js
+mimeeqApp.utils
+    .setPricingSettings(minimumFractionDigits, maximumFractionDigits)
+```
