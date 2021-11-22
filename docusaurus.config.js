@@ -9,6 +9,12 @@ module.exports = {
   organizationName: "mimeeqsoftware", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
   themeConfig: {
+    algolia: {
+      appId: 'FIXCMVY237',
+      apiKey: '4f9c1630b405aff8437ed23c9f149020',
+      indexName: 'mimeeq_docs',
+      contextualSearch: true,
+    },
     gtag: {
       trackingID: 'UA-134854471-2',
       anonymizeIP: true,

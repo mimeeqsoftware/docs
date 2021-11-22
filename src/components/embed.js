@@ -14,7 +14,6 @@ export default ({ code }) => {
   const codeRef = useRef(null)
 
   useEffect(() => {
-    console.log(window)
     const documentFragment = document
       .createRange()
       .createContextualFragment(transformCodeEvent(code))
