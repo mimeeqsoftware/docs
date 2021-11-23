@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: "Mimeeq Documentation",
   tagline: "",
@@ -128,6 +130,7 @@ module.exports = {
       {
         id: 'GTM-KDGB3WP',
       }
-    ]
+    ],
+    path.resolve(__dirname, 'src/plugins/webpack-plugin')
   ],
 }
