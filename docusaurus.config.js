@@ -13,7 +13,7 @@ module.exports = {
       appId: 'FIXCMVY237',
       apiKey: '4f9c1630b405aff8437ed23c9f149020',
       indexName: 'mimeeq_docs',
-      contextualSearch: true,
+      contextualSearch: false,
     },
     gtag: {
       trackingID: 'UA-134854471-2',
