@@ -1,5 +1,7 @@
 import { Buffer } from 'buffer';
-window.Buffer = Buffer;
+if(typeof window === 'object') {
+  window.Buffer = Buffer;
+}
 
 import React from "react"
 import SwaggerUI from "swagger-ui-react"
@@ -10,10 +12,7 @@ import "./api-reference.css"
 
 const ApiReference = () => (
   <Layout title="Api Reference | Mimeeq Documentation" >
-    {
-      typeof Buffer !== 'undefined' &&
       <SwaggerUI spec={spec} />
-    }
   </Layout>
 )
 
