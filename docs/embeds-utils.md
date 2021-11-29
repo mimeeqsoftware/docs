@@ -70,7 +70,9 @@ We recoomend also using the price field loader to indicate when prices are being
 data-mimeeq-use-custom-pricing
 ```
 
-__NOTE:__ Currently our modular product configurator does not accept price for components. You can only set the total price.
+:::caution
+
+Currently our modular product configurator does not accept price for components. You can only set the total price.
 
 #### Parameters
 
