@@ -44,6 +44,7 @@ title: Events
 | mimeeq-select-tab                  | This event is fired when changing Tab.                                                                                                                           | { hash: string, index: number }                                              |
 | mimeeq-tree-unmounted              | This event is fired when Embed was unmounted from DOM. It returns type of unmounted embed (configurator, modular, product-list, favourites, login, user-profile) | { type: string }                                                             |
 | mimeeq-click-hotspot               | This event is fired when user click on Hotspot                                                                                                                   | { meshId: string, instanceId: string, dimensions: { x: number, y: number } } |
+| mimeeq-price-change                | This event is fired just before configurator is going to fetch price. Keep in mind that data is only passed on regular product. There is no payload for Modular. | { variantCode: string, quantity: number }                                    |
 
 ### Modular events
 
