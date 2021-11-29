@@ -74,6 +74,8 @@ data-mimeeq-use-custom-pricing
 
 Currently our modular product configurator does not accept price for components. You can only set the total price.
 
+:::
+
 #### Parameters
 
 | Name              | Type                              | Default | Description                                                                                                                                                                          |
