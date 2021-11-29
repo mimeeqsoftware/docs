@@ -46,7 +46,7 @@ When called it will generate unique shortcode for given productId-configurationC
 | productId         | string                            |         | Id of product                                   |
 | configurationCode | string                            |         | Selected configuration code string              |
 
-#### Usage
+#### Usage Shortcode
 
 ```js
 mimeeqApp.utils
@@ -78,7 +78,7 @@ __NOTE:__ Currently our modular product configurator does not accept price for c
 | ----------------- | --------------------------------- | ------- | ----------------------------------------------- |
 | pricing           | [ProductPriceResponse](https://docs.mimeeq.com/api-reference#model-ProductPriceResponse)  |         | Mimeeq Pricing data                             |
 
-#### Usage
+#### Usage Set Price
 
 ```js
 mimeeqApp.utils
