@@ -93,6 +93,63 @@ mimeeqApp.utils
     .setPrice(pricing)
 ```
 
+##### To set only price and currency
+
+```js
+mimeeqApp.utils
+         .setPrice({
+  "price": 5318,
+  "unitPrice": 5318,
+  "currency": "EUR"
+})
+```
+
+##### To also set delivery data
+
+```js
+mimeeqApp.utils
+         .setPrice({
+  "price": 5318,
+  "unitPrice": 5318,
+  "currency": "PLN",
+  "deliveryTime": 7
+})
+```
+
+##### In case you are using quantity breaks it may looks like this
+
+```js
+mimeeqApp.utils
+         .setPrice({
+  "price": 338,
+  "unitPrice": 338,
+  "currency": "EUR",
+  "deliveryTime": 25,
+  "levels": [
+    {
+      "quantityMin": "1",
+      "quantityMax": 4,
+      "discount": 0,
+      "price": 338,
+      "pricePart": 0
+    },
+    {
+      "quantityMin": "5",
+      "quantityMax": 9,
+      "discount": 0.2,
+      "price": 270,
+      "pricePart": 0
+    },
+    {
+      "quantityMin": "10",
+      "discount": 0.27,
+      "price": 248,
+      "pricePart": 0
+    }
+  ]
+});
+```
+
 ## Set pricing settings
 
 Method: mimeeqApp.utils.setPricingSettings(minimumFractionDigits, maximumFractionDigits)
