@@ -64,9 +64,11 @@ Method: mimeeqApp.utils.setPrice(pricing)
 
 Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing with the paremter enabled in the product admin panel). It accepts price object from API. It should be used in conjunction with __"Use Custom Pricing"__ enabled at embed snippet.
 
+
+
 :::note
 
-We recoomend also using the price field loader to indicate when prices are being changed, for information see events [Events from Host Site](https://docs.mimeeq.com/events#events-that-can-be-triggered-by-the-host-site)
+We recoomend listening for this event **mimeeq-price-change** [Events](https://docs.mimeeq.com/events#generic-events) so you know when to request the price from our API end point.  Addtionally we reccomend using the price field loader to indicate when prices are being changed, see [Events from Host Site](https://docs.mimeeq.com/events#events-that-can-be-triggered-by-the-host-site)
 
 :::
 
