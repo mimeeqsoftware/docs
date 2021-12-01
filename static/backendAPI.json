@@ -373,6 +373,19 @@
             }
           },
           {
+            "name": "priceType",
+            "in": "query",
+            "description": "Selected price type. Required if you want get price from specific price list(s)",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "RRP",
+                "SALE",
+                "COST"
+              ]
+            }
+          },
+          {
             "name": "companyId",
             "in": "query",
             "description": "Custom company Id. Provide it in case you want to get price for specific company",
