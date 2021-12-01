@@ -180,9 +180,10 @@ document.dispatchEvent(new Event("mimeeq-show-modular"))
 | viewId       | string= | Selected view id. Only 2d.                                                                                        |
 | image        | string= | Base64 image. In basket variant it will be jpeg file with width of 1000px. Otherwise 1200px wide png. Only on 3d. |
 | productName  | string  | Product name.                                                                                                     |
-| description  | object  | List of pairs of blocks and selected options from them.                                                           |
+| description  | object  | List of pairs of blocks and selected options from them. Only for regular products.                                |
 | collectionId | string  | Custom parameter for wix integration.                                                                             |
 | code         | string  | Unique product code.                                                                                              |
+| shortCode    | string  | Scene short code. Returned only if modular product.                                                               |
 
 ### Option
 
