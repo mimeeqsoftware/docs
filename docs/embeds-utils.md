@@ -39,7 +39,7 @@ Method: mimeeqApp.utils.getShortcode(productId, configurationCode)
 
 When called it will generate unique shortcode for given productId-configurationCode pair. For the same pair shortcode is always the same.
 
-:::note
+:::caution
 
 This method works only for regular products. In case of modular Short Code is returned as part of _mimeeq-add-to-cart_ event.
 
