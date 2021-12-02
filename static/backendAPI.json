@@ -373,9 +373,17 @@
             }
           },
           {
+            "name": "companyId",
+            "in": "query",
+            "description": "Custom company Id. Provide it in case you want to get price for specific company",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "priceType",
             "in": "query",
-            "description": "Selected price type. Required if you want get price from specific price list(s)",
+            "description": "Custom price type. Required if you want get price for specific company or from specific price list(s)",
             "schema": {
               "type": "string",
               "enum": [
@@ -386,13 +394,17 @@
             }
           },
           {
-            "name": "companyId",
+            "name": "vatType",
             "in": "query",
-            "description": "Custom company Id. Provide it in case you want to get price for specific company",
+            "description": "Custom VAT type. If not provided it will use default value from Customer's public price list",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "INCL_VAT",
+                "EXCL_VAT"
+              ]
             }
-          }
+          },
         ],
         "responses": {
           "200": {
