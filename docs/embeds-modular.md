@@ -29,3 +29,12 @@ When you generate the code snippet, you can customize things like:
 <div data-mimeeq data-mimeeq-short-code="E3AN1J" data-withhistory data-locale="en"></div>
 <script src="https://jrdgrq09nk.execute-api.eu-central-1.amazonaws.com/api/cpq/get-embed-short-code-data?shortCode=E3AN1J&html=1" rel="script" type="application/javascript" async></script>
 ```
+
+## Open Finish Screen
+
+In case you are using modular configurator with enabled History Navigation you can open Summary Modal by default while loading shared url.
+To do that you need to append `&finishScreen=1` to your URL.
+
+Example url should look like this 
+
+`https://stagingembed.mimeeq.co.uk/products-sixteen3/?isModular=true&variantCode=CALMOD&shortCode=1TXDJI&finishScreen=1`
