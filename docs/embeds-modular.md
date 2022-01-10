@@ -35,6 +35,11 @@ When you generate the code snippet, you can customize things like:
 In case you are using modular configurator with enabled History Navigation you can open Summary Modal by default while loading shared url.
 To do that you need to append `&finishScreen=1` to your URL.
 
+
+:::caution
+Make sure `s` in Screen is capital. 
+:::
+
 Example url should look like this 
 
 `https://stagingembed.mimeeq.co.uk/products-sixteen3/?isModular=true&variantCode=CALMOD&shortCode=1TXDJI&finishScreen=1`
