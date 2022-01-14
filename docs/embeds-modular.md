@@ -42,4 +42,4 @@ Make sure `s` in Screen is capital.
 
 Example url should look like this 
 
-`https://yoururl/products-sixteen3/?isModular=true&variantCode=CALMOD&shortCode=1TXDJI&finishScreen=1`
+`https://yoururl/colelction-name/?isModular=true&variantCode=CALMOD&shortCode=1TXDJI&finishScreen=1`
