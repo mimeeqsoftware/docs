@@ -176,3 +176,28 @@ This allows you to set the decimal places in the mimeeq configurator
 mimeeqApp.utils
     .setPricingSettings(minimumFractionDigits, maximumFractionDigits)
 ```
+
+## Close configurator
+
+Method: mimeeqApp.utils.closeConfigurator()
+Calling this method will close and unmount from DOM tree first occurence of mimeeq configurator. It works for all types of configuartor.
+
+
+#### Usage
+
+```js
+mimeeqApp.utils
+    .closeConfigurator()
+```
+
+## Show modular
+
+Method: mimeeqApp.utils.showModular()
+Calling this method will mound and render modular configurator. It may be used while you use single Modular configuartor with option `Render modular configurator at page load` disabled while generating code snippet.
+
+#### Usage
+
+```js
+mimeeqApp.utils
+    .showModular()
+```
