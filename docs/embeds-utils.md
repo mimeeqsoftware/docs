@@ -193,7 +193,7 @@ mimeeqApp.utils
 ## Show modular
 
 Method: mimeeqApp.utils.showModular()
-Calling this method will mound and render modular configurator. It may be used while you use single Modular configuartor with option `Render modular configurator at page load` disabled while generating code snippet.
+Calling this method will mount and render modular configurator. It may be used while you use single Modular configuartor with option `Render modular configurator at page load` disabled while generating code snippet.
 
 #### Usage
 
