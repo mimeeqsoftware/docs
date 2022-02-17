@@ -201,3 +201,15 @@ Calling this method will mount and render modular configurator. It may be used w
 mimeeqApp.utils
     .showModular()
 ```
+
+## Show configurator
+
+Method: mimeeqApp.utils.showConfigurator()
+Calling this method will mount and render regular configurator. It may be used while you use single configuartor with option `Render modular configurator at page load` disabled while generating code snippet.
+
+#### Usage
+
+```js
+mimeeqApp.utils
+    .showConfigurator()
+```
