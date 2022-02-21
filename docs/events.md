@@ -153,7 +153,7 @@ title: Events
 
 :::Info
 
-See utils section for other controls
+See [utils](/embeds-utils) section for other controls
 
 :::
 
