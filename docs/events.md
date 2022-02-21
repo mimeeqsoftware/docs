@@ -155,6 +155,8 @@ title: Events
 
 See utils section for other controls
 
+:::
+
 ## Example
 
 Listening to an event
