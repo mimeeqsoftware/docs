@@ -151,7 +151,7 @@ title: Events
 | mimeeq-hide-add-to-cart-toast | Hide toast with information about adding to basket.                            |
 | mimeeq-show-add-to-cart-toast | Show toast with information about adding to basket.                            |
 
-:::Info
+:::info
 
 See [utils](/embeds-utils) section for other controls
 
