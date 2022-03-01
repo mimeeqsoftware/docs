@@ -137,12 +137,14 @@ title: Events
 | mimeeq-select-popular-variant    | This event is fired when Popular Configurations was clicked.          | { variantCode: string, productId: string, image: string }                                |
 | mimeeq-show-summary              | This event is fired when _Finish_ button was clicked.                 | [SelectedConfiguration](#selectedconfiguration)                                          |
 | mimeeq-open-option-panel         | This event is fired when Option Panel on mobile is opened             |                                                                                          |
+| mimeeq-configurator-closed       | This event is fired when configurator modal was closed.                                                                                                          |                                                                                                |
 
 ## Events that can be triggered by the host site
 
 | Name                          | Description                                                                    |
 | ----------------------------- | ------------------------------------------------------------------------------ |
-| mimeeq-show-modular           | Show (if hidden) modular modal when in modal mode.                             |
+| mimeeq-show-modular           | Show (if hidden) modular when Render on Mount disabled                         |
+| mimeeq-show-configurator      | Show (if hidden) configurator when Render on Mount disabled                    |
 | mimeeq-unmount                | Remove all existing Mimeeq instances from the DOM including in-memory cleanup. |
 | mimeeq-hide-basket-loader     | Hide loader at action button next to the price at Option Panel.                |
 | mimeeq-show-basket-loader     | Show loader at action button next to the price at Option Panel.                |
