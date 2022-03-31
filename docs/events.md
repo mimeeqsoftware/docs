@@ -152,6 +152,7 @@ title: Events
 | mimeeq-show-price-loader      | Show loader in price box at Option Panel.                                      |
 | mimeeq-hide-add-to-cart-toast | Hide toast with information about adding to basket.                            |
 | mimeeq-show-add-to-cart-toast | Show toast with information about adding to basket.                            |
+| mimeeq-handle-add-to-cart     | Run add to cart logic or open finish panel at Option Panel                     |
 
 :::info
 
