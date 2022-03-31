@@ -233,7 +233,7 @@ mimeeqApp.actions
     .markOptionByBlockNameAndOptionCode(blockName, optionCode)
 ```
 
-## Handle add to cart / show finish panel
+## Trigger add to cart / show finish panel
 
 Method: mimeeqApp.utils.addToCart()
 Calling this method will run add to cart or finish logic.
