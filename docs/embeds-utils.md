@@ -235,13 +235,13 @@ mimeeqApp.actions
 
 ## Handle add to cart / show finish panel
 
-Method: mimeeqApp.utils.onHandleAddToCart()
+Method: mimeeqApp.utils.addToCart()
 Calling this method will run add to cart or finish logic.
 
 #### Usage
 
 ```js
 mimeeqApp.utils
-    .onHandleAddToCart()
+    .addToCart()
 ```
 
