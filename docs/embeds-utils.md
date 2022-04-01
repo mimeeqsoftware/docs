@@ -213,3 +213,35 @@ Calling this method will mount and render regular configurator. It may be used w
 mimeeqApp.utils
     .showConfigurator()
 ```
+
+## Mark option by block name and option code
+
+Method: mimeeqApp.actions.markOptionByBlockNameAndOptionCode(blockName, optionCode)
+Calling this method will mark option by block name and option code.
+
+#### Parameters
+
+| Name                  | Type                              | Default | Description                                                                                                                                                                          |
+| --------------------- | --------------------------------- | ------- | ----------------------------------------------- |
+| blockName             | string                            |         | Name of block                                   |
+| optionCode            | string                            |         | Code of option                                  |
+
+#### Usage
+
+```js
+mimeeqApp.actions
+    .markOptionByBlockNameAndOptionCode(blockName, optionCode)
+```
+
+## Trigger add to cart / show finish panel
+
+Method: mimeeqApp.utils.addToCart()
+Calling this method will run add to cart or finish logic.
+
+#### Usage
+
+```js
+mimeeqApp.utils
+    .addToCart()
+```
+
