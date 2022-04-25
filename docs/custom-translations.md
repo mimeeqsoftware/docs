@@ -17,6 +17,8 @@ This example includes all available keys for translation and usage.
       "header3d.finish": "Finish", // modular product
       "historymodule.panelmenufooter.finish": "Finish", // 2d/3d product
       "historymodule.panelmenufooter.addToCart": "Add to Cart", // 2d/3d product when basket mode
+      "summarypanel.addToCart": "Add to Cart", // when add to cart button on summary screen
+      "header3d.addToCart": "Add to Cart", // Add to cart on modular product header
       "optiongroupmenu.selectoptions": "Select Options", // header of Options panel menu
       "modular.summary.relatedProducts": "Related Products", // Tab name of Related Products at Modular summary modal
       "relatedproducts.relatedproducts": "Related Products", // Header over Related Products section at 2d and 3d products
