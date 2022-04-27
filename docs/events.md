@@ -193,6 +193,7 @@ document.dispatchEvent(new Event("mimeeq-show-modular"))
 | collectionId | string  | Custom parameter for wix integration.                                                                             |
 | code         | string  | Unique product code.                                                                                              |
 | shortCode    | string  | Scene short code. Returned only if modular product.                                                               |
+| sku          | string  | Selected configuration SKU. Do not appy to modular product.                                                       |
 
 ### Option
 
