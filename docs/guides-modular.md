@@ -7,6 +7,7 @@ title: Handling state of modular configurator
 ```js
 document.getElementById("modularButton").addEventListener("click", () => {
   document.dispatchEvent(new Event("mimeeq-show-modular"))
+  document.dispatchEvent(new Event('mimeeq-show-configurator')); //only required if loading a list view
 })
 ```
 
