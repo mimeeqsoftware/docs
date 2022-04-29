@@ -29,6 +29,10 @@
   "tags": [
     {
       "name": "products",
+      "description": "Products API methods"
+    },
+    {
+      "name": "product",
       "description": "Product API methods"
     }
   ],
@@ -317,6 +321,141 @@
             }
           }
         ]
+      },
+      "ProductGeneralInfo": {
+        "type": "object",
+        "required": [
+          "productId",
+          "variantCode",
+          "name",
+          "displayName",
+          "status",
+          "visibility",
+          "privacy",
+          "type",
+          "mode",
+          "createdAt",
+          "isOwn"
+        ],
+        "properties": {
+          "productId": {
+            "description": "Unique product identifier",
+            "type": "string",
+            "example": "PROD-e6e35a89-159c-413e-98b6-8260367c554a"
+          },
+          "variantCode": {
+            "description": "Unique variant code",
+            "type": "string",
+            "example": "CODE-1"
+          },
+          "name": {
+            "description": "Translated product name",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "example": {
+              "en": "English text",
+              "de": "Deutscher Text"
+            }
+          },
+          "displayName": {
+            "description": "Translated product display name",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "example": {
+              "en": "English text",
+              "de": "Deutscher Text"
+            }
+          },
+          "status": {
+            "description": "Product status",
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "INACTIVE"
+            ],
+            "example": "ACTIVE"
+          },
+          "mode": {
+            "description": "Product mode",
+            "type": "string",
+            "enum": [
+              "MODULAR",
+              "VARIANT",
+              "STANDARD"
+            ],
+            "example": "VARIANT"
+          },
+          "type": {
+            "description": "Product type",
+            "type": "string",
+            "enum": [
+              "2D",
+              "3D"
+            ],
+            "example": "3D"
+          },
+          "visibility": {
+            "description": "Product visibility",
+            "type": "boolean",
+            "example": true
+          },
+          "privacy": {
+            "description": "Product privacy setting",
+            "type": "string",
+            "enum": [
+              "PUBLIC",
+              "PRIVATE",
+              "RESTRICTED_TO"
+            ],
+            "example": "PUBLIC"
+          },
+          "defaultConfigurationCode": {
+            "description": "Product default configuration code",
+            "type": "string",
+            "example": "Fabric-a7&Colour-a1"
+          },
+          "manufacturer": {
+            "description": "Product manufacturer details",
+            "type": "string",
+            "example": "AB furniture"
+          },
+          "designer": {
+            "description": "Product designer details",
+            "type": "string",
+            "example": "John Doe"
+          },
+          "collection": {
+            "description": "Product collection details",
+            "type": "string",
+            "example": "Office"
+          },
+          "previewImage": {
+            "description": "Product preview image URL",
+            "type": "string",
+            "example": "https://fsdfsfe3231.cloudfront.net/c_aer/3963efc7-e1b5-4a03-ab51-4e68efa5afdb.png"
+          },
+          "isOwn": {
+            "description": "Flag indicating whether product is owned by the customer or is shared by another subject",
+            "type": "boolean",
+            "example": true
+          },
+          "createdAt": {
+            "description": "Product creation date",
+            "type": "string",
+            "format": "date-time",
+            "example": "2022-04-19T00:41:33.721Z"
+          },
+          "modifiedAt": {
+            "description": "Product last modification date",
+            "type": "string",
+            "format": "date-time",
+            "example": "2022-04-22T21:18:25.321Z"
+          }
+        }
       }
     }
   },
@@ -367,8 +506,8 @@
             "description": "Custom price list ids. Provide these in case you want get price from specific price list(s)",
             "schema": {
               "type": "array",
-              "items": {             
-                "type": "string" 
+              "items": {
+                "type": "string"
               }
             }
           },
@@ -474,6 +613,43 @@
                 }
               }
             }
+          },
+          "403": {
+            "description": "Authentication failed.",
+            "content": {}
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/get-products-general-info": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Returns products general information",
+        "description": "Returns general information about all products defined for given customer",
+        "operationId": "getProductsGeneralInfo",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductGeneralInfo"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "content": {}
           },
           "403": {
             "description": "Authentication failed.",
