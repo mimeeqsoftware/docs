@@ -17,10 +17,6 @@ module.exports = {
       indexName: 'mimeeq_docs',
       contextualSearch: false,
     },
-    gtag: {
-      trackingID: 'UA-134854471-2',
-      anonymizeIP: true,
-    },
     navbar: {
       title: "Mimeeq Documentation",
       logo: {
@@ -122,7 +118,9 @@ module.exports = {
   plugins: [
     ['@docusaurus/plugin-google-gtag',
       {
-        id: 'gtag'
+        id: 'gtag',
+        trackingID: 'UA-134854471-2',
+        anonymizeIP: true,
       }
     ],
     [

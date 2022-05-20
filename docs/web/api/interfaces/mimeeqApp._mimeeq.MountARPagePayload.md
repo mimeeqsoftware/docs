@@ -1,0 +1,151 @@
+---
+id: "mimeeqApp._mimeeq.MountARPagePayload"
+title: "Interface: MountARPagePayload"
+sidebar_label: "mimeeqApp.@mimeeq.MountARPagePayload"
+custom_edit_url: null
+---
+
+[mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).MountARPagePayload
+
+## Hierarchy
+
+- [`EmbedPayloadPartial`](mimeeqApp._mimeeq.EmbedPayloadPartial.md)
+
+  ↳ **`MountARPagePayload`**
+
+## Properties
+
+### CDNPath
+
+• `Optional` **CDNPath**: `string`
+
+URL to storage/CDN
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[CDNPath](mimeeqApp._mimeeq.EmbedPayloadPartial.md#cdnpath)
+
+___
+
+### appUrl
+
+• `Optional` **appUrl**: `string`
+
+App url for return path
+
+___
+
+### arShortCode
+
+• `Optional` **arShortCode**: `string`
+
+AR short code for product
+
+___
+
+### baseURL
+
+• `Optional` **baseURL**: `string`
+
+URL to page API
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[baseURL](mimeeqApp._mimeeq.EmbedPayloadPartial.md#baseurl)
+
+___
+
+### customerId
+
+• **customerId**: `string`
+
+Id of current customer from witch fetch data
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[customerId](mimeeqApp._mimeeq.EmbedPayloadPartial.md#customerid)
+
+___
+
+### elementId
+
+• `Optional` **elementId**: `string`
+
+**`deprecated`**
+Id of HTML element on which mount tree
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[elementId](mimeeqApp._mimeeq.EmbedPayloadPartial.md#elementid)
+
+___
+
+### incompatible
+
+• `Optional` **incompatible**: `boolean`
+
+If `true` it will display view for incompatible device
+
+___
+
+### locale
+
+• **locale**: `string`
+
+Code of current locale
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[locale](mimeeqApp._mimeeq.EmbedPayloadPartial.md#locale)
+
+___
+
+### onEventDispatch
+
+• `Optional` **onEventDispatch**: [`EventDispatchCallback`](../namespaces/mimeeqApp._mimeeq.md#eventdispatchcallback)<`any`\>
+
+Custom events callback
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[onEventDispatch](mimeeqApp._mimeeq.EmbedPayloadPartial.md#oneventdispatch)
+
+___
+
+### renderOnMount
+
+• **renderOnMount**: `boolean`
+
+If `true` embed will be rendered into DOM on mount
+
+___
+
+### uid
+
+• **uid**: `string`
+
+Embed instance unique id. Typically, embed shortcode. If passed app will try to mount into html element with data-mimmeq-shortcode set to this value and use env for this id
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[uid](mimeeqApp._mimeeq.EmbedPayloadPartial.md#uid)
+
+___
+
+### withModal
+
+• `Optional` **withModal**: `boolean`
+
+If true it will be rendered at modal
+
+___
+
+### withWatcher
+
+• `Optional` **withWatcher**: `boolean`
+
+If true will assign "sandbox" logic to components
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[withWatcher](mimeeqApp._mimeeq.EmbedPayloadPartial.md#withwatcher)
