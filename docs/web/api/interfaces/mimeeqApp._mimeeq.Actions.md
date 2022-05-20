@@ -47,6 +47,8 @@ ___
 
 Calling this method will trigger file download
 
+**`since`** 6.0.0
+
 **`param`** Relative path to file
 
 **`param`** Name to be set to file during download
@@ -127,6 +129,8 @@ ___
 
 Get list of 2d images for current product on selected options
 
+**`since`** 6.0.0
+
 **`returns`** List of urls
 
 ___
@@ -136,6 +140,8 @@ ___
 • **getRelatedDynamicData**: [`GetRelatedDynamicData`](../namespaces/mimeeqApp._mimeeq.md#getrelateddynamicdata)
 
 Get list of related items with matched image and options based on currently selected options
+
+**`since`** 6.0.0
 
 **`param`** Raw list of related products
 
@@ -151,6 +157,8 @@ ___
 
 Get list of related products for current product
 
+**`since`** 6.0.0
+
 **`returns`** Raw list of related products
 
 ___
@@ -160,6 +168,8 @@ ___
 • **getTabFiles**: [`GetTabFiles`](../namespaces/mimeeqApp._mimeeq.md#gettabfiles)
 
 Get list of available files on Files tab. Some files are added based on configuration code, so it's advised to call this after each configuration code change (unless only static files are used).
+
+**`since`** 6.0.0
 
 **`param`** Id of the tab
 
@@ -173,6 +183,8 @@ ___
 
 Get data for all passed finishes
 
+**`since`** 6.0.0
+
 **`param`** List of finishes from tab
 
 **`returns`** Data for all (if found) finishes from provided list
@@ -185,6 +197,8 @@ ___
 
 Get list of images for provided galleryId.
 
+**`since`** 6.0.0
+
 **`param`** Id of the gallery
 
 **`returns`** Record with data about number of columns and list of items at the gallery
@@ -196,6 +210,8 @@ ___
 • **getTabPopular**: [`GetTabPopular`](../namespaces/mimeeqApp._mimeeq.md#gettabpopular)
 
 Get data about provided popular configurations. It also filters out all broken configurations
+
+**`since`** 6.0.0
 
 **`param`** List of popular configurations
 
@@ -395,6 +411,8 @@ ___
 
 Trigger it to select popular configuration
 
+**`since`** 6.0.0
+
 **`param`** Popular configuration item data
 
 **`fires`** @mimeeq#mimeeq-select-popular-variant
@@ -408,6 +426,8 @@ ___
 • **selectRelatedProduct**: [`SelectRelatedProduct`](../namespaces/mimeeqApp._mimeeq.md#selectrelatedproduct)
 
 Call it to select product from related list
+
+**`since`** 6.0.0
 
 **`param`** Id of related product
 

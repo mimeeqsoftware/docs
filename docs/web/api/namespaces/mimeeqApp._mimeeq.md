@@ -247,6 +247,8 @@ ___
 
 Calling this method will trigger file download
 
+**`since`** 6.0.0
+
 ##### Parameters
 
 | Name | Type | Description |
@@ -469,6 +471,8 @@ ___
 
 Get list of 2d images for current product on selected options
 
+**`since`** 6.0.0
+
 ##### Parameters
 
 | Name | Type |
@@ -495,6 +499,8 @@ ___
 
 Get list of related items with matched image and options based on currently selected options
 
+**`since`** 6.0.0
+
 ##### Parameters
 
 | Name | Type | Description |
@@ -519,6 +525,8 @@ ___
 ▸ (): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[]\>
 
 Get list of related products for current product
+
+**`since`** 6.0.0
 
 ##### Returns
 
@@ -567,6 +575,8 @@ ___
 
 Get list of available files on Files tab. Some files are added based on configuration code, so it's advised to call this after each configuration code change (unless only static files are used).
 
+**`since`** 6.0.0
+
 ##### Parameters
 
 | Name | Type | Description |
@@ -590,6 +600,8 @@ ___
 ▸ (`finishes`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`MimeeqOptionSetData`](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetData.md)[]\>
 
 Get data for all passed finishes
+
+**`since`** 6.0.0
 
 ##### Parameters
 
@@ -615,6 +627,8 @@ ___
 
 Get list of images for provided galleryId.
 
+**`since`** 6.0.0
+
 ##### Parameters
 
 | Name | Type | Description |
@@ -638,6 +652,8 @@ ___
 ▸ (`configs`, `backgroundColor?`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`PopularConfigItem`](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)[]\>
 
 Get data about provided popular configurations. It also filters out all broken configurations
+
+**`since`** 6.0.0
 
 ##### Parameters
 
@@ -1175,6 +1191,8 @@ ___
 
 Trigger it to select popular configuration
 
+**`since`** 6.0.0
+
 **`fires`** @mimeeq#mimeeq-select-popular-variant
 
 **`fires`** @mimeeq#mimeeq-app-url-change
@@ -1200,6 +1218,8 @@ ___
 ▸ (`productId`, `variantCode`): [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
 
 Call it to select product from related list
+
+**`since`** 6.0.0
 
 **`fires`** @mimeeq#mimeeq-open-related-product
 
