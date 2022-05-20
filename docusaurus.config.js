@@ -112,17 +112,14 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        gtag: {
+          trackingID: 'UA-134854471-2',
+          anonymizeIP: true,
+        }
       },
     ],
   ],
   plugins: [
-    ['@docusaurus/plugin-google-gtag',
-      {
-        id: 'gtag',
-        trackingID: 'UA-134854471-2',
-        anonymizeIP: true,
-      }
-    ],
     [
       require.resolve('docusaurus-gtm-plugin'),
       {
