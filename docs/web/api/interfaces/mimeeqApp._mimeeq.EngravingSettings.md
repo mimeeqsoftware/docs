@@ -95,7 +95,7 @@ ___
 
 ### textAlign
 
-• **textAlign**: [`CanvasTextAlign`](../namespaces/mimeeqApp._mimeeq.md#canvastextalign)
+• **textAlign**: `CanvasTextAlign`
 
 ___
 

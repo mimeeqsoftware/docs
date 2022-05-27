@@ -11,19 +11,19 @@ custom_edit_url: null
 
 ### blocks
 
-• `Optional` **blocks**: [`MimeeqOptionSetsBlocks`](../namespaces/mimeeqApp._mimeeq.md#mimeeqoptionsetsblocks)
+• `Optional` **blocks**: [`OptionSetsBlocks`](../namespaces/mimeeqApp._mimeeq.md#optionsetsblocks)
 
 ___
 
 ### filters
 
-• `Optional` **filters**: [`MimeeqGlobalFilters`](../namespaces/mimeeqApp._mimeeq.md#mimeeqglobalfilters)
+• `Optional` **filters**: [`GlobalFilters`](../namespaces/mimeeqApp._mimeeq.md#globalfilters)
 
 ___
 
 ### groups
 
-• `Optional` **groups**: [`MimeeqBlockGroups`](../namespaces/mimeeqApp._mimeeq.md#mimeeqblockgroups)
+• `Optional` **groups**: [`BlockGroups`](../namespaces/mimeeqApp._mimeeq.md#blockgroups)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 ### pricing
 
-• `Optional` **pricing**: [`MimeeqPricing`](mimeeqApp._mimeeq.MimeeqPricing.md)
+• `Optional` **pricing**: [`PricingSettings`](mimeeqApp._mimeeq.PricingSettings.md)
 
 ___
 
@@ -45,12 +45,24 @@ ___
 
 ___
 
+### showDimensions
+
+• `Optional` **showDimensions**: `boolean`
+
+___
+
+### showExportObj
+
+• `Optional` **showExportObj**: `boolean`
+
+___
+
 ### tabs
 
-• `Optional` **tabs**: [`MimeeqTab`](mimeeqApp._mimeeq.MimeeqTab.md)[]
+• `Optional` **tabs**: [`ProductTab`](mimeeqApp._mimeeq.ProductTab.md)[]
 
 ___
 
 ### views
 
-• `Optional` **views**: [`MimeeqView`](mimeeqApp._mimeeq.MimeeqView.md)[]
+• `Optional` **views**: [`View2D`](mimeeqApp._mimeeq.View2D.md)[]

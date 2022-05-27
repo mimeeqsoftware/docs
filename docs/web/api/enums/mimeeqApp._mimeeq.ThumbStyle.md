@@ -11,10 +11,10 @@ custom_edit_url: null
 
 ### ROUND
 
-• **ROUND** = `1`
+• **ROUND** = `"ROUND"`
 
 ___
 
 ### SQUARE
 
-• **SQUARE** = `0`
+• **SQUARE** = `"SQUARE"`

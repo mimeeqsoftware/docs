@@ -27,6 +27,18 @@ URL to storage/CDN
 
 ___
 
+### apiPricingUrl
+
+• `Optional` **apiPricingUrl**: `string`
+
+New Pricing URL
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[apiPricingUrl](mimeeqApp._mimeeq.EmbedPayloadPartial.md#apipricingurl)
+
+___
+
 ### appUrl
 
 • `Optional` **appUrl**: `string`
@@ -77,6 +89,18 @@ Id of HTML element on which mount tree
 #### Inherited from
 
 [EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[elementId](mimeeqApp._mimeeq.EmbedPayloadPartial.md#elementid)
+
+___
+
+### enableNewPricing
+
+• `Optional` **enableNewPricing**: `string`
+
+If `true` use new pricing
+
+#### Inherited from
+
+[EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[enableNewPricing](mimeeqApp._mimeeq.EmbedPayloadPartial.md#enablenewpricing)
 
 ___
 

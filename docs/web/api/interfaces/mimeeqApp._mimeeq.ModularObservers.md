@@ -59,7 +59,7 @@ ___
 
 ### sceneSetup
 
-• **sceneSetup**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`MimeeqSceneSetup`](mimeeqApp._mimeeq.MimeeqSceneSetup.md)\>
+• **sceneSetup**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`SceneSetup`](mimeeqApp._mimeeq.SceneSetup.md)\>
 
 Scene setup options
 

@@ -11,22 +11,22 @@ custom_edit_url: null
 
 ### ENGRAVE
 
-• **ENGRAVE** = `2`
+• **ENGRAVE** = `"ENGRAVE"`
 
 ___
 
 ### IMAGE
 
-• **IMAGE** = `3`
+• **IMAGE** = `"IMAGE"`
 
 ___
 
 ### LINKED
 
-• **LINKED** = `0`
+• **LINKED** = `"LINKED"`
 
 ___
 
 ### MANUAL
 
-• **MANUAL** = `1`
+• **MANUAL** = `"MANUAL"`

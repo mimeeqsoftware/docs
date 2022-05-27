@@ -59,7 +59,7 @@ ___
 
 ### prices
 
-• **prices**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`MimeeqPrice`](mimeeqApp._mimeeq.MimeeqPrice.md)\>
+• **prices**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`PriceData`](mimeeqApp._mimeeq.PriceData.md)\>
 
 Price data for current configuration. Applicable only for regular products.
 

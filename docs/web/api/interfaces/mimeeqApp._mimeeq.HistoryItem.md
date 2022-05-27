@@ -35,7 +35,7 @@ ___
 
 ### option
 
-• `Optional` **option**: [`MimeeqOption`](mimeeqApp._mimeeq.MimeeqOption.md)
+• `Optional` **option**: [`OptionSetOption`](mimeeqApp._mimeeq.OptionSetOption.md)
 
 ___
 

@@ -17,7 +17,7 @@ Set of simple tools for manipulating configurator and obtaining simple data from
 
 Calling this method will run add to cart or finish logic.
 
-**`fires`** mimeeq-add-to-cart
+**`fires`** @mimeeq#mimeeq-add-to-cart
 
 ___
 

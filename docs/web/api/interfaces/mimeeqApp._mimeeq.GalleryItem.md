@@ -25,19 +25,19 @@ Item caption
 
 ___
 
-### download
-
-• **download**: `string`
-
-Path to original item. Only if not external video. Then path to external resource
-
-___
-
 ### filename
 
 • **filename**: `string`
 
 File name. Only if not external video
+
+___
+
+### isIframe
+
+• **isIframe**: `boolean`
+
+If `true` video if from external service like youtube, vimeo etc.
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **original**: `string`
 
-Path to original item.
+Path to the original item
 
 ___
 

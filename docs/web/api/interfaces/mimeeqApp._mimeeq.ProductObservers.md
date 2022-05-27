@@ -21,7 +21,7 @@ ___
 
 • **currentViewId**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`string`\>
 
-Id of currently visible 2d view.
+Id of currently displayed view. In case of 3d empty value indicates 3d model
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 ### loader
 
-• **loader**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`MimeeqLoader`](mimeeqApp._mimeeq.MimeeqLoader.md)\>
+• **loader**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`Loader`](mimeeqApp._mimeeq.Loader.md)\>
 
 Loader information for 3d scene.
 

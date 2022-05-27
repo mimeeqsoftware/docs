@@ -25,12 +25,6 @@ custom_edit_url: null
 - [WidgetType](../enums/mimeeqApp._mimeeq.WidgetType.md)
 - [YesNoValue](../enums/mimeeqApp._mimeeq.YesNoValue.md)
 
-## Classes
-
-- [Observable](../classes/mimeeqApp._mimeeq.Observable.md)
-- [Subscriber](../classes/mimeeqApp._mimeeq.Subscriber.md)
-- [Subscription](../classes/mimeeqApp._mimeeq.Subscription.md)
-
 ## Interfaces
 
 - [Actions](../interfaces/mimeeqApp._mimeeq.Actions.md)
@@ -38,49 +32,40 @@ custom_edit_url: null
 - [AuthError](../interfaces/mimeeqApp._mimeeq.AuthError.md)
 - [AuthOptions](../interfaces/mimeeqApp._mimeeq.AuthOptions.md)
 - [Authorization](../interfaces/mimeeqApp._mimeeq.Authorization.md)
+- [BlockEngraveSettings](../interfaces/mimeeqApp._mimeeq.BlockEngraveSettings.md)
+- [BlockGroup](../interfaces/mimeeqApp._mimeeq.BlockGroup.md)
+- [BlockGroupWithStatus](../interfaces/mimeeqApp._mimeeq.BlockGroupWithStatus.md)
+- [BlockSelectedValue](../interfaces/mimeeqApp._mimeeq.BlockSelectedValue.md)
+- [CameraPosition](../interfaces/mimeeqApp._mimeeq.CameraPosition.md)
+- [CarouselItem](../interfaces/mimeeqApp._mimeeq.CarouselItem.md)
+- [ColorTints](../interfaces/mimeeqApp._mimeeq.ColorTints.md)
+- [ConfigObservers](../interfaces/mimeeqApp._mimeeq.ConfigObservers.md)
 - [CustomImageOption](../interfaces/mimeeqApp._mimeeq.CustomImageOption.md)
+- [CustomerConfigState](../interfaces/mimeeqApp._mimeeq.CustomerConfigState.md)
+- [CustomerLimits](../interfaces/mimeeqApp._mimeeq.CustomerLimits.md)
+- [DefaultPalette](../interfaces/mimeeqApp._mimeeq.DefaultPalette.md)
 - [Dimensions](../interfaces/mimeeqApp._mimeeq.Dimensions.md)
 - [ElementAction](../interfaces/mimeeqApp._mimeeq.ElementAction.md)
 - [EmbedPayloadPartial](../interfaces/mimeeqApp._mimeeq.EmbedPayloadPartial.md)
 - [EngravingOption](../interfaces/mimeeqApp._mimeeq.EngravingOption.md)
 - [EngravingSettings](../interfaces/mimeeqApp._mimeeq.EngravingSettings.md)
+- [Filter](../interfaces/mimeeqApp._mimeeq.Filter.md)
+- [Filters](../interfaces/mimeeqApp._mimeeq.Filters.md)
+- [Font](../interfaces/mimeeqApp._mimeeq.Font.md)
+- [FontSizes](../interfaces/mimeeqApp._mimeeq.FontSizes.md)
+- [FontWeights](../interfaces/mimeeqApp._mimeeq.FontWeights.md)
 - [GalleryItem](../interfaces/mimeeqApp._mimeeq.GalleryItem.md)
 - [GalleryTabResponse](../interfaces/mimeeqApp._mimeeq.GalleryTabResponse.md)
 - [HistoryItem](../interfaces/mimeeqApp._mimeeq.HistoryItem.md)
 - [HistoryObservers](../interfaces/mimeeqApp._mimeeq.HistoryObservers.md)
 - [HotSpotInfo](../interfaces/mimeeqApp._mimeeq.HotSpotInfo.md)
-- [Iterable](../interfaces/mimeeqApp._mimeeq.Iterable.md)
-- [Iterator](../interfaces/mimeeqApp._mimeeq.Iterator.md)
-- [IteratorReturnResult](../interfaces/mimeeqApp._mimeeq.IteratorReturnResult.md)
-- [IteratorYieldResult](../interfaces/mimeeqApp._mimeeq.IteratorYieldResult.md)
+- [Layer2D](../interfaces/mimeeqApp._mimeeq.Layer2D.md)
 - [LetterMappings](../interfaces/mimeeqApp._mimeeq.LetterMappings.md)
+- [Loader](../interfaces/mimeeqApp._mimeeq.Loader.md)
 - [LoaderMessage](../interfaces/mimeeqApp._mimeeq.LoaderMessage.md)
 - [MarketCostPriceItem](../interfaces/mimeeqApp._mimeeq.MarketCostPriceItem.md)
 - [MarketCostPriceMap](../interfaces/mimeeqApp._mimeeq.MarketCostPriceMap.md)
-- [MimeeqBlockEngraveSettings](../interfaces/mimeeqApp._mimeeq.MimeeqBlockEngraveSettings.md)
-- [MimeeqBlockGroup](../interfaces/mimeeqApp._mimeeq.MimeeqBlockGroup.md)
-- [MimeeqBlockGroupWithStatus](../interfaces/mimeeqApp._mimeeq.MimeeqBlockGroupWithStatus.md)
-- [MimeeqBlockSelectedValue](../interfaces/mimeeqApp._mimeeq.MimeeqBlockSelectedValue.md)
-- [MimeeqCameraPosition](../interfaces/mimeeqApp._mimeeq.MimeeqCameraPosition.md)
-- [MimeeqFilter](../interfaces/mimeeqApp._mimeeq.MimeeqFilter.md)
-- [MimeeqFilters](../interfaces/mimeeqApp._mimeeq.MimeeqFilters.md)
-- [MimeeqLayer](../interfaces/mimeeqApp._mimeeq.MimeeqLayer.md)
-- [MimeeqLoader](../interfaces/mimeeqApp._mimeeq.MimeeqLoader.md)
-- [MimeeqOption](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)
-- [MimeeqOptionSetBlock](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetBlock.md)
-- [MimeeqOptionSetData](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetData.md)
-- [MimeeqOptionSetsData](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetsData.md)
-- [MimeeqPreparedBlock](../interfaces/mimeeqApp._mimeeq.MimeeqPreparedBlock.md)
-- [MimeeqPrice](../interfaces/mimeeqApp._mimeeq.MimeeqPrice.md)
-- [MimeeqPriceLevel](../interfaces/mimeeqApp._mimeeq.MimeeqPriceLevel.md)
-- [MimeeqPricing](../interfaces/mimeeqApp._mimeeq.MimeeqPricing.md)
-- [MimeeqProductThumb](../interfaces/mimeeqApp._mimeeq.MimeeqProductThumb.md)
-- [MimeeqSceneCameraSettings](../interfaces/mimeeqApp._mimeeq.MimeeqSceneCameraSettings.md)
-- [MimeeqSceneSetup](../interfaces/mimeeqApp._mimeeq.MimeeqSceneSetup.md)
-- [MimeeqTab](../interfaces/mimeeqApp._mimeeq.MimeeqTab.md)
-- [MimeeqTabFile](../interfaces/mimeeqApp._mimeeq.MimeeqTabFile.md)
-- [MimeeqTabMaterial](../interfaces/mimeeqApp._mimeeq.MimeeqTabMaterial.md)
-- [MimeeqView](../interfaces/mimeeqApp._mimeeq.MimeeqView.md)
+- [MediaQueries](../interfaces/mimeeqApp._mimeeq.MediaQueries.md)
 - [ModularHistoryItem](../interfaces/mimeeqApp._mimeeq.ModularHistoryItem.md)
 - [ModularObservers](../interfaces/mimeeqApp._mimeeq.ModularObservers.md)
 - [ModularPrices](../interfaces/mimeeqApp._mimeeq.ModularPrices.md)
@@ -92,38 +77,54 @@ custom_edit_url: null
 - [MountLoginPayload](../interfaces/mimeeqApp._mimeeq.MountLoginPayload.md)
 - [MountUserProfilePayload](../interfaces/mimeeqApp._mimeeq.MountUserProfilePayload.md)
 - [MultiBlocks](../interfaces/mimeeqApp._mimeeq.MultiBlocks.md)
-- [Observer](../interfaces/mimeeqApp._mimeeq.Observer.md)
 - [Observers](../interfaces/mimeeqApp._mimeeq.Observers.md)
-- [Operator](../interfaces/mimeeqApp._mimeeq.Operator.md)
-- [OperatorFunction](../interfaces/mimeeqApp._mimeeq.OperatorFunction.md)
+- [OptionSetBlock](../interfaces/mimeeqApp._mimeeq.OptionSetBlock.md)
+- [OptionSetData](../interfaces/mimeeqApp._mimeeq.OptionSetData.md)
+- [OptionSetOption](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)
+- [OptionSetsData](../interfaces/mimeeqApp._mimeeq.OptionSetsData.md)
 - [OptionSetsObservers](../interfaces/mimeeqApp._mimeeq.OptionSetsObservers.md)
+- [Palette](../interfaces/mimeeqApp._mimeeq.Palette.md)
+- [PaletteBackground](../interfaces/mimeeqApp._mimeeq.PaletteBackground.md)
+- [PaletteBorder](../interfaces/mimeeqApp._mimeeq.PaletteBorder.md)
+- [PaletteBoxShadow](../interfaces/mimeeqApp._mimeeq.PaletteBoxShadow.md)
+- [PaletteColor](../interfaces/mimeeqApp._mimeeq.PaletteColor.md)
+- [PaletteCommon](../interfaces/mimeeqApp._mimeeq.PaletteCommon.md)
+- [PaletteHeader](../interfaces/mimeeqApp._mimeeq.PaletteHeader.md)
+- [PaletteHotSpots](../interfaces/mimeeqApp._mimeeq.PaletteHotSpots.md)
+- [PaletteScrollbar](../interfaces/mimeeqApp._mimeeq.PaletteScrollbar.md)
+- [PaletteStatus](../interfaces/mimeeqApp._mimeeq.PaletteStatus.md)
+- [PaletteTypography](../interfaces/mimeeqApp._mimeeq.PaletteTypography.md)
 - [PopularConfigItem](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)
 - [PopularConfiguration](../interfaces/mimeeqApp._mimeeq.PopularConfiguration.md)
+- [PreparedBlock](../interfaces/mimeeqApp._mimeeq.PreparedBlock.md)
+- [PriceData](../interfaces/mimeeqApp._mimeeq.PriceData.md)
+- [PriceLevel](../interfaces/mimeeqApp._mimeeq.PriceLevel.md)
 - [PriceType](../interfaces/mimeeqApp._mimeeq.PriceType.md)
 - [PricingObservers](../interfaces/mimeeqApp._mimeeq.PricingObservers.md)
+- [PricingSettings](../interfaces/mimeeqApp._mimeeq.PricingSettings.md)
 - [ProductMetadata](../interfaces/mimeeqApp._mimeeq.ProductMetadata.md)
 - [ProductObservers](../interfaces/mimeeqApp._mimeeq.ProductObservers.md)
-- [Promise](../interfaces/mimeeqApp._mimeeq.Promise.md)
-- [PromiseConstructor](../interfaces/mimeeqApp._mimeeq.PromiseConstructor.md)
-- [PromiseFulfilledResult](../interfaces/mimeeqApp._mimeeq.PromiseFulfilledResult.md)
-- [PromiseLike](../interfaces/mimeeqApp._mimeeq.PromiseLike.md)
-- [PromiseRejectedResult](../interfaces/mimeeqApp._mimeeq.PromiseRejectedResult.md)
+- [ProductTab](../interfaces/mimeeqApp._mimeeq.ProductTab.md)
+- [ProductThumb](../interfaces/mimeeqApp._mimeeq.ProductThumb.md)
 - [RelatedItem](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)
 - [RelatedItemConfiguration](../interfaces/mimeeqApp._mimeeq.RelatedItemConfiguration.md)
 - [RelatedMapping](../interfaces/mimeeqApp._mimeeq.RelatedMapping.md)
+- [SceneCameraSettings](../interfaces/mimeeqApp._mimeeq.SceneCameraSettings.md)
+- [SceneSetup](../interfaces/mimeeqApp._mimeeq.SceneSetup.md)
 - [SimpleProduct](../interfaces/mimeeqApp._mimeeq.SimpleProduct.md)
-- [Subscribable](../interfaces/mimeeqApp._mimeeq.Subscribable.md)
 - [SubscribeValueWrapper](../interfaces/mimeeqApp._mimeeq.SubscribeValueWrapper.md)
-- [SubscriptionLike](../interfaces/mimeeqApp._mimeeq.SubscriptionLike.md)
 - [SuccessResponse](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md)
+- [TabFile](../interfaces/mimeeqApp._mimeeq.TabFile.md)
 - [TabFileItem](../interfaces/mimeeqApp._mimeeq.TabFileItem.md)
+- [TabMaterial](../interfaces/mimeeqApp._mimeeq.TabMaterial.md)
+- [Theme](../interfaces/mimeeqApp._mimeeq.Theme.md)
 - [ToolbarData](../interfaces/mimeeqApp._mimeeq.ToolbarData.md)
-- [UnaryFunction](../interfaces/mimeeqApp._mimeeq.UnaryFunction.md)
-- [Unsubscribable](../interfaces/mimeeqApp._mimeeq.Unsubscribable.md)
+- [Transitions](../interfaces/mimeeqApp._mimeeq.Transitions.md)
 - [UserData](../interfaces/mimeeqApp._mimeeq.UserData.md)
 - [Utils](../interfaces/mimeeqApp._mimeeq.Utils.md)
 - [VariantCodes](../interfaces/mimeeqApp._mimeeq.VariantCodes.md)
 - [Vector3](../interfaces/mimeeqApp._mimeeq.Vector3.md)
+- [View2D](../interfaces/mimeeqApp._mimeeq.View2D.md)
 
 ## Type aliases
 
@@ -143,17 +144,32 @@ Calling this method will run add to cart or finish logic.
 
 ___
 
-### Awaited
+### AugmentColor
 
-Ƭ **Awaited**<`T`\>: `T` extends ``null`` \| `undefined` ? `T` : `T` extends `object` & { `then`: (`onfulfilled`: `F`) => `any`  } ? `F` extends (`value`: infer V, ...`args`: `any`) => `any` ? [`Awaited`](mimeeqApp._mimeeq.md#awaited)<`V`\> : `never` : `T`
+Ƭ **AugmentColor**: (`color`: [`PaletteColor`](../interfaces/mimeeqApp._mimeeq.PaletteColor.md), `mainShade?`: `number`, `lightShade?`: `number`, `darkShade?`: `number`) => [`PaletteColor`](../interfaces/mimeeqApp._mimeeq.PaletteColor.md)
 
-Recursively unwraps the "awaited type" of a type. Non-promise "thenables" should resolve to `never`. This emulates the behavior of `await`.
+#### Type declaration
 
-#### Type parameters
+▸ (`color`, `mainShade?`, `lightShade?`, `darkShade?`): [`PaletteColor`](../interfaces/mimeeqApp._mimeeq.PaletteColor.md)
 
-| Name |
-| :------ |
-| `T` |
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `color` | [`PaletteColor`](../interfaces/mimeeqApp._mimeeq.PaletteColor.md) |
+| `mainShade?` | `number` |
+| `lightShade?` | `number` |
+| `darkShade?` | `number` |
+
+##### Returns
+
+[`PaletteColor`](../interfaces/mimeeqApp._mimeeq.PaletteColor.md)
+
+___
+
+### BlockGroups
+
+Ƭ **BlockGroups**: [`BlockGroup`](../interfaces/mimeeqApp._mimeeq.BlockGroup.md)[]
 
 ___
 
@@ -172,12 +188,6 @@ Cancel all active operations on models like adding new, clone or move.
 ##### Returns
 
 `void`
-
-___
-
-### CanvasTextAlign
-
-Ƭ **CanvasTextAlign**: ``"center"`` \| ``"end"`` \| ``"left"`` \| ``"right"`` \| ``"start"``
 
 ___
 
@@ -239,11 +249,11 @@ ___
 
 ### DownloadFile
 
-Ƭ **DownloadFile**: (`s3Path`: `string`, `fileName`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+Ƭ **DownloadFile**: (`s3Path`: `string`, `fileName`: `string`) => `Promise`<`void`\>
 
 #### Type declaration
 
-▸ (`s3Path`, `fileName`): [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ (`s3Path`, `fileName`): `Promise`<`void`\>
 
 Calling this method will trigger file download
 
@@ -258,7 +268,7 @@ Calling this method will trigger file download
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
@@ -364,13 +374,34 @@ Export scene to obj
 
 ___
 
-### FilterOptions
+### FadeColor
 
-Ƭ **FilterOptions**: (`options`: [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[], `selectedFilters`: `string`[]) => [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[]
+Ƭ **FadeColor**: (`color`: `string`, `value`: `number`) => `string`
 
 #### Type declaration
 
-▸ (`options`, `selectedFilters`): [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[]
+▸ (`color`, `value`): `string`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `color` | `string` |
+| `value` | `number` |
+
+##### Returns
+
+`string`
+
+___
+
+### FilterOptions
+
+Ƭ **FilterOptions**: (`options`: [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[], `selectedFilters`: `string`[]) => [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[]
+
+#### Type declaration
+
+▸ (`options`, `selectedFilters`): [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[]
 
 Filter list of options agains selected filters
 
@@ -378,12 +409,12 @@ Filter list of options agains selected filters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `options` | [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[] | List of block options |
+| `options` | [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[] | List of block options |
 | `selectedFilters` | `string`[] | List of selected filters |
 
 ##### Returns
 
-[`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[]
+[`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[]
 
 List of filtered options
 
@@ -415,11 +446,11 @@ ___
 
 ### ForgotPassword
 
-Ƭ **ForgotPassword**: (`email`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+Ƭ **ForgotPassword**: (`email`: `string`) => `Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 #### Type declaration
 
-▸ (`email`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+▸ (`email`): `Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 Initialize forgot password procedure for email
 
@@ -431,17 +462,17 @@ Initialize forgot password procedure for email
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+`Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 ___
 
 ### ForgotPasswordSubmit
 
-Ƭ **ForgotPasswordSubmit**: (`email`: `string`, `password`: `string`, `code`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+Ƭ **ForgotPasswordSubmit**: (`email`: `string`, `password`: `string`, `code`: `string`) => `Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 #### Type declaration
 
-▸ (`email`, `password`, `code`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+▸ (`email`, `password`, `code`): `Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 Submit new password for account
 
@@ -455,19 +486,39 @@ Submit new password for account
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+`Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 Promise<SuccessResponse | AuthError>
 
 ___
 
-### GetProductCarouselImages
+### GetContrastText
 
-Ƭ **GetProductCarouselImages**: (`views`: `string`[], `configurationCode?`: `string`, `backgroundColor?`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<`string`[]\>
+Ƭ **GetContrastText**: (`background`: `string`) => `string`
 
 #### Type declaration
 
-▸ (`views`, `configurationCode?`, `backgroundColor?`): [`Promise`](mimeeqApp._mimeeq.md#promise)<`string`[]\>
+▸ (`background`): `string`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `background` | `string` |
+
+##### Returns
+
+`string`
+
+___
+
+### GetProductCarouselImages
+
+Ƭ **GetProductCarouselImages**: (`views`: `string`[], `configurationCode?`: `string`, `backgroundColor?`: `string`) => `Promise`<[`CarouselItem`](../interfaces/mimeeqApp._mimeeq.CarouselItem.md)[]\>
+
+#### Type declaration
+
+▸ (`views`, `configurationCode?`, `backgroundColor?`): `Promise`<[`CarouselItem`](../interfaces/mimeeqApp._mimeeq.CarouselItem.md)[]\>
 
 Get list of 2d images for current product on selected options
 
@@ -483,7 +534,7 @@ Get list of 2d images for current product on selected options
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`string`[]\>
+`Promise`<[`CarouselItem`](../interfaces/mimeeqApp._mimeeq.CarouselItem.md)[]\>
 
 List of urls
 
@@ -491,11 +542,11 @@ ___
 
 ### GetRelatedDynamicData
 
-Ƭ **GetRelatedDynamicData**: (`items`: [`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[], `backgroundColor?`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`RelatedItemConfiguration`](../interfaces/mimeeqApp._mimeeq.RelatedItemConfiguration.md)[]\>
+Ƭ **GetRelatedDynamicData**: (`items`: [`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[], `backgroundColor?`: `string`) => `Promise`<[`RelatedItemConfiguration`](../interfaces/mimeeqApp._mimeeq.RelatedItemConfiguration.md)[]\>
 
 #### Type declaration
 
-▸ (`items`, `backgroundColor?`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`RelatedItemConfiguration`](../interfaces/mimeeqApp._mimeeq.RelatedItemConfiguration.md)[]\>
+▸ (`items`, `backgroundColor?`): `Promise`<[`RelatedItemConfiguration`](../interfaces/mimeeqApp._mimeeq.RelatedItemConfiguration.md)[]\>
 
 Get list of related items with matched image and options based on currently selected options
 
@@ -510,7 +561,7 @@ Get list of related items with matched image and options based on currently sele
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`RelatedItemConfiguration`](../interfaces/mimeeqApp._mimeeq.RelatedItemConfiguration.md)[]\>
+`Promise`<[`RelatedItemConfiguration`](../interfaces/mimeeqApp._mimeeq.RelatedItemConfiguration.md)[]\>
 
 List of related products with dynamic data generated
 
@@ -518,11 +569,11 @@ ___
 
 ### GetRelatedProducts
 
-Ƭ **GetRelatedProducts**: () => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[]\>
+Ƭ **GetRelatedProducts**: () => `Promise`<[`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[]\>
 
 #### Type declaration
 
-▸ (): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[]\>
+▸ (): `Promise`<[`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[]\>
 
 Get list of related products for current product
 
@@ -530,7 +581,7 @@ Get list of related products for current product
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[]\>
+`Promise`<[`RelatedItem`](../interfaces/mimeeqApp._mimeeq.RelatedItem.md)[]\>
 
 Raw list of related products
 
@@ -538,11 +589,11 @@ ___
 
 ### GetShortcode
 
-Ƭ **GetShortcode**: (`productId`: `string`, `variantCode?`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<`string`\>
+Ƭ **GetShortcode**: (`productId`: `string`, `variantCode?`: `string`) => `Promise`<`string`\>
 
 #### Type declaration
 
-▸ (`productId`, `variantCode?`): [`Promise`](mimeeqApp._mimeeq.md#promise)<`string`\>
+▸ (`productId`, `variantCode?`): `Promise`<`string`\>
 
 When called it will generate unique shortcode for given productId-configurationCode pair. For the same pair shortcode is always the same.
 
@@ -559,7 +610,7 @@ This method works only for regular products. In case of modular Short Code is re
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`string`\>
+`Promise`<`string`\>
 
 Generated short code
 
@@ -567,11 +618,11 @@ ___
 
 ### GetTabFiles
 
-Ƭ **GetTabFiles**: (`tabId`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`TabFileItem`](../interfaces/mimeeqApp._mimeeq.TabFileItem.md)[]\>\>
+Ƭ **GetTabFiles**: (`tabId`: `string`) => `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`TabFileItem`](../interfaces/mimeeqApp._mimeeq.TabFileItem.md)[]\>\>
 
 #### Type declaration
 
-▸ (`tabId`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`TabFileItem`](../interfaces/mimeeqApp._mimeeq.TabFileItem.md)[]\>\>
+▸ (`tabId`): `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`TabFileItem`](../interfaces/mimeeqApp._mimeeq.TabFileItem.md)[]\>\>
 
 Get list of available files on Files tab. Some files are added based on configuration code, so it's advised to call this after each configuration code change (unless only static files are used).
 
@@ -585,7 +636,7 @@ Get list of available files on Files tab. Some files are added based on configur
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`TabFileItem`](../interfaces/mimeeqApp._mimeeq.TabFileItem.md)[]\>\>
+`Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`TabFileItem`](../interfaces/mimeeqApp._mimeeq.TabFileItem.md)[]\>\>
 
 List of available files
 
@@ -593,11 +644,11 @@ ___
 
 ### GetTabFinishes
 
-Ƭ **GetTabFinishes**: (`finishes`: [`MimeeqTabMaterial`](../interfaces/mimeeqApp._mimeeq.MimeeqTabMaterial.md)[]) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`MimeeqOptionSetData`](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetData.md)[]\>
+Ƭ **GetTabFinishes**: (`finishes`: [`TabMaterial`](../interfaces/mimeeqApp._mimeeq.TabMaterial.md)[]) => `Promise`<[`OptionSetData`](../interfaces/mimeeqApp._mimeeq.OptionSetData.md)[]\>
 
 #### Type declaration
 
-▸ (`finishes`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`MimeeqOptionSetData`](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetData.md)[]\>
+▸ (`finishes`): `Promise`<[`OptionSetData`](../interfaces/mimeeqApp._mimeeq.OptionSetData.md)[]\>
 
 Get data for all passed finishes
 
@@ -607,11 +658,11 @@ Get data for all passed finishes
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `finishes` | [`MimeeqTabMaterial`](../interfaces/mimeeqApp._mimeeq.MimeeqTabMaterial.md)[] | List of finishes from tab |
+| `finishes` | [`TabMaterial`](../interfaces/mimeeqApp._mimeeq.TabMaterial.md)[] | List of finishes from tab |
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`MimeeqOptionSetData`](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetData.md)[]\>
+`Promise`<[`OptionSetData`](../interfaces/mimeeqApp._mimeeq.OptionSetData.md)[]\>
 
 Data for all (if found) finishes from provided list
 
@@ -619,11 +670,11 @@ ___
 
 ### GetTabGallery
 
-Ƭ **GetTabGallery**: (`galleryId`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`GalleryTabResponse`](../interfaces/mimeeqApp._mimeeq.GalleryTabResponse.md)\>\>
+Ƭ **GetTabGallery**: (`galleryId`: `string`) => `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`GalleryTabResponse`](../interfaces/mimeeqApp._mimeeq.GalleryTabResponse.md)\>\>
 
 #### Type declaration
 
-▸ (`galleryId`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`GalleryTabResponse`](../interfaces/mimeeqApp._mimeeq.GalleryTabResponse.md)\>\>
+▸ (`galleryId`): `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`GalleryTabResponse`](../interfaces/mimeeqApp._mimeeq.GalleryTabResponse.md)\>\>
 
 Get list of images for provided galleryId.
 
@@ -637,7 +688,7 @@ Get list of images for provided galleryId.
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`GalleryTabResponse`](../interfaces/mimeeqApp._mimeeq.GalleryTabResponse.md)\>\>
+`Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`GalleryTabResponse`](../interfaces/mimeeqApp._mimeeq.GalleryTabResponse.md)\>\>
 
 Record with data about number of columns and list of items at the gallery
 
@@ -645,11 +696,11 @@ ___
 
 ### GetTabPopular
 
-Ƭ **GetTabPopular**: (`configs`: [`PopularConfiguration`](../interfaces/mimeeqApp._mimeeq.PopularConfiguration.md)[], `backgroundColor?`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`PopularConfigItem`](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)[]\>
+Ƭ **GetTabPopular**: (`configs`: [`PopularConfiguration`](../interfaces/mimeeqApp._mimeeq.PopularConfiguration.md)[], `backgroundColor?`: `string`) => `Promise`<[`PopularConfigItem`](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)[]\>
 
 #### Type declaration
 
-▸ (`configs`, `backgroundColor?`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`PopularConfigItem`](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)[]\>
+▸ (`configs`, `backgroundColor?`): `Promise`<[`PopularConfigItem`](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)[]\>
 
 Get data about provided popular configurations. It also filters out all broken configurations
 
@@ -664,7 +715,7 @@ Get data about provided popular configurations. It also filters out all broken c
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`PopularConfigItem`](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)[]\>
+`Promise`<[`PopularConfigItem`](../interfaces/mimeeqApp._mimeeq.PopularConfigItem.md)[]\>
 
 List of popular configurations
 
@@ -672,29 +723,56 @@ ___
 
 ### GetUserData
 
-Ƭ **GetUserData**: () => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
+Ƭ **GetUserData**: () => `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
 
 #### Type declaration
 
-▸ (): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
+▸ (): `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
 
 Get current user's data or if not exists current session
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
+`Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
 
 A promise resolves to user data or session object if success
 
 ___
 
-### HistoryGoBack
+### GlobalFilters
 
-Ƭ **HistoryGoBack**: () => [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+Ƭ **GlobalFilters**: [`Filter`](../interfaces/mimeeqApp._mimeeq.Filter.md)[]
+
+___
+
+### HexToRGB
+
+Ƭ **HexToRGB**: (`color`: `string`, `alpha?`: `number`) => `string`
 
 #### Type declaration
 
-▸ (): [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ (`color`, `alpha?`): `string`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `color` | `string` |
+| `alpha?` | `number` |
+
+##### Returns
+
+`string`
+
+___
+
+### HistoryGoBack
+
+Ƭ **HistoryGoBack**: () => `Promise`<`void`\>
+
+#### Type declaration
+
+▸ (): `Promise`<`void`\>
 
 Revert last change
 
@@ -704,17 +782,17 @@ Revert last change
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### HistoryRedo
 
-Ƭ **HistoryRedo**: () => [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+Ƭ **HistoryRedo**: () => `Promise`<`void`\>
 
 #### Type declaration
 
-▸ (): [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ (): `Promise`<`void`\>
 
 Redo next history action
 
@@ -724,17 +802,17 @@ Redo next history action
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### HistoryReset
 
-Ƭ **HistoryReset**: () => [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+Ƭ **HistoryReset**: () => `Promise`<`void`\>
 
 #### Type declaration
 
-▸ (): [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ (): `Promise`<`void`\>
 
 Go back to initial configuration
 
@@ -744,7 +822,7 @@ Go back to initial configuration
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
@@ -778,22 +856,9 @@ Increase camera zoom
 
 ___
 
-### IteratorResult
-
-Ƭ **IteratorResult**<`T`, `TReturn`\>: [`IteratorYieldResult`](../interfaces/mimeeqApp._mimeeq.IteratorYieldResult.md)<`T`\> \| [`IteratorReturnResult`](../interfaces/mimeeqApp._mimeeq.IteratorReturnResult.md)<`TReturn`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `T` |
-| `TReturn` | `any` |
-
-___
-
 ### MarkOption
 
-Ƭ **MarkOption**: (`option`: [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md), `blockId`: `string`, `widgetType`: `string`, `setMatchingGroup?`: `boolean`) => `void`
+Ƭ **MarkOption**: (`option`: [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md), `blockId`: `string`, `widgetType`: `string`, `setMatchingGroup?`: `boolean`) => `void`
 
 #### Type declaration
 
@@ -809,7 +874,7 @@ Select single option
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `option` | [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md) | Option object to select |
+| `option` | [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md) | Option object to select |
 | `blockId` | `string` | Id of block |
 | `widgetType` | `string` | Type of widget the block is using |
 | `setMatchingGroup?` | `boolean` | If `true` it will try to match selected option in other blocks within this block group |
@@ -849,7 +914,7 @@ ___
 
 ### MarkOptionModular
 
-Ƭ **MarkOptionModular**: (`option`: [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md), `blockId`: `string`, `widgetType`: `string`, `setMatchingGroup?`: `boolean`, `blockCode?`: [`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>) => `void`
+Ƭ **MarkOptionModular**: (`option`: [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md), `blockId`: `string`, `widgetType`: `string`, `setMatchingGroup?`: `boolean`, `blockCode?`: [`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>) => `void`
 
 #### Type declaration
 
@@ -865,7 +930,7 @@ Select option at modular on currently selected product(s).
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `option` | [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md) | Option object to select |
+| `option` | [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md) | Option object to select |
 | `blockId` | `string` | Id of block |
 | `widgetType` | `string` | Type of widget the block is using |
 | `setMatchingGroup?` | `boolean` | If `true` it will try to match selected option in other blocks within this block group |
@@ -877,39 +942,15 @@ Select option at modular on currently selected product(s).
 
 ___
 
-### MimeeqBlockGroups
-
-Ƭ **MimeeqBlockGroups**: [`MimeeqBlockGroup`](../interfaces/mimeeqApp._mimeeq.MimeeqBlockGroup.md)[]
-
-___
-
-### MimeeqGlobalFilters
-
-Ƭ **MimeeqGlobalFilters**: [`MimeeqFilter`](../interfaces/mimeeqApp._mimeeq.MimeeqFilter.md)[]
-
-___
-
 ### MimeeqObservable
 
-Ƭ **MimeeqObservable**<`T`\>: [`Observable`](../classes/mimeeqApp._mimeeq.Observable.md)<[`SubscribeValueWrapper`](../interfaces/mimeeqApp._mimeeq.SubscribeValueWrapper.md)<`T`\>\>
+Ƭ **MimeeqObservable**<`T`\>: `Observable`<[`SubscribeValueWrapper`](../interfaces/mimeeqApp._mimeeq.SubscribeValueWrapper.md)<`T`\>\>
 
 #### Type parameters
 
 | Name |
 | :------ |
 | `T` |
-
-___
-
-### MimeeqOptionSetsBlocks
-
-Ƭ **MimeeqOptionSetsBlocks**: [`MimeeqOptionSetBlock`](../interfaces/mimeeqApp._mimeeq.MimeeqOptionSetBlock.md)[]
-
-___
-
-### MimeeqSelectedOptions
-
-Ƭ **MimeeqSelectedOptions**: [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[]
 
 ___
 
@@ -995,27 +1036,19 @@ Trigger this to open Scene picker
 
 ___
 
-### Partial
+### OptionSetsBlocks
 
-Ƭ **Partial**<`T`\>: { [P in keyof T]?: T[P] }
-
-Make all properties in T optional
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
+Ƭ **OptionSetsBlocks**: [`OptionSetBlock`](../interfaces/mimeeqApp._mimeeq.OptionSetBlock.md)[]
 
 ___
 
 ### PrepareFilterOptions
 
-Ƭ **PrepareFilterOptions**: (`filterList`: [`MimeeqGlobalFilters`](mimeeqApp._mimeeq.md#mimeeqglobalfilters), `options`: [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[], `selectedFilters`: `string`[]) => [`Record`](mimeeqApp._mimeeq.md#record)<`string`, [`MimeeqFilter`](../interfaces/mimeeqApp._mimeeq.MimeeqFilter.md)\>
+Ƭ **PrepareFilterOptions**: (`filterList`: [`GlobalFilters`](mimeeqApp._mimeeq.md#globalfilters), `options`: [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[], `selectedFilters`: `string`[]) => `Record`<`string`, [`Filter`](../interfaces/mimeeqApp._mimeeq.Filter.md)\>
 
 #### Type declaration
 
-▸ (`filterList`, `options`, `selectedFilters`): [`Record`](mimeeqApp._mimeeq.md#record)<`string`, [`MimeeqFilter`](../interfaces/mimeeqApp._mimeeq.MimeeqFilter.md)\>
+▸ (`filterList`, `options`, `selectedFilters`): `Record`<`string`, [`Filter`](../interfaces/mimeeqApp._mimeeq.Filter.md)\>
 
 Prepare list of available filters with count of affected options
 
@@ -1023,13 +1056,13 @@ Prepare list of available filters with count of affected options
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `filterList` | [`MimeeqGlobalFilters`](mimeeqApp._mimeeq.md#mimeeqglobalfilters) | List of all filters configured for customer |
-| `options` | [`MimeeqOption`](../interfaces/mimeeqApp._mimeeq.MimeeqOption.md)[] | List of available options |
+| `filterList` | [`GlobalFilters`](mimeeqApp._mimeeq.md#globalfilters) | List of all filters configured for customer |
+| `options` | [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[] | List of available options |
 | `selectedFilters` | `string`[] | List of currently selected filters |
 
 ##### Returns
 
-[`Record`](mimeeqApp._mimeeq.md#record)<`string`, [`MimeeqFilter`](../interfaces/mimeeqApp._mimeeq.MimeeqFilter.md)\>
+`Record`<`string`, [`Filter`](../interfaces/mimeeqApp._mimeeq.Filter.md)\>
 
 Map of possible filters
 
@@ -1038,55 +1071,6 @@ ___
 ### PriceOptions
 
 Ƭ **PriceOptions**: [`PriceType`](../interfaces/mimeeqApp._mimeeq.PriceType.md)[]
-
-___
-
-### PromiseConstructorLike
-
-Ƭ **PromiseConstructorLike**: <T\>(`executor`: (`resolve`: (`value`: `T` \| [`PromiseLike`](../interfaces/mimeeqApp._mimeeq.PromiseLike.md)<`T`\>) => `void`, `reject`: (`reason?`: `any`) => `void`) => `void`) => [`PromiseLike`](../interfaces/mimeeqApp._mimeeq.PromiseLike.md)<`T`\>
-
-#### Type declaration
-
-• <`T`\>(`executor`)
-
-##### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `executor` | (`resolve`: (`value`: `T` \| [`PromiseLike`](../interfaces/mimeeqApp._mimeeq.PromiseLike.md)<`T`\>) => `void`, `reject`: (`reason?`: `any`) => `void`) => `void` |
-
-___
-
-### PromiseSettledResult
-
-Ƭ **PromiseSettledResult**<`T`\>: [`PromiseFulfilledResult`](../interfaces/mimeeqApp._mimeeq.PromiseFulfilledResult.md)<`T`\> \| [`PromiseRejectedResult`](../interfaces/mimeeqApp._mimeeq.PromiseRejectedResult.md)
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-___
-
-### Record
-
-Ƭ **Record**<`K`, `T`\>: { [P in K]: T }
-
-Construct a type with a set of properties K of type T
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `K` | extends keyof `any` |
-| `T` | `T` |
 
 ___
 
@@ -1110,11 +1094,11 @@ ___
 
 ### ResendSignUp
 
-Ƭ **ResendSignUp**: (`email`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+Ƭ **ResendSignUp**: (`email`: `string`) => `Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 #### Type declaration
 
-▸ (`email`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+▸ (`email`): `Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 Resend SignUp confirmation email
 
@@ -1128,7 +1112,7 @@ Resend SignUp confirmation email
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+`Promise`<[`SuccessResponse`](../interfaces/mimeeqApp._mimeeq.SuccessResponse.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 Promise<SuccessResponse | AuthError>
 
@@ -1211,11 +1195,11 @@ ___
 
 ### SelectRelatedProduct
 
-Ƭ **SelectRelatedProduct**: (`productId`: `string`, `variantCode`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+Ƭ **SelectRelatedProduct**: (`productId`: `string`, `variantCode`: `string`) => `Promise`<`void`\>
 
 #### Type declaration
 
-▸ (`productId`, `variantCode`): [`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ (`productId`, `variantCode`): `Promise`<`void`\>
 
 Call it to select product from related list
 
@@ -1234,13 +1218,41 @@ Call it to select product from related list
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
+
+___
+
+### SelectedOptions
+
+Ƭ **SelectedOptions**: [`OptionSetOption`](../interfaces/mimeeqApp._mimeeq.OptionSetOption.md)[]
+
+___
+
+### SetCarouselView
+
+Ƭ **SetCarouselView**: (`viewId`: `string`) => `Promise`<`void`\>
+
+#### Type declaration
+
+▸ (`viewId`): `Promise`<`void`\>
+
+Change currently visible view on canvas/2d
+
+##### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `viewId` | `string` | id of the view to show. In case of 3d pass empty value |
+
+##### Returns
+
+`Promise`<`void`\>
 
 ___
 
 ### SetPrice
 
-Ƭ **SetPrice**: (`customPricing`: [`MimeeqPrice`](../interfaces/mimeeqApp._mimeeq.MimeeqPrice.md)) => `void`
+Ƭ **SetPrice**: (`customPricing`: [`PriceData`](../interfaces/mimeeqApp._mimeeq.PriceData.md)) => `void`
 
 #### Type declaration
 
@@ -1257,7 +1269,7 @@ We recommend listening for this event mimeeq-price-change Events, so you know wh
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `customPricing` | [`MimeeqPrice`](../interfaces/mimeeqApp._mimeeq.MimeeqPrice.md) | Mimeeq pricing data |
+| `customPricing` | [`PriceData`](../interfaces/mimeeqApp._mimeeq.PriceData.md) | Mimeeq pricing data |
 
 ##### Returns
 
@@ -1470,11 +1482,11 @@ ___
 
 ### SignIn
 
-Ƭ **SignIn**: (`email`: `string`, `password`: `string`, `customerId`: [`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
+Ƭ **SignIn**: (`email`: `string`, `password`: `string`, `customerId`: [`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>) => `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
 
 #### Type declaration
 
-▸ (`email`, `password`, `customerId`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
+▸ (`email`, `password`, `customerId`): `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
 
 Sign in to Mimeeq account
 
@@ -1490,7 +1502,7 @@ Sign in to Mimeeq account
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
+`Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<[`UserData`](../interfaces/mimeeqApp._mimeeq.UserData.md) \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>\>
 
 A promise resolves the CognitoUser or error object in case of failure
 
@@ -1498,11 +1510,11 @@ ___
 
 ### SignOut
 
-Ƭ **SignOut**: () => [`Promise`](mimeeqApp._mimeeq.md#promise)<`boolean` \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+Ƭ **SignOut**: () => `Promise`<`boolean` \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 #### Type declaration
 
-▸ (): [`Promise`](mimeeqApp._mimeeq.md#promise)<`boolean` \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+▸ (): `Promise`<`boolean` \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 Sign out from Mimeeq
 
@@ -1510,7 +1522,7 @@ Sign out from Mimeeq
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<`boolean` \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
+`Promise`<`boolean` \| [`AuthError`](../interfaces/mimeeqApp._mimeeq.AuthError.md)\>
 
 A promise resolved if success. On success it return boolean if failure object with error data
 
@@ -1518,11 +1530,11 @@ ___
 
 ### TakeScreenshot
 
-Ƭ **TakeScreenshot**: (`extension?`: `string`, `size?`: `number`, `backgroundColor?`: `string`, `customDimensions?`: [`Dimensions`](../interfaces/mimeeqApp._mimeeq.Dimensions.md), `withAutozoom?`: `boolean`, `withCameraReset?`: `boolean`, `customCameraPosition?`: `string`) => [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>\>
+Ƭ **TakeScreenshot**: (`extension?`: `string`, `size?`: `number`, `backgroundColor?`: `string`, `customDimensions?`: [`Dimensions`](../interfaces/mimeeqApp._mimeeq.Dimensions.md), `withAutozoom?`: `boolean`, `withCameraReset?`: `boolean`, `customCameraPosition?`: `string`) => `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>\>
 
 #### Type declaration
 
-▸ (`extension?`, `size?`, `backgroundColor?`, `customDimensions?`, `withAutozoom?`, `withCameraReset?`, `customCameraPosition?`): [`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>\>
+▸ (`extension?`, `size?`, `backgroundColor?`, `customDimensions?`, `withAutozoom?`, `withCameraReset?`, `customCameraPosition?`): `Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>\>
 
 You can use this method to generate an image from the current canvas state, method is called screenshot, but you are able to control the size of the image and the type, png or jpg.
 
@@ -1540,15 +1552,15 @@ You can use this method to generate an image from the current canvas state, meth
 
 ##### Returns
 
-[`Promise`](mimeeqApp._mimeeq.md#promise)<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>\>
+`Promise`<[`Nullable`](mimeeqApp._mimeeq.md#nullable)<`string`\>\>
 
 Base64 image string
 
 ___
 
-### TeardownLogic
+### ThemeType
 
-Ƭ **TeardownLogic**: [`Subscription`](../classes/mimeeqApp._mimeeq.Subscription.md) \| [`Unsubscribable`](../interfaces/mimeeqApp._mimeeq.Unsubscribable.md) \| () => `void` \| `void`
+Ƭ **ThemeType**: ``"light"`` \| ``"dark"``
 
 ___
 
@@ -1643,9 +1655,3 @@ Zoom out scene to see whole product
 ##### Returns
 
 `void`
-
-## Variables
-
-### Promise
-
-• **Promise**: [`PromiseConstructor`](../interfaces/mimeeqApp._mimeeq.PromiseConstructor.md)

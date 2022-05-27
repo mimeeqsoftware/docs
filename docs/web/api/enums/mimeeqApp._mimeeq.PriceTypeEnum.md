@@ -11,22 +11,22 @@ custom_edit_url: null
 
 ### BLANK
 
-• **BLANK** = `1`
+• **BLANK** = `"BLANK"`
 
 ___
 
 ### COST
 
-• **COST** = `2`
+• **COST** = `"COST"`
 
 ___
 
 ### RRP
 
-• **RRP** = `0`
+• **RRP** = `"RRP"`
 
 ___
 
 ### SALE
 
-• **SALE** = `3`
+• **SALE** = `"SALE"`

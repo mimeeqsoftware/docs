@@ -40,7 +40,7 @@ ___
 
 ### initialize
 
-▸ **initialize**(`cognitoConfig`, `s3Config`): [`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ **initialize**(`cognitoConfig`, `s3Config`): `Promise`<`void`\>
 
 Initialize Auth and bucket with configuration
 
@@ -49,17 +49,17 @@ Initialize Auth and bucket with configuration
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `cognitoConfig` | [`AuthOptions`](../interfaces/mimeeqApp._mimeeq.AuthOptions.md) | Auth instance options |
-| `s3Config` | [`Record`](../namespaces/mimeeqApp._mimeeq.md#record)<`string`, `string`\> | S3 configuration |
+| `s3Config` | `Record`<`string`, `string`\> | S3 configuration |
 
 #### Returns
 
-[`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### mountARPage
 
-▸ **mountARPage**(`payload`): [`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ **mountARPage**(`payload`): `Promise`<`void`\>
 
 Mount AR landing page
 
@@ -71,13 +71,13 @@ Mount AR landing page
 
 #### Returns
 
-[`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### mountConfigurator
 
-▸ **mountConfigurator**(`payload`): [`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ **mountConfigurator**(`payload`): `Promise`<`void`\>
 
 Mount configurator. Either 2d variant of 3d/modular.
 
@@ -89,13 +89,13 @@ Mount configurator. Either 2d variant of 3d/modular.
 
 #### Returns
 
-[`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### mountFavourites
 
-▸ **mountFavourites**(`payload`): [`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ **mountFavourites**(`payload`): `Promise`<`void`\>
 
 Mount list of products along with Configurator.
 
@@ -107,13 +107,13 @@ Mount list of products along with Configurator.
 
 #### Returns
 
-[`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### mountList
 
-▸ **mountList**(`payload`): [`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ **mountList**(`payload`): `Promise`<`void`\>
 
 Mount list of products along with Configurator.
 
@@ -125,13 +125,13 @@ Mount list of products along with Configurator.
 
 #### Returns
 
-[`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### mountLogin
 
-▸ **mountLogin**(`payload`): [`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ **mountLogin**(`payload`): `Promise`<`void`\>
 
 Renders login modal. Provides forgotten password form as well
 
@@ -143,13 +143,13 @@ Renders login modal. Provides forgotten password form as well
 
 #### Returns
 
-[`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>
 
 ___
 
 ### mountUserProfile
 
-▸ **mountUserProfile**(`payload`): [`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+▸ **mountUserProfile**(`payload`): `Promise`<`void`\>
 
 Renders login modal. Provides forgotten password form as well
 
@@ -161,4 +161,4 @@ Renders login modal. Provides forgotten password form as well
 
 #### Returns
 
-[`Promise`](../namespaces/mimeeqApp._mimeeq.md#promise)<`void`\>
+`Promise`<`void`\>

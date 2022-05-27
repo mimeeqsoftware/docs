@@ -11,10 +11,10 @@ custom_edit_url: null
 
 ### ACTIVE
 
-• **ACTIVE** = `0`
+• **ACTIVE** = `"ACTIVE"`
 
 ___
 
 ### INACTIVE
 
-• **INACTIVE** = `1`
+• **INACTIVE** = `"INACTIVE"`

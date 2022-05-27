@@ -33,6 +33,14 @@ URL to storage/CDN
 
 ___
 
+### apiPricingUrl
+
+• `Optional` **apiPricingUrl**: `string`
+
+New Pricing URL
+
+___
+
 ### baseURL
 
 • `Optional` **baseURL**: `string`
@@ -55,6 +63,14 @@ ___
 
 **`deprecated`**
 Id of HTML element on which mount tree
+
+___
+
+### enableNewPricing
+
+• `Optional` **enableNewPricing**: `string`
+
+If `true` use new pricing
 
 ___
 

@@ -7,9 +7,9 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).ProductMetadata
 
-**`property`** {MimeeqProductThumb} standardImage
+**`property`** {ProductThumb} standardImage
 
-**`property`** {MimeeqProductThumb} mouseoverImage
+**`property`** {ProductThumb} mouseoverImage
 
 **`property`** {string} code
 
@@ -59,7 +59,7 @@ ___
 
 ### mouseoverImage
 
-• `Optional` **mouseoverImage**: [`MimeeqProductThumb`](mimeeqApp._mimeeq.MimeeqProductThumb.md)
+• `Optional` **mouseoverImage**: [`ProductThumb`](mimeeqApp._mimeeq.ProductThumb.md)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 ### standardImage
 
-• `Optional` **standardImage**: [`MimeeqProductThumb`](mimeeqApp._mimeeq.MimeeqProductThumb.md)
+• `Optional` **standardImage**: [`ProductThumb`](mimeeqApp._mimeeq.ProductThumb.md)
 
 ___
 

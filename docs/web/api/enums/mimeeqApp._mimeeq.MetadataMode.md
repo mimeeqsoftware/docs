@@ -11,16 +11,16 @@ custom_edit_url: null
 
 ### MODULAR
 
-• **MODULAR** = `0`
+• **MODULAR** = `"MODULAR"`
 
 ___
 
 ### STANDARD
 
-• **STANDARD** = `2`
+• **STANDARD** = `"STANDARD"`
 
 ___
 
 ### VARIANT
 
-• **VARIANT** = `1`
+• **VARIANT** = `"VARIANT"`

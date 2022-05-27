@@ -11,7 +11,7 @@ custom_edit_url: null
 
 ### blocks
 
-• **blocks**: [`MimeeqPreparedBlock`](mimeeqApp._mimeeq.MimeeqPreparedBlock.md)[]
+• **blocks**: [`PreparedBlock`](mimeeqApp._mimeeq.PreparedBlock.md)[]
 
 List of available blocks with options
 

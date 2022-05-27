@@ -11,10 +11,10 @@ custom_edit_url: null
 
 ### NO
 
-• **NO** = `1`
+• **NO** = `"NO"`
 
 ___
 
 ### YES
 
-• **YES** = `0`
+• **YES** = `"YES"`

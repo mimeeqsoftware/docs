@@ -11,10 +11,10 @@ custom_edit_url: null
 
 ### MULTIPLE
 
-• **MULTIPLE** = `1`
+• **MULTIPLE** = `"MULTIPLE"`
 
 ___
 
 ### SINGLE
 
-• **SINGLE** = `0`
+• **SINGLE** = `"SINGLE"`

@@ -11,70 +11,70 @@ custom_edit_url: null
 
 ### ENGRAVE
 
-• **ENGRAVE** = `10`
+• **ENGRAVE** = `"ENGRAVE"`
 
 ___
 
 ### FILTER
 
-• **FILTER** = `5`
+• **FILTER** = `"FILTER"`
 
 ___
 
 ### FILTER\_GROUPS
 
-• **FILTER\_GROUPS** = `6`
+• **FILTER\_GROUPS** = `"FILTER_GROUPS"`
 
 ___
 
 ### IMAGE
 
-• **IMAGE** = `11`
+• **IMAGE** = `"IMAGE"`
 
 ___
 
 ### MULTICHOICE
 
-• **MULTICHOICE** = `4`
+• **MULTICHOICE** = `"MULTICHOICE"`
 
 ___
 
 ### NUMBERS\_BUTTON
 
-• **NUMBERS\_BUTTON** = `1`
+• **NUMBERS\_BUTTON** = `"NUMBERS_BUTTON"`
 
 ___
 
 ### NUMBERS\_SCALE
 
-• **NUMBERS\_SCALE** = `7`
+• **NUMBERS\_SCALE** = `"NUMBERS_SCALE"`
 
 ___
 
 ### RADIO\_LISTBOX\_TYPE
 
-• **RADIO\_LISTBOX\_TYPE** = `2`
+• **RADIO\_LISTBOX\_TYPE** = `"RADIO_LISTBOX_TYPE"`
 
 ___
 
 ### RADIO\_PLAIN\_TEXT
 
-• **RADIO\_PLAIN\_TEXT** = `0`
+• **RADIO\_PLAIN\_TEXT** = `"RADIO_PLAIN_TEXT"`
 
 ___
 
 ### RADIO\_WITH\_THUMBNAILS
 
-• **RADIO\_WITH\_THUMBNAILS** = `3`
+• **RADIO\_WITH\_THUMBNAILS** = `"RADIO_WITH_THUMBNAILS"`
 
 ___
 
 ### THUMBNAILS
 
-• **THUMBNAILS** = `8`
+• **THUMBNAILS** = `"THUMBNAILS"`
 
 ___
 
 ### THUMBNAILS\_GROUPS
 
-• **THUMBNAILS\_GROUPS** = `9`
+• **THUMBNAILS\_GROUPS** = `"THUMBNAILS_GROUPS"`

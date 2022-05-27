@@ -59,7 +59,7 @@ ___
 
 ### hoverImageMeta
 
-• `Optional` **hoverImageMeta**: [`MimeeqProductThumb`](mimeeqApp._mimeeq.MimeeqProductThumb.md)
+• `Optional` **hoverImageMeta**: [`ProductThumb`](mimeeqApp._mimeeq.ProductThumb.md)
 
 #### Inherited from
 
@@ -75,7 +75,7 @@ ___
 
 ### imageMeta
 
-• `Optional` **imageMeta**: [`MimeeqProductThumb`](mimeeqApp._mimeeq.MimeeqProductThumb.md)
+• `Optional` **imageMeta**: [`ProductThumb`](mimeeqApp._mimeeq.ProductThumb.md)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ ___
 
 ### mappings
 
-• `Optional` **mappings**: [`Record`](../namespaces/mimeeqApp._mimeeq.md#record)<`string`, [`RelatedMapping`](mimeeqApp._mimeeq.RelatedMapping.md)\>
+• `Optional` **mappings**: `Record`<`string`, [`RelatedMapping`](mimeeqApp._mimeeq.RelatedMapping.md)\>
 
 #### Inherited from
 

@@ -11,6 +11,14 @@ Set of observers on configurator related data. You can subscribe to any of avail
 
 ## Properties
 
+### config
+
+• **config**: [`ConfigObservers`](mimeeqApp._mimeeq.ConfigObservers.md)
+
+Customer and embed config data
+
+___
+
 ### history
 
 • **history**: [`HistoryObservers`](mimeeqApp._mimeeq.HistoryObservers.md)

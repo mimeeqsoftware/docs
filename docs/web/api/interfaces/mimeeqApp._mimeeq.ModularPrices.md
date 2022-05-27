@@ -9,4 +9,4 @@ custom_edit_url: null
 
 ## Indexable
 
-▪ [key: `string`]: [`MimeeqPrice`](mimeeqApp._mimeeq.MimeeqPrice.md)
+▪ [key: `string`]: [`PriceData`](mimeeqApp._mimeeq.PriceData.md)

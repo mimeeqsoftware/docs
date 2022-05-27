@@ -439,6 +439,16 @@ Call it to select product from related list
 
 ___
 
+### setCarouselView
+
+• **setCarouselView**: [`SetCarouselView`](../namespaces/mimeeqApp._mimeeq.md#setcarouselview)
+
+Change currently visible view on canvas/2d
+
+**`param`** id of the view to show. In case of 3d pass empty value
+
+___
+
 ### setQuantity
 
 • **setQuantity**: [`SetQuantity`](../namespaces/mimeeqApp._mimeeq.md#setquantity)

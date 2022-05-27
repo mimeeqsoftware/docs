@@ -11,34 +11,34 @@ custom_edit_url: null
 
 ### DOWNLOADS
 
-• **DOWNLOADS** = `1`
+• **DOWNLOADS** = `"DOWNLOADS"`
 
 ___
 
 ### FINISHES
 
-• **FINISHES** = `2`
+• **FINISHES** = `"FINISHES"`
 
 ___
 
 ### GALLERY
 
-• **GALLERY** = `5`
+• **GALLERY** = `"GALLERY"`
 
 ___
 
 ### POPULAR\_DYNAMIC
 
-• **POPULAR\_DYNAMIC** = `4`
+• **POPULAR\_DYNAMIC** = `"POPULAR_DYNAMIC"`
 
 ___
 
 ### POPULAR\_STATIC
 
-• **POPULAR\_STATIC** = `3`
+• **POPULAR\_STATIC** = `"POPULAR_STATIC"`
 
 ___
 
 ### TEXT
 
-• **TEXT** = `0`
+• **TEXT** = `"TEXT"`

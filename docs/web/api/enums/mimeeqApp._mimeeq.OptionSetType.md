@@ -11,10 +11,10 @@ custom_edit_url: null
 
 ### MATERIAL\_COLLECTION
 
-• **MATERIAL\_COLLECTION** = `0`
+• **MATERIAL\_COLLECTION** = `"MATERIAL_COLLECTION"`
 
 ___
 
 ### OPTION\_SET
 
-• **OPTION\_SET** = `1`
+• **OPTION\_SET** = `"OPTION_SET"`

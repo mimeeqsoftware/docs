@@ -11,10 +11,10 @@ custom_edit_url: null
 
 ### DYNAMIC
 
-• **DYNAMIC** = `0`
+• **DYNAMIC** = `"DYNAMIC"`
 
 ___
 
 ### STATIC
 
-• **STATIC** = `1`
+• **STATIC** = `"STATIC"`

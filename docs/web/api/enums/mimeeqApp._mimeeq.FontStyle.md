@@ -11,16 +11,16 @@ custom_edit_url: null
 
 ### italic
 
-• **italic** = `1`
+• **italic** = `"italic"`
 
 ___
 
 ### normal
 
-• **normal** = `0`
+• **normal** = `"normal"`
 
 ___
 
 ### oblique
 
-• **oblique** = `2`
+• **oblique** = `"oblique"`
