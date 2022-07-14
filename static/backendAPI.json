@@ -459,7 +459,7 @@
             "description": "Embed short code for the product variant",
             "type": "string",
             "example": "77NOCJ"
-          },
+          }
         }
       }
     }
