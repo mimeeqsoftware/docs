@@ -454,7 +454,12 @@
             "type": "string",
             "format": "date-time",
             "example": "2022-04-22T21:18:25.321Z"
-          }
+          },
+          "embedShortCode": {
+            "description": "Embed short code for the product variant",
+            "type": "string",
+            "example": "77NOCJ"
+          },
         }
       }
     }
