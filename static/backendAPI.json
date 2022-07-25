@@ -22,7 +22,7 @@
       "description": "Staging server"
     },
     {
-      "url": "https://jrdgrq09nk.execute-api.eu-central-1.amazonaws.com/api/cpq",
+      "url": "https://mimeeqapi.com",
       "description": "Production server"
     }
   ],
