@@ -18,12 +18,12 @@
   },
   "servers": [
     {
-      "url": "https://cjqo3924b3.execute-api.eu-central-1.amazonaws.com/api/cpq",
-      "description": "Staging server"
-    },
-    {
       "url": "https://mimeeqapi.com",
       "description": "Production server"
+    },
+    {
+      "url": "https://cjqo3924b3.execute-api.eu-central-1.amazonaws.com/api/cpq",
+      "description": "Staging server"
     }
   ],
   "tags": [
