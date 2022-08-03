@@ -7,6 +7,28 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).ProductTab
 
+**`Property`**
+
+Yes/No
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+text content
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
 ## Properties
 
 ### content

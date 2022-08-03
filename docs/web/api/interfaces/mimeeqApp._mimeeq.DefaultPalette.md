@@ -9,12 +9,6 @@ custom_edit_url: null
 
 ## Properties
 
-### DefaultPalette
-
-• **DefaultPalette**: `boolean`
-
-___
-
 ### accentColor
 
 • **accentColor**: `string`
@@ -24,6 +18,18 @@ ___
 ### backgroundColor
 
 • **backgroundColor**: `string`
+
+___
+
+### default
+
+• **default**: `boolean`
+
+___
+
+### groupStyle
+
+• **groupStyle**: `string`
 
 ___
 

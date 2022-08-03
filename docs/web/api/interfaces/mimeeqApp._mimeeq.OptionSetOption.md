@@ -7,6 +7,54 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).OptionSetOption
 
+**`Property`**
+
+Price code
+
+**`Property`**
+
+Option code
+
+**`Property`**
+
+Id of connected 3d material
+
+**`Property`**
+
+Path to image
+
+**`Property`**
+
+Option id
+
+**`Property`**
+
+Option ordinal on list
+
+**`Property`**
+
+Option name
+
+**`Property`**
+
+Parent option set id
+
+**`Property`**
+
+Id of the block option belongs
+
+**`Property`**
+
+List of attached filters
+
+**`Property`**
+
+If `true` option is hidden by the rules
+
+**`Property`**
+
+If `true` option is disabled by the rules
+
 ## Properties
 
 ### arMaterial3dId
@@ -18,6 +66,10 @@ ___
 ### blockCode
 
 • `Optional` **blockCode**: `string`
+
+**`Alias`**
+
+blockName
 
 ___
 
@@ -31,6 +83,8 @@ ___
 
 • `Optional` **blockName**: `string`
 
+Unique block name
+
 ___
 
 ### code
@@ -39,9 +93,19 @@ ___
 
 ___
 
+### comment
+
+• `Optional` **comment**: `string`
+
+Option comment
+
+___
+
 ### engraveSettings
 
 • `Optional` **engraveSettings**: [`EngravingOption`](mimeeqApp._mimeeq.EngravingOption.md)
+
+Engraving widget settings and data
 
 ___
 
@@ -55,6 +119,8 @@ ___
 
 • `Optional` **hideInPdf**: `boolean`
 
+If `true` it will be hidden at PDF
+
 ___
 
 ### id
@@ -66,6 +132,8 @@ ___
 ### imageSettings
 
 • `Optional` **imageSettings**: [`CustomImageOption`](mimeeqApp._mimeeq.CustomImageOption.md)
+
+Custom Image/Logo widget settings and data
 
 ___
 
@@ -90,6 +158,8 @@ ___
 ### letterMapping
 
 • `Optional` **letterMapping**: `string`
+
+Block Symbol used to create configuration code
 
 ___
 

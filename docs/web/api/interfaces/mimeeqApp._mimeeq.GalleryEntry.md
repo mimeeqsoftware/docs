@@ -1,11 +1,11 @@
 ---
-id: "mimeeqApp._mimeeq.GalleryItem"
-title: "Interface: GalleryItem"
-sidebar_label: "mimeeqApp.@mimeeq.GalleryItem"
+id: "mimeeqApp._mimeeq.GalleryEntry"
+title: "Interface: GalleryEntry"
+sidebar_label: "mimeeqApp.@mimeeq.GalleryEntry"
 custom_edit_url: null
 ---
 
-[mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).GalleryItem
+[mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).GalleryEntry
 
 ## Properties
 

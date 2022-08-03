@@ -8,63 +8,26 @@ custom_edit_url: null
 
 Authorization related methods for Mimeeq Embed
 
-## Variables
+## References
 
 ### authorization
 
-• **authorization**: [`Authorization`](../interfaces/mimeeqApp._mimeeq.Authorization.md)
+Re-exports [authorization](mimeeqApp.md#authorization)
 
-## Functions
+___
 
 ### initialize
 
-▸ **initialize**(`cognitoConfig`, `s3Config`): `Promise`<`void`\>
-
-Initialize Auth and bucket with configuration
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `cognitoConfig` | [`AuthOptions`](../interfaces/mimeeqApp._mimeeq.AuthOptions.md) | Auth instance options |
-| `s3Config` | `Record`<`string`, `string`\> | S3 configuration |
-
-#### Returns
-
-`Promise`<`void`\>
+Re-exports [initialize](mimeeqApp.md#initialize)
 
 ___
 
 ### mountLogin
 
-▸ **mountLogin**(`payload`): `Promise`<`void`\>
-
-Renders login modal. Provides forgotten password form as well
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `payload` | [`MountLoginPayload`](../interfaces/mimeeqApp._mimeeq.MountLoginPayload.md) |
-
-#### Returns
-
-`Promise`<`void`\>
+Re-exports [mountLogin](mimeeqApp.md#mountlogin)
 
 ___
 
 ### mountUserProfile
 
-▸ **mountUserProfile**(`payload`): `Promise`<`void`\>
-
-Renders login modal. Provides forgotten password form as well
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `payload` | [`MountUserProfilePayload`](../interfaces/mimeeqApp._mimeeq.MountUserProfilePayload.md) |
-
-#### Returns
-
-`Promise`<`void`\>
+Renames and re-exports [mountLogin](mimeeqApp.md#mountlogin)

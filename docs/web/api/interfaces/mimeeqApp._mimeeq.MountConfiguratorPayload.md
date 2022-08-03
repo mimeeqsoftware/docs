@@ -75,7 +75,8 @@ ___
 
 • `Optional` **elementId**: `string`
 
-**`deprecated`**
+**`Deprecated`**
+
 Id of HTML element on which mount tree
 
 #### Inherited from
@@ -132,7 +133,7 @@ ___
 
 • `Optional` **legacy**: `boolean`
 
-If `true` some parameter will use old default values
+If `true` some parameter will use old default values for regular configurator
 
 ___
 
@@ -145,6 +146,14 @@ Code of current locale
 #### Inherited from
 
 [EmbedPayloadPartial](mimeeqApp._mimeeq.EmbedPayloadPartial.md).[locale](mimeeqApp._mimeeq.EmbedPayloadPartial.md#locale)
+
+___
+
+### modularLegacy
+
+• `Optional` **modularLegacy**: `boolean`
+
+If `true` some parameter will use old default values for modular
 
 ___
 

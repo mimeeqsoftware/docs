@@ -7,6 +7,16 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).BlockGroupWithStatus
 
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
 ## Hierarchy
 
 - [`BlockGroup`](mimeeqApp._mimeeq.BlockGroup.md)

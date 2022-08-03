@@ -19,6 +19,6 @@ ___
 
 ### items
 
-• **items**: [`GalleryItem`](mimeeqApp._mimeeq.GalleryItem.md)[]
+• **items**: [`GalleryEntry`](mimeeqApp._mimeeq.GalleryEntry.md)[]
 
 List of gallery items

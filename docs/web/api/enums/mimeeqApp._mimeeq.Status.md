@@ -7,14 +7,16 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).Status
 
-## Enumeration members
+Different parts of the configurator comes with status. Depending on status they may or not be active and available for user
+
+## Enumeration Members
 
 ### ACTIVE
 
-• **ACTIVE** = `"ACTIVE"`
+• **ACTIVE** = ``"ACTIVE"``
 
 ___
 
 ### INACTIVE
 
-• **INACTIVE** = `"INACTIVE"`
+• **INACTIVE** = ``"INACTIVE"``

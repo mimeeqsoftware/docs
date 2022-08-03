@@ -27,6 +27,14 @@ Observers for history of scene changes
 
 ___
 
+### misc
+
+• **misc**: [`MiscObservers`](mimeeqApp._mimeeq.MiscObservers.md)
+
+Miscellaneous observers
+
+___
+
 ### modular
 
 • **modular**: [`ModularObservers`](mimeeqApp._mimeeq.ModularObservers.md)

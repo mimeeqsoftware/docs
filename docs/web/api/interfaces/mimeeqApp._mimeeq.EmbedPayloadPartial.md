@@ -11,16 +11,6 @@ custom_edit_url: null
 
 - **`EmbedPayloadPartial`**
 
-  ↳ [`MountLoginPayload`](mimeeqApp._mimeeq.MountLoginPayload.md)
-
-  ↳ [`MountUserProfilePayload`](mimeeqApp._mimeeq.MountUserProfilePayload.md)
-
-  ↳ [`MountFavouritesPayload`](mimeeqApp._mimeeq.MountFavouritesPayload.md)
-
-  ↳ [`MountARPagePayload`](mimeeqApp._mimeeq.MountARPagePayload.md)
-
-  ↳ [`MountListPayload`](mimeeqApp._mimeeq.MountListPayload.md)
-
   ↳ [`MountConfiguratorPayload`](mimeeqApp._mimeeq.MountConfiguratorPayload.md)
 
 ## Properties
@@ -61,7 +51,8 @@ ___
 
 • `Optional` **elementId**: `string`
 
-**`deprecated`**
+**`Deprecated`**
+
 Id of HTML element on which mount tree
 
 ___

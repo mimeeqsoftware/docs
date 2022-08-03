@@ -9,7 +9,7 @@ custom_edit_url: null
 
 Authorization related utils
 
-## Properties
+## Authentication Properties
 
 ### forgotPassword
 
@@ -17,9 +17,9 @@ Authorization related utils
 
 Initialize forgot password procedure for email
 
-**`param`** User email
+**`Param`**
 
-**`returns`**
+User email
 
 ___
 
@@ -29,13 +29,25 @@ ___
 
 Submit new password for account
 
-**`param`** User email
+**`Param`**
 
-**`param`** New password
+User email
 
-**`param`** Forget password confirmation code from email
+**`Param`**
 
-**`returns`** Promise<SuccessResponse | AuthError>
+New password
+
+**`Param`**
+
+Forget password confirmation code from email
+
+___
+
+### getToken
+
+• **getToken**: [`GetToken`](../namespaces/mimeeqApp._mimeeq.md#gettoken)
+
+If authorized, get user's JWT Token string.
 
 ___
 
@@ -43,9 +55,27 @@ ___
 
 • **getUserData**: [`GetUserData`](../namespaces/mimeeqApp._mimeeq.md#getuserdata)
 
-Get current user's data or if not exists current session
+Get current user's data or if not exists current session.
+Use this method to get information about currently logged in user. This is useful for
+reading current state of authentication or accessing current user details.
 
-**`returns`** A promise resolves to user data or session object if success
+#### Usage
+
+```js
+mimeeqAuth.authorization
+  .getUserData()
+  .then((user) => {
+    if (user) {
+      // logged in
+      console.log(user);
+    } else {
+      // logged out
+    }
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+```
 
 ___
 
@@ -55,11 +85,13 @@ ___
 
 Resend SignUp confirmation email
 
-**`param`** User email
+**`Param`**
 
-**`fires`** @mimeeq#mimeeq-resend-signup-confirm-code
+User email
 
-**`returns`** Promise<SuccessResponse | AuthError>
+**`Fires`**
+
+@mimeeq#mimeeq-resend-signup-confirm-code
 
 ___
 
@@ -69,15 +101,21 @@ ___
 
 Sign in to Mimeeq account
 
-**`param`** The username (email) to be signed in
+**`Param`**
 
-**`param`** The password of the username
+The username (email) to be signed in
 
-**`param`** Id of customer we want to sing in
+**`Param`**
 
-**`returns`** A promise resolves the CognitoUser or error object in case of failure
+The password of the username
 
-**`fires`** @mimeeq#mimeeq-user-signed-in
+**`Param`**
+
+Id of customer we want to sing in
+
+**`Fires`**
+
+@mimeeq#mimeeq-user-signed-in
 
 ___
 
@@ -87,6 +125,14 @@ ___
 
 Sign out from Mimeeq
 
-**`fires`** @mimeeq#mimeeq-user-signed-out
+#### Usage
 
-**`returns`** A promise resolved if success. On success it return boolean if failure object with error data
+```js
+mimeeqAuth.authorization.signOut().then(() => {
+  window.location.reload();
+});
+```
+
+**`Fires`**
+
+@mimeeq#mimeeq-user-signed-out

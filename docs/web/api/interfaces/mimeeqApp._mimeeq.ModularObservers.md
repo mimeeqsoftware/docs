@@ -11,7 +11,7 @@ custom_edit_url: null
 
 ### allSelected
 
-• **allSelected**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`boolean`\>
+• **allSelected**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`boolean`\>
 
 If `true` it means all models on the scene are selected
 
@@ -19,7 +19,7 @@ ___
 
 ### chosenProductId
 
-• **chosenProductId**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`string`\>
+• **chosenProductId**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`string`\>
 
 Id of product selected for adding
 
@@ -27,7 +27,7 @@ ___
 
 ### currentElement
 
-• **currentElement**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`string` \| `string`[]\>
+• **currentElement**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`string` \| `string`[]\>
 
 Instance id (or ids if multiselect) of currently selected element
 
@@ -35,15 +35,23 @@ ___
 
 ### elementAction
 
-• **elementAction**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`ElementAction`](mimeeqApp._mimeeq.ElementAction.md)\>
+• **elementAction**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`ElementAction`](mimeeqApp._mimeeq.ElementAction.md)\>
 
 Currently active action data
 
 ___
 
+### favSceneShortcode
+
+• **favSceneShortcode**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`string`\>
+
+ID of currently loaded Favourite Scene
+
+___
+
 ### hasProducts
 
-• **hasProducts**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`boolean`\>
+• **hasProducts**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`boolean`\>
 
 Information if there are any products on the scene.
 
@@ -51,7 +59,7 @@ ___
 
 ### isDimensionsActive
 
-• **isDimensionsActive**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`boolean`\>
+• **isDimensionsActive**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`boolean`\>
 
 If true, scene will display dimensions
 
@@ -59,7 +67,7 @@ ___
 
 ### sceneSetup
 
-• **sceneSetup**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`SceneSetup`](mimeeqApp._mimeeq.SceneSetup.md)\>
+• **sceneSetup**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`SceneSetup`](mimeeqApp._mimeeq.SceneSetup.md)\>
 
 Scene setup options
 
@@ -67,7 +75,7 @@ ___
 
 ### selectMode
 
-• **selectMode**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`SelectMode`](../enums/mimeeqApp._mimeeq.SelectMode.md)\>
+• **selectMode**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`SelectMode`](../enums/mimeeqApp._mimeeq.SelectMode.md)\>
 
 Current selection mode
 
@@ -75,7 +83,7 @@ ___
 
 ### showCollisionWarning
 
-• **showCollisionWarning**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`boolean`\>
+• **showCollisionWarning**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`boolean`\>
 
 If true, Collision Warning should be presented to user
 
@@ -83,7 +91,7 @@ ___
 
 ### slideIds
 
-• **slideIds**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`ActiveSlides`](mimeeqApp._mimeeq.ActiveSlides.md)\>
+• **slideIds**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`ActiveSlides`](mimeeqApp._mimeeq.ActiveSlides.md)\>
 
 Ids of elements with slide activated
 
@@ -91,7 +99,7 @@ ___
 
 ### snapError
 
-• **snapError**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`ModularWarning`](mimeeqApp._mimeeq.ModularWarning.md)\>
+• **snapError**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`ModularWarning`](mimeeqApp._mimeeq.ModularWarning.md)\>
 
 Information about Snap point warning modal
 
@@ -99,7 +107,7 @@ ___
 
 ### toolbarData
 
-• **toolbarData**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`ToolbarData`](mimeeqApp._mimeeq.ToolbarData.md)\>
+• **toolbarData**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`ToolbarData`](mimeeqApp._mimeeq.ToolbarData.md)\>
 
 Information about possible actions and names for currently selected models
 
@@ -107,6 +115,6 @@ ___
 
 ### variantCodes
 
-• **variantCodes**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`VariantCodes`](mimeeqApp._mimeeq.VariantCodes.md)\>
+• **variantCodes**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`VariantCodes`](mimeeqApp._mimeeq.VariantCodes.md)\>
 
 Map of instance id and variant codes for all elements on scene.

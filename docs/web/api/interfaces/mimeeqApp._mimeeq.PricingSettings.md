@@ -7,11 +7,27 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).PricingSettings
 
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
 ## Properties
 
 ### codeStructure
 
 • `Optional` **codeStructure**: `string`
+
+SKU code structure
 
 ___
 
@@ -19,11 +35,15 @@ ___
 
 • `Optional` **codes**: `object`[]
 
+Pricing codes
+
 ___
 
 ### defaultCode
 
 • `Optional` **defaultCode**: `string`
+
+Default configuration code
 
 ___
 
@@ -31,11 +51,15 @@ ___
 
 • `Optional` **deliveryTime**: `string`
 
+Delivery time override text. Used only if `useItemMaster` is disabled
+
 ___
 
 ### mqq
 
 • **mqq**: `string` \| `number`
+
+Minimum quantity
 
 ___
 
@@ -43,8 +67,12 @@ ___
 
 • **qty**: `string` \| `number`
 
+Incremental quantity. It defines how high should be step at quantity selector
+
 ___
 
 ### useItemMaster
 
 • `Optional` **useItemMaster**: `boolean`
+
+If `true` it will use delivery time from Item Master.

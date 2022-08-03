@@ -7,14 +7,20 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).ThumbStyle
 
-## Enumeration members
+Type of corner rounding for Thumbnails and Filter widgets options thumbs.
+
+## Enumeration Members
 
 ### ROUND
 
-• **ROUND** = `"ROUND"`
+• **ROUND** = ``"ROUND"``
+
+Round image with completely rounded corners.
 
 ___
 
 ### SQUARE
 
-• **SQUARE** = `"SQUARE"`
+• **SQUARE** = ``"SQUARE"``
+
+Square image with slightly rounded corners.

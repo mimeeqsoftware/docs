@@ -7,25 +7,31 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).ProductMetadata
 
-**`property`** {ProductThumb} standardImage
+**`Property`**
 
-**`property`** {ProductThumb} mouseoverImage
+**`Property`**
 
-**`property`** {string} code
+**`Property`**
 
-**`property`** {string} designer
+**`Property`**
 
-**`property`** {MetadataType} type
+**`Property`**
 
-**`property`** {string} manufacturer
+**`Property`**
 
-**`property`** {null | string} description
+**`Property`**
 
-**`property`** {string} name
+**`Property`**
 
-**`property`** {Status} status
+**`Property`**
 
 ## Properties
+
+### brand
+
+• `Optional` **brand**: `string`
+
+___
 
 ### code
 

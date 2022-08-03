@@ -45,12 +45,6 @@ ___
 
 ___
 
-### toastDark
-
-• **toastDark**: `string`
-
-___
-
 ### tooltip
 
 • **tooltip**: `string`

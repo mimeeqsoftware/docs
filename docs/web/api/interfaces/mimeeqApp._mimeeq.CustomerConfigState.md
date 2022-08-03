@@ -15,6 +15,12 @@ custom_edit_url: null
 
 ___
 
+### basket
+
+• `Optional` **basket**: [`CustomerBasket`](mimeeqApp._mimeeq.CustomerBasket.md)
+
+___
+
 ### customerCode
 
 • **customerCode**: `string`
@@ -39,6 +45,12 @@ ___
 
 ___
 
+### isFullCustomer
+
+• **isFullCustomer**: `boolean`
+
+___
+
 ### languages
 
 • `Optional` **languages**: `string`[]
@@ -48,6 +60,12 @@ ___
 ### limits
 
 • `Optional` **limits**: [`CustomerLimits`](mimeeqApp._mimeeq.CustomerLimits.md)
+
+___
+
+### logoS3Path
+
+• **logoS3Path**: `string`
 
 ___
 

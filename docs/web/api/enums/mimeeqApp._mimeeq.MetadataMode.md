@@ -7,20 +7,28 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).MetadataMode
 
-## Enumeration members
+List of possible configurator modes
+
+## Enumeration Members
 
 ### MODULAR
 
-• **MODULAR** = `"MODULAR"`
+• **MODULAR** = ``"MODULAR"``
+
+Modular product. It allows user to create configuration from connected products.
 
 ___
 
 ### STANDARD
 
-• **STANDARD** = `"STANDARD"`
+• **STANDARD** = ``"STANDARD"``
+
+Type of product which doesn't allow any customization.
 
 ___
 
 ### VARIANT
 
-• **VARIANT** = `"VARIANT"`
+• **VARIANT** = ``"VARIANT"``
+
+Product variant. Product which allow for specifying some options. Most common product mode.

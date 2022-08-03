@@ -45,6 +45,12 @@ ___
 
 ___
 
+### scene3d
+
+• `Optional` **scene3d**: [`Scene3D`](mimeeqApp._mimeeq.Scene3D.md)
+
+___
+
 ### showDimensions
 
 • `Optional` **showDimensions**: `boolean`
@@ -65,4 +71,4 @@ ___
 
 ### views
 
-• `Optional` **views**: [`View2D`](mimeeqApp._mimeeq.View2D.md)[]
+• `Optional` **views**: `string`[]

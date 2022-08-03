@@ -13,14 +13,20 @@ custom_edit_url: null
 
 • **code**: `string`
 
+Configuration code
+
 ___
 
 ### id
 
 • **id**: `string`
 
+Unique id of configuration
+
 ___
 
 ### thumbnailFilePath
 
 • **thumbnailFilePath**: `string`
+
+Relative path to static image

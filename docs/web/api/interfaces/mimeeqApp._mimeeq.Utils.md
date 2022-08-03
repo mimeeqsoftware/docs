@@ -9,7 +9,103 @@ custom_edit_url: null
 
 Set of simple tools for manipulating configurator and obtaining simple data from
 
-## Properties
+## Pricing Properties
+
+### setPrice
+
+• **setPrice**: [`SetPrice`](../namespaces/mimeeqApp._mimeeq.md#setprice)
+
+Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing with the paremter enabled in the product admin panel). It accepts price object from API. It should be used in conjunction with `Use Custom Pricing` enabled at embed snippet.
+```
+We recommend listening for this event mimeeq-price-change Events, so you know when to request the price from our API end point. Addtionally we reccomend using the price field loader to indicate when prices are being changed, see Events from Host Site
+```
+```data-mimmeq-use-custom-pricing```
+```Currently our modular product configurator does not accept price for components. You can only set the total price.```
+
+**`Param`**
+
+Mimeeq pricing data
+
+___
+
+### setPricingSettings
+
+• **setPricingSettings**: [`SetPricingSettings`](../namespaces/mimeeqApp._mimeeq.md#setpricingsettings)
+
+This allows you to set the decimal places in the Mimeeq configurator
+
+**`Param`**
+
+Minimum number of decimal places
+
+**`Param`**
+
+Maximum number of decimal places
+
+___
+
+## Product Properties
+
+### getShortcode
+
+• **getShortcode**: [`GetShortcode`](../namespaces/mimeeqApp._mimeeq.md#getshortcode)
+
+When called it will generate unique shortcode for given productId-configurationCode pair. For the same pair shortcode is always the same.
+
+```
+This method works only for regular products. In case of modular Short Code is returned as part of `mimeeq-add-to-cart` event.
+Since version 6.7.0 short code is returned in `mimeeq-add-to-cart` for all products. It's preferable to use that value instead of calling this method.
+```
+
+**`Param`**
+
+Id of the product
+
+**`Param`**
+
+Selected configuration code string
+
+___
+
+## Scene Properties
+
+### takeScreenshot
+
+• **takeScreenshot**: [`TakeScreenshot`](../namespaces/mimeeqApp._mimeeq.md#takescreenshot)
+
+You can use this method to generate an image from the current canvas state, method is called screenshot, but you are able to control the size of the image and the type, png or jpg.
+
+**`Param`**
+
+[png] Extension of file. Based on that image has set proper MimeType. Accepts only png, jpg and jpeg.
+
+**`Param`**
+
+[3072] Width of image. Height will be set automatically based on canvas aspect ratio. On iOS powered mobiles it may cause reloads if size is bigger than 2k. We recommend 1k for ecommerce.
+
+**`Param`**
+
+[#fff] If provided, will be used for background on jpeg file. Accepts only hex and hexa format.
+
+**`Param`**
+
+If provided, it will overwrite size and/or automatically calculated height.
+
+**`Param`**
+
+If `true`, it will do zoom out on canvas to make sure product if fully visible.
+
+**`Param`**
+
+If `true`, it will reset camera to initial position (position from 1st camera at scene settings).
+
+**`Param`**
+
+JSON string with custom camera position eg. `{"position":{"x":-1.4827425522188151,"y":1.7029008083897266,"z":-5.265221131049244},"alpha":4.4378873110317825,"beta":1.3718508759876076,"target":{"x":0,"y":0.600077748298645,"z":0},"radius":5.580080441792618}`
+
+___
+
+## Utils Properties
 
 ### addToCart
 
@@ -17,7 +113,9 @@ Set of simple tools for manipulating configurator and obtaining simple data from
 
 Calling this method will run add to cart or finish logic.
 
-**`fires`** @mimeeq#mimeeq-add-to-cart
+**`Fires`**
+
+@mimeeq#mimeeq-add-to-cart
 
 ___
 
@@ -37,13 +135,16 @@ When called it will generate unique shortcode for given productId-configurationC
 
 ```
 This method works only for regular products. In case of modular Short Code is returned as part of `mimeeq-add-to-cart` event.
+Since version 6.7.0 short code is returned in `mimeeq-add-to-cart` for all products. It's preferable to use that value instead of calling this method.
 ```
 
-**`param`** Id of the product
+**`Param`**
 
-**`param`** Selected configuration code string
+Id of the product
 
-**`returns`** Generated short code
+**`Param`**
+
+Selected configuration code string
 
 ___
 
@@ -58,7 +159,9 @@ We recommend listening for this event mimeeq-price-change Events, so you know wh
 ```data-mimmeq-use-custom-pricing```
 ```Currently our modular product configurator does not accept price for components. You can only set the total price.```
 
-**`param`** Mimeeq pricing data
+**`Param`**
+
+Mimeeq pricing data
 
 ___
 
@@ -68,9 +171,13 @@ ___
 
 This allows you to set the decimal places in the Mimeeq configurator
 
-**`param`** Minimum number of decimal places
+**`Param`**
 
-**`param`** Maximum number of decimal places
+Minimum number of decimal places
+
+**`Param`**
+
+Maximum number of decimal places
 
 ___
 
@@ -96,18 +203,30 @@ ___
 
 You can use this method to generate an image from the current canvas state, method is called screenshot, but you are able to control the size of the image and the type, png or jpg.
 
-**`param`** Extension of file. Based on that image has set proper MimeType. Accepts only png, jpg and jpeg.
+**`Param`**
 
-**`param`** Width of image. Height will be set automatically based on canvas aspect ratio. On iOS powered mobiles it may cause reloads if size is bigger than 2k. We recommend 1k for ecommerce.
+[png] Extension of file. Based on that image has set proper MimeType. Accepts only png, jpg and jpeg.
 
-**`param`** If provided, will be used for background on jpeg file. Accepts only hex and hexa format.
+**`Param`**
 
-**`param`** If provided, it will overwrite size and/or automatically calculated height.
+[3072] Width of image. Height will be set automatically based on canvas aspect ratio. On iOS powered mobiles it may cause reloads if size is bigger than 2k. We recommend 1k for ecommerce.
 
-**`param`** If `true`, it will do zoom out on canvas to make sure product if fully visible.
+**`Param`**
 
-**`param`** If `true`, it will reset camera to initial position (position from 1st camera at scene settings).
+[#fff] If provided, will be used for background on jpeg file. Accepts only hex and hexa format.
 
-**`param`** JSON string with custom camera position eg. `{"position":{"x":-1.4827425522188151,"y":1.7029008083897266,"z":-5.265221131049244},"alpha":4.4378873110317825,"beta":1.3718508759876076,"target":{"x":0,"y":0.600077748298645,"z":0},"radius":5.580080441792618}`
+**`Param`**
 
-**`returns`** Base64 image string
+If provided, it will overwrite size and/or automatically calculated height.
+
+**`Param`**
+
+If `true`, it will do zoom out on canvas to make sure product if fully visible.
+
+**`Param`**
+
+If `true`, it will reset camera to initial position (position from 1st camera at scene settings).
+
+**`Param`**
+
+JSON string with custom camera position eg. `{"position":{"x":-1.4827425522188151,"y":1.7029008083897266,"z":-5.265221131049244},"alpha":4.4378873110317825,"beta":1.3718508759876076,"target":{"x":0,"y":0.600077748298645,"z":0},"radius":5.580080441792618}`

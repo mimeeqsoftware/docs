@@ -9,9 +9,17 @@ custom_edit_url: null
 
 ## Properties
 
+### basketConfig
+
+• **basketConfig**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`InterfaceBasketConfig`](mimeeqApp._mimeeq.InterfaceBasketConfig.md)\>
+
+Embed basket settings. Generated based on options passed to embed mounting point
+
+___
+
 ### customerConfig
 
-• **customerConfig**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`CustomerConfigState`](mimeeqApp._mimeeq.CustomerConfigState.md)\>
+• **customerConfig**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`CustomerConfigState`](mimeeqApp._mimeeq.CustomerConfigState.md)\>
 
 Data and settings related to customer settings.
 
@@ -19,6 +27,6 @@ ___
 
 ### uiConfig
 
-• **uiConfig**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`Record`<`string`, `boolean`\>\>
+• **uiConfig**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`Record`<`string`, `boolean`\>\>
 
 Embed ui settings. Generated from options passed to embed element

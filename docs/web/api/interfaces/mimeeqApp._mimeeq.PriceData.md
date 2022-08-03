@@ -7,6 +7,18 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).PriceData
 
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
 ## Properties
 
 ### currency
@@ -18,6 +30,12 @@ ___
 ### deliveryTime
 
 • `Optional` **deliveryTime**: `string`
+
+___
+
+### discount
+
+• `Optional` **discount**: `number`
 
 ___
 

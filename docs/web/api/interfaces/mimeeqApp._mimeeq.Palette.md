@@ -81,15 +81,15 @@ ___
 
 ___
 
-### header
+### group
 
-• **header**: [`PaletteHeader`](mimeeqApp._mimeeq.PaletteHeader.md)
+• **group**: [`PaletteGroup`](mimeeqApp._mimeeq.PaletteGroup.md)
 
 ___
 
-### headerAdmin
+### header
 
-• **headerAdmin**: [`PaletteHeader`](mimeeqApp._mimeeq.PaletteHeader.md)
+• **header**: [`PaletteHeader`](mimeeqApp._mimeeq.PaletteHeader.md)
 
 ___
 

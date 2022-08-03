@@ -19,6 +19,8 @@ ___
 
 • **fontFamily**: `string`
 
+Font name. In case of not deafult font make sure to load it previously
+
 ___
 
 ### fontSize
@@ -30,6 +32,8 @@ ___
 ### fontStyle
 
 • `Optional` **fontStyle**: [`FontStyle`](../enums/mimeeqApp._mimeeq.FontStyle.md)
+
+Font style.
 
 ___
 
@@ -48,6 +52,8 @@ ___
 ### invertH
 
 • **invertH**: `boolean`
+
+If true it will create embossing effect
 
 ___
 
@@ -90,6 +96,8 @@ ___
 ### strokeText
 
 • **strokeText**: `boolean`
+
+If true it will use stroke text instead of fill text
 
 ___
 

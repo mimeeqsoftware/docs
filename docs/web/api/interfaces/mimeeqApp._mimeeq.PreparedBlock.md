@@ -7,6 +7,40 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).PreparedBlock
 
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
 ## Hierarchy
 
 - [`OptionSetBlock`](mimeeqApp._mimeeq.OptionSetBlock.md)
@@ -187,7 +221,7 @@ ___
 
 ### optionSetsData
 
-• `Optional` **optionSetsData**: [`OptionSetsData`](mimeeqApp._mimeeq.OptionSetsData.md)
+• `Optional` **optionSetsData**: [`OptionSetData`](mimeeqApp._mimeeq.OptionSetData.md)[]
 
 ___
 
@@ -225,7 +259,7 @@ ___
 
 ### thumbColumns
 
-• `Optional` **thumbColumns**: ``"auto"`` \| ``1`` \| ``2`` \| ``3`` \| ``4`` \| ``5`` \| ``6``
+• `Optional` **thumbColumns**: ``1`` \| ``3`` \| ``2`` \| ``4`` \| ``"AUTO"`` \| ``5`` \| ``6``
 
 #### Inherited from
 

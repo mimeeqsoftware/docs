@@ -6,7 +6,7 @@ title: Utils
 
 Method: mimeeqApp.utils.takeScreenshot()
 
-You can use this method to generate an image from the current canvas state, method is called screenshot but you are able to control the size of the image and the type, png or jpg.
+You can use this method to generate an image from the current canvas state, method is called screenshot, but you are able to control the size of the image and the type, png or jpg.
 
 #### Parameters
 
@@ -42,6 +42,7 @@ When called it will generate unique shortcode for given productId-configurationC
 :::caution
 
 This method works only for regular products. In case of modular Short Code is returned as part of _mimeeq-add-to-cart_ event.
+Since version 6.7.0 short code is returned in `mimeeq-add-to-cart` for all products. It's preferable to use that value instead of calling this method.
 
 :::
 
@@ -68,13 +69,13 @@ This method returns `Promise` with generated short code, or thrown an error in c
 
 Method: mimeeqApp.utils.setPrice(pricing)
 
-Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing with the paremter enabled in the product admin panel). It accepts price object from API. It should be used in conjunction with __"Use Custom Pricing"__ enabled at embed snippet.
+Use this method to set price, currency and delivery time in days (note delivery time only works if product is using MCP for pricing with the parameter enabled in the product admin panel). It accepts price object from API. It should be used in conjunction with __"Use Custom Pricing"__ enabled at embed snippet.
 
 
 
 :::note
 
-We recoomend listening for this event **mimeeq-price-change** [Events](https://docs.mimeeq.com/events#generic-events) so you know when to request the price from our API end point.  Addtionally we reccomend using the price field loader to indicate when prices are being changed, see [Events from Host Site](https://docs.mimeeq.com/events#events-that-can-be-triggered-by-the-host-site)
+We recommend listening for event [**mimeeq-price-change**](https://docs.mimeeq.com/events#generic-events), so you know when to request the price from our API end point. Additionally, we recommend using the price field loader to indicate when prices are being changed, see [Events from Host Site](https://docs.mimeeq.com/events#events-that-can-be-triggered-by-the-host-site)
 
 :::
 
@@ -84,7 +85,7 @@ data-mimeeq-use-custom-pricing
 
 :::caution
 
-Currently our modular product configurator does not accept price for components. You can only set the total price.
+Currently, our modular product configurator does not accept price for components. You can only set the total price.
 
 :::
 
@@ -180,7 +181,7 @@ mimeeqApp.utils
 ## Close configurator
 
 Method: mimeeqApp.utils.closeConfigurator()
-Calling this method will close and unmount from DOM tree first occurence of mimeeq configurator. It works for all types of configuartor.
+Calling this method will close and unmount from DOM tree first occurrence of mimeeq configurator. It works for all types of configurator.
 
 
 #### Usage
@@ -193,7 +194,7 @@ mimeeqApp.utils
 ## Show modular
 
 Method: mimeeqApp.utils.showModular()
-Calling this method will mount and render modular configurator. It may be used while you use single Modular configuartor with option `Render modular configurator at page load` disabled while generating code snippet.
+Calling this method will mount and render modular configurator. It may be used while you use single Modular configurator with option `Render modular configurator at page load` disabled while generating code snippet.
 
 #### Usage
 
@@ -217,6 +218,7 @@ mimeeqApp.utils
 ## Mark option by block name and option code
 
 Method: mimeeqApp.actions.markOptionByBlockNameAndOptionCode(blockName, optionCode)
+
 Calling this method will mark option by block name and option code.
 
 #### Parameters
@@ -229,8 +231,58 @@ Calling this method will mark option by block name and option code.
 #### Usage
 
 ```js
-mimeeqApp.actions
-    .markOptionByBlockNameAndOptionCode(blockName, optionCode)
+await mimeeqApp.actions
+               .markOptionByBlockNameAndOptionCode(blockName, optionCode)
+```
+
+#### Returns
+
+This method returns `Promise` with no value.
+
+#### Selecting multiple options
+
+By default, calling this method can select only single option. In case you want to change multiple options at the same time you need to combine this method with observers for selected options.
+
+```js
+// example list of blockName, optionCode pairs
+const options = [
+  {blockName: 'leg', optionCode: 'wooden_leg'},
+  {blockName: 'legColour', optionCode: 'oak'},
+]
+
+// we need to iterate through each options and since each option needs to be triggered one after another using for look with await inside is one of the options.
+// Anyway it's not the best option. It would be better to use some generator or observer to make it more secure and managable.
+for (var i = 0; i < options.length; i++) {
+  // we get blockName and optionCode for current option
+  const {blockName, optionCode} = options[i];
+
+  let sub;
+  
+  await new Promise(resolve => {
+    // we subscribe to selected options observer to keep track of selected options
+    sub = mimeeqApp.observers.optionSets.selectedOptions.subscribe(data => {
+      let hasEntry;
+      // After subscribing data returns current data state. We look if our current option is already selected. If yes we immediately resolve and go to next option.
+      if (data.SINGLE_PRODUCT_ID && Array.isArray(data.SINGLE_PRODUCT_ID)) {
+        // We get selected options for current product. In case of regular product it's always in SINGLE_PRODUCT_ID object
+        hasEntry = data.SINGLE_PRODUCT_ID.find(selectedOption => selectedOption.blockCode === blockName && selectedOption.code === optionCode);
+      }
+      // If current option is already selected or we was informed about new options then we resolve and go to next option.
+      if (data.newValue || hasEntry) {
+        resolve(true);
+      }
+    });
+
+    // in case promise wasn't yet resolved (eg. current option wasn't selected yet) we call method to select current option.
+    mimeeqApp.actions
+             .markOptionByBlockNameAndOptionCode(blockName, optionCode);
+  });
+  
+  // if subscription exists we unsubscibe since it's no longer needed
+  if (sub) {
+    sub.unsubscribe();
+  }
+}
 ```
 
 ## Trigger add to cart / show finish panel

@@ -11,7 +11,7 @@ custom_edit_url: null
 
 ### currentElement
 
-• **currentElement**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<`number`\>
+• **currentElement**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<`number`\>
 
 Index of currently selected history stack item.
 
@@ -19,6 +19,6 @@ ___
 
 ### stack
 
-• **stack**: [`MimeeqObservable`](../namespaces/mimeeqApp._mimeeq.md#mimeeqobservable)<[`HistoryStackValue`](../namespaces/mimeeqApp._mimeeq.md#historystackvalue)\>
+• **stack**: [`Observable`](../namespaces/mimeeqApp._mimeeq.md#observable)<[`HistoryStackValue`](../namespaces/mimeeqApp._mimeeq.md#historystackvalue)\>
 
 History stack. Contains all elements from entering configurator until last change

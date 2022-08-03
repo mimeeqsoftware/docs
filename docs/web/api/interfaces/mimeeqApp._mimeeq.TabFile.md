@@ -7,6 +7,14 @@ custom_edit_url: null
 
 [mimeeqApp](../modules/mimeeqApp.md).[@mimeeq](../namespaces/mimeeqApp._mimeeq.md).TabFile
 
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
+**`Property`**
+
 ## Properties
 
 ### directoryPath

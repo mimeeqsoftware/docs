@@ -21,6 +21,12 @@ ___
 
 ___
 
+### quantity
+
+• `Optional` **quantity**: `number`
+
+___
+
 ### value
 
 • `Optional` **value**: `string` \| `number`

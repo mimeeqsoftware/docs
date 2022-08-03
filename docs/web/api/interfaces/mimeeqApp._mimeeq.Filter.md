@@ -13,11 +13,15 @@ custom_edit_url: null
 
 • **children**: [`Filter`](mimeeqApp._mimeeq.Filter.md)[]
 
+Sub filters
+
 ___
 
 ### hideInUi
 
 • **hideInUi**: `boolean`
+
+If `true` filter shouldn't be displayed on filter list in Configurator
 
 ___
 
@@ -25,14 +29,20 @@ ___
 
 • **id**: `string`
 
+Filter id
+
 ___
 
 ### parentId
 
 • **parentId**: `string`
 
+Filter parent id
+
 ___
 
 ### title
 
 • **title**: `string`
+
+Filter name

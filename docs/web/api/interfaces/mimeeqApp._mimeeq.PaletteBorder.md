@@ -27,12 +27,6 @@ ___
 
 ___
 
-### lightDark
-
-• **lightDark**: `string`
-
-___
-
 ### lighter
 
 • **lighter**: `string`
