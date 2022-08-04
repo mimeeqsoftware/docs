@@ -26,3 +26,20 @@ Below we list all available clases with example styles
   }
 </style>
 ```
+
+## Mimeeq cart z-indexes
+
+You can control Mimeeq cart z-index by using CSS variables. We expose following variables
+
+```html
+<style>  
+  :root {
+   // backdrop
+   --mmq-basket-z-index: 10000;
+   // basket panel
+   --mmq-basket-panel-z-index: 100001;
+  // basket button
+   --mmq-basket-btn-z-index: 100000;
+  }
+</style>
+```
