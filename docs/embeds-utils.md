@@ -125,7 +125,7 @@ mimeeqApp.utils
 })
 ```
 
-##### In case you are using quantity breaks it may looks like this
+##### In case you are using quantity breaks it may look like this
 
 ```js
 mimeeqApp.utils
@@ -158,6 +158,14 @@ mimeeqApp.utils
   ]
 });
 ```
+
+##### Example
+
+<iframe height="570" style={{width: "100%"}} scrolling="no" title="Custom Price Example" src="https://codepen.io/mimeeq/embed/preview/dymeOpZ/7955794d26d8cc859b5f38c87b799652?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/mimeeq/pen/dymeOpZ/7955794d26d8cc859b5f38c87b799652">
+  Custom Price Example</a> by Mimeeq (<a href="https://codepen.io/mimeeq">@mimeeq</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 ## Set pricing settings
 
