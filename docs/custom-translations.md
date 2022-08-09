@@ -146,8 +146,34 @@ This example includes all available keys for translation and usage.
       "ar.landingpage.description.devicesSupported": "click here",
   
       // Delivery Info
-      "summarypanel.delivery": "<b>Delivery</b>: {valueType, select, number {{type, select, week {{weeks, plural, one {# Week} other {# Weeks}}} month {{months, plural, one {# Month} other {# Months}}} year {{years, plural, one {# Year} other {# Years}}} other {{days, plural, one {# Working Day} other {# Working Days}}} }} other {{days}}}"
+      "summarypanel.delivery": "<b>Delivery</b>: {valueType, select, number {{type, select, week {{weeks, plural, one {# Week} other {# Weeks}}} month {{months, plural, one {# Month} other {# Months}}} year {{years, plural, one {# Year} other {# Years}}} other {{days, plural, one {# Working Day} other {# Working Days}}} }} other {{days}}}",
 
+      // Basket
+
+       "basket.panel.header": "Basket {count, plural, =0 { } other {(#)}}",
+       "basket.panel.requestQuote": "Request Quote",
+       "basket.panel.total": "Total",
+       "basket.item.removeTooltip": "Remove this item",
+       "basket.item.specification": "Specification",
+       "basket.item.subtotal": "Subtotal",
+       "basket.item.unitPrice": "Unit price",
+       "basket.panel.empty.header": "Your basket is empty",
+       "basket.panel.empty.description": "Add at least one item to a basket for making an order or generation a quotation",
+       "basket.panel.empty.explore": "Explore Products",
+       "basket.panel.contact.header": "Add Contact Details",
+       "basket.contact.name": "Full Name",
+       "basket.contact.email": "Email",
+       "basket.contact.phone": "Phone Number",
+       "basket.contact.company": "Company Name",
+       "basket.contact.address": "Address",
+       "basket.contact.notes": "Notes",
+       "basket.contact.submit": "Send Request",
+       "basket.success.header": "Order Sent",
+       "basket.success.subheader": "Thank you for submitting your Request!",
+       "basket.success.reference": "Your Submission Reference is {referenceCode}.",
+       "basket.success.email": "A copy has been sent to the email you submitted for your reference",
+       "basket.success.explore": "Browse More Products",
+       "basket.item.note": "Note (optional)"
   }
 </script>
 ```
