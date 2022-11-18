@@ -2,7 +2,7 @@
 title: Custom CSS
 ---
 
-By default we are using dynamically created CSS classes for all elements so it's not possible to easily apply custom styles. But in case of few elements we also set fixed CSS class so these elements could be customized.
+By default, we are using dynamically created CSS classes for all elements so it's not possible to easily apply custom styles. But in case of few elements we also set fixed CSS class so these elements could be customized.
 
 ### Usage
 

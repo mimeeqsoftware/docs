@@ -32,12 +32,12 @@ module.exports = {
         // },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: "https://app.mimeeq.co.uk",
+          href: "https://app.mimeeq.com",
           label: "Go to app",
           position: "right",
         },
         {
-          href: "mailto:support@mimeeq.co.uk",
+          href: "mailto:support@mimeeq.com",
           label: "Support",
           position: "right",
         },
